@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "papygreek-to-ligre"
+version = "1.0.0"
+description = "Converts the PapyGreek treebanks into LiLa-style RDF linked to the LiGre lemma bank"
+requires-python = ">=3.10"
+dependencies = ["rdflib>=7.0"]
+
+[project.scripts]
+papygreek-to-ligre = "papygreek_to_ligre.__main__:main"
+
+[tool.setuptools]
+packages = ["papygreek_to_ligre"]

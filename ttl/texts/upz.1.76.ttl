@@ -1,0 +1,548 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ligreLemma: <https://ligre.ugent.be/data/id/lemma/> .
+@prefix lilaOntology: <http://lila-erc.eu/ontologies/lila/> .
+@prefix lila_corpus: <http://lila-erc.eu/ontologies/lila_corpora/> .
+@prefix powla: <http://purl.org/powla/powla.owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus> powla:hasSubDocument <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76> a powla:Document ;
+    dc:title "upz.1.76" ;
+    dcterms:identifier "TM 3467" ;
+    rdfs:seeAlso <https://papyri.info/hgv/3467>,
+        <https://www.trismegistos.org/text/3467> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure> a lila_corpus:CitationStructure ;
+    dc:title "upz.1.76 Citation Layer" ;
+    dc:description "upz.1.76 Citation Layer" ;
+    powla:hasDocument <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76> ;
+    lila_corpus:first <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1> ;
+    lila_corpus:isLayer <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1> a lila_corpus:citationUnit ;
+    rdfs:label "Pars 1" ;
+    lila_corpus:hasRefType "Pars" ;
+    lila_corpus:hasCitLevel "1"^^xsd:int ;
+    lila_corpus:hasRefValue "Pars_1" ;
+    lila_corpus:hasCitSubUnit <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_1>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_2>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_3>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_4>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_5>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_6>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_7>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_8>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_9>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_11>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_12>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_13> ;
+    lila_corpus:first <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_1> ;
+    lila_corpus:last <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_13> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_1> a lila_corpus:citationUnit ;
+    rdfs:label "Linea 1" ;
+    lila_corpus:hasRefType "Linea" ;
+    lila_corpus:hasCitLevel "2"^^xsd:int ;
+    lila_corpus:hasRefValue "Linea_1" ;
+    powla:hasChild <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000001>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000002>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000003>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000004> ;
+    lila_corpus:first <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000001> ;
+    lila_corpus:last <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000004> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_2> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_2> a lila_corpus:citationUnit ;
+    rdfs:label "Linea 2" ;
+    lila_corpus:hasRefType "Linea" ;
+    lila_corpus:hasCitLevel "2"^^xsd:int ;
+    lila_corpus:hasRefValue "Linea_2" ;
+    powla:hasChild <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000005>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000006>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000007> ;
+    lila_corpus:first <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000005> ;
+    lila_corpus:last <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000007> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_3> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_1> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_3> a lila_corpus:citationUnit ;
+    rdfs:label "Linea 3" ;
+    lila_corpus:hasRefType "Linea" ;
+    lila_corpus:hasCitLevel "2"^^xsd:int ;
+    lila_corpus:hasRefValue "Linea_3" ;
+    powla:hasChild <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000008> ;
+    lila_corpus:first <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000008> ;
+    lila_corpus:last <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000008> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_4> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_2> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_4> a lila_corpus:citationUnit ;
+    rdfs:label "Linea 4" ;
+    lila_corpus:hasRefType "Linea" ;
+    lila_corpus:hasCitLevel "2"^^xsd:int ;
+    lila_corpus:hasRefValue "Linea_4" ;
+    powla:hasChild <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000009>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000010> ;
+    lila_corpus:first <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000009> ;
+    lila_corpus:last <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000010> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_5> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_3> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_5> a lila_corpus:citationUnit ;
+    rdfs:label "Linea 5" ;
+    lila_corpus:hasRefType "Linea" ;
+    lila_corpus:hasCitLevel "2"^^xsd:int ;
+    lila_corpus:hasRefValue "Linea_5" ;
+    powla:hasChild <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000011>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000012>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000013> ;
+    lila_corpus:first <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000011> ;
+    lila_corpus:last <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000013> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_6> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_4> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_6> a lila_corpus:citationUnit ;
+    rdfs:label "Linea 6" ;
+    lila_corpus:hasRefType "Linea" ;
+    lila_corpus:hasCitLevel "2"^^xsd:int ;
+    lila_corpus:hasRefValue "Linea_6" ;
+    powla:hasChild <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000014>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000015> ;
+    lila_corpus:first <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000014> ;
+    lila_corpus:last <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000015> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_7> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_5> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_7> a lila_corpus:citationUnit ;
+    rdfs:label "Linea 7" ;
+    lila_corpus:hasRefType "Linea" ;
+    lila_corpus:hasCitLevel "2"^^xsd:int ;
+    lila_corpus:hasRefValue "Linea_7" ;
+    powla:hasChild <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000016>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000017>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000018> ;
+    lila_corpus:first <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000016> ;
+    lila_corpus:last <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000018> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_8> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_6> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_8> a lila_corpus:citationUnit ;
+    rdfs:label "Linea 8" ;
+    lila_corpus:hasRefType "Linea" ;
+    lila_corpus:hasCitLevel "2"^^xsd:int ;
+    lila_corpus:hasRefValue "Linea_8" ;
+    powla:hasChild <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000019>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000020>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000021>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000022> ;
+    lila_corpus:first <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000019> ;
+    lila_corpus:last <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000022> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_9> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_7> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_9> a lila_corpus:citationUnit ;
+    rdfs:label "Linea 9" ;
+    lila_corpus:hasRefType "Linea" ;
+    lila_corpus:hasCitLevel "2"^^xsd:int ;
+    lila_corpus:hasRefValue "Linea_9" ;
+    powla:hasChild <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000023>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000024>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000025>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000026> ;
+    lila_corpus:first <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000023> ;
+    lila_corpus:last <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000026> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_11> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_8> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_11> a lila_corpus:citationUnit ;
+    rdfs:label "Linea 11" ;
+    lila_corpus:hasRefType "Linea" ;
+    lila_corpus:hasCitLevel "2"^^xsd:int ;
+    lila_corpus:hasRefValue "Linea_11" ;
+    powla:hasChild <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000027> ;
+    lila_corpus:first <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000027> ;
+    lila_corpus:last <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000027> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_12> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_9> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_12> a lila_corpus:citationUnit ;
+    rdfs:label "Linea 12" ;
+    lila_corpus:hasRefType "Linea" ;
+    lila_corpus:hasCitLevel "2"^^xsd:int ;
+    lila_corpus:hasRefValue "Linea_12" ;
+    powla:hasChild <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000028>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000029>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000030> ;
+    lila_corpus:first <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000028> ;
+    lila_corpus:last <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000030> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_13> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_11> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_13> a lila_corpus:citationUnit ;
+    rdfs:label "Linea 13" ;
+    lila_corpus:hasRefType "Linea" ;
+    lila_corpus:hasCitLevel "2"^^xsd:int ;
+    lila_corpus:hasRefValue "Linea_13" ;
+    powla:hasChild <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000031>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000032> ;
+    lila_corpus:first <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000031> ;
+    lila_corpus:last <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000032> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure/Pars_1/Linea_12> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer> a lila_corpus:CitationStructure ;
+    dc:title "upz.1.76 Sentence Layer" ;
+    dc:description "upz.1.76 Sentence Layer" ;
+    powla:hasDocument <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76> ;
+    lila_corpus:first <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer/Sentence_1> ;
+    lila_corpus:isLayer <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer/Sentence_1>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer/Sentence_2>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer/Sentence_3>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer/Sentence_4> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer/Sentence_1> a lila_corpus:citationUnit ;
+    rdfs:label "Sentence 1" ;
+    lila_corpus:hasRefType "Sentence" ;
+    lila_corpus:hasCitLevel "1"^^xsd:int ;
+    lila_corpus:hasRefValue "Sentence_1" ;
+    powla:hasChild <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000001>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000002>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000003>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000004>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000005>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000006>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000007>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000008>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000009>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000010>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000011>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000012>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000013> ;
+    lila_corpus:first <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000001> ;
+    lila_corpus:last <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000013> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer/Sentence_2> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer/Sentence_2> a lila_corpus:citationUnit ;
+    rdfs:label "Sentence 2" ;
+    lila_corpus:hasRefType "Sentence" ;
+    lila_corpus:hasCitLevel "1"^^xsd:int ;
+    lila_corpus:hasRefValue "Sentence_2" ;
+    powla:hasChild <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000014>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000015>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000016>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000017> ;
+    lila_corpus:first <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000014> ;
+    lila_corpus:last <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000017> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer/Sentence_3> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer/Sentence_1> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer/Sentence_3> a lila_corpus:citationUnit ;
+    rdfs:label "Sentence 3" ;
+    lila_corpus:hasRefType "Sentence" ;
+    lila_corpus:hasCitLevel "1"^^xsd:int ;
+    lila_corpus:hasRefValue "Sentence_3" ;
+    powla:hasChild <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000018>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000019>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000020>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000021>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000022>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000023>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000024>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000025>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000026>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000027>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000028>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000029>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000030> ;
+    lila_corpus:first <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000018> ;
+    lila_corpus:last <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000030> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer/Sentence_4> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer/Sentence_2> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer/Sentence_4> a lila_corpus:citationUnit ;
+    rdfs:label "Sentence 4" ;
+    lila_corpus:hasRefType "Sentence" ;
+    lila_corpus:hasCitLevel "1"^^xsd:int ;
+    lila_corpus:hasRefValue "Sentence_4" ;
+    powla:hasChild <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000031>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000032> ;
+    lila_corpus:first <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000031> ;
+    lila_corpus:last <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000032> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer/Sentence_3> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000001> a powla:Terminal ;
+    rdfs:label "γίνωσκε" ;
+    powla:hasStringValue "γίνωσκε" ;
+    lilaOntology:hasLemma ligreLemma:18805 ;
+    lila_corpus:hasCitStructure <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000002> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000002> a powla:Terminal ;
+    rdfs:label "," ;
+    powla:hasStringValue "," ;
+    lila_corpus:hasCitStructure <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000003> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000001> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000003> a powla:Terminal ;
+    rdfs:label "ἀπὸ" ;
+    powla:hasStringValue "ἀπὸ" ;
+    lilaOntology:hasLemma ligreLemma:10556 ;
+    lila_corpus:hasCitStructure <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000004> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000002> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000004> a powla:Terminal ;
+    rdfs:label "τῆς" ;
+    powla:hasStringValue "τῆς" ;
+    lilaOntology:hasLemma ligreLemma:61173 ;
+    lila_corpus:hasCitStructure <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000005> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000003> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000005> a powla:Terminal ;
+    rdfs:label "κε" ;
+    powla:hasStringValue "κε" ;
+    lila_corpus:hasCitStructure <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000006> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000004> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000006> a powla:Terminal ;
+    rdfs:label "〚_.1〛" ;
+    powla:hasStringValue "〚_.1〛" ;
+    lila_corpus:hasCitStructure <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000007> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000005> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000007> a powla:Terminal ;
+    rdfs:label "Μένων" ;
+    powla:hasStringValue "Μένων" ;
+    lila_corpus:hasCitStructure <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000008> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000006> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000008> a powla:Terminal ;
+    rdfs:label "[_.2]_.1ω̣ν̣" ;
+    powla:hasStringValue "[_.2]_.1ω̣ν̣" ;
+    lila_corpus:hasCitStructure <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000009> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000007> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000009> a powla:Terminal ;
+    rdfs:label "χιλωτ̣ῆ|ρα" ;
+    powla:hasStringValue "χιλωτ̣ῆ|ρα" ;
+    lilaOntology:hasLemma ligreLemma:97970 ;
+    lila_corpus:hasCitStructure <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000010> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000008> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000010> a powla:Terminal ;
+    rdfs:label "περιπορεύεται" ;
+    powla:hasStringValue "περιπορεύεται" ;
+    lilaOntology:hasLemma ligreLemma:69945 ;
+    lila_corpus:hasCitStructure <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000011> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000009> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000011> a powla:Terminal ;
+    rdfs:label "τ[ὴ]ν" ;
+    powla:hasStringValue "τ[ὴ]ν" ;
+    lilaOntology:hasLemma ligreLemma:61173 ;
+    lila_corpus:hasCitStructure <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000012> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000010> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000012> a powla:Terminal ;
+    rdfs:label "Τρικομίαν" ;
+    powla:hasStringValue "Τρικομίαν" ;
+    lila_corpus:hasCitStructure <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000013> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000011> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000013> a powla:Terminal ;
+    rdfs:label "." ;
+    powla:hasStringValue "." ;
+    lila_corpus:hasCitStructure <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000014> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000012> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000014> a powla:Terminal ;
+    rdfs:label "δι|γνύοι" ;
+    powla:hasStringValue "δι|γνύοι" ;
+    lilaOntology:hasLemma ligreLemma:19946 ;
+    lila_corpus:hasCitStructure <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000015> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000013> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000015> a powla:Terminal ;
+    rdfs:label "αὐτων" ;
+    powla:hasStringValue "αὐτων" ;
+    lila_corpus:hasCitStructure <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000016> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000014> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000016> a powla:Terminal ;
+    rdfs:label "τινι" ;
+    powla:hasStringValue "τινι" ;
+    lilaOntology:hasLemma ligreLemma:89326 ;
+    lila_corpus:hasCitStructure <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000017> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000015> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000017> a powla:Terminal ;
+    rdfs:label "_.2" ;
+    powla:hasStringValue "_.2" ;
+    lila_corpus:hasCitStructure <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000018> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000016> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000018> a powla:Terminal ;
+    rdfs:label "πέπρακα" ;
+    powla:hasStringValue "πέπρακα" ;
+    lilaOntology:hasLemma ligreLemma:71052 ;
+    lila_corpus:hasCitStructure <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000019> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000017> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000019> a powla:Terminal ;
+    rdfs:label "〚δὲ〛" ;
+    powla:hasStringValue "〚δὲ〛" ;
+    lila_corpus:hasCitStructure <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000020> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000018> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000020> a powla:Terminal ;
+    rdfs:label "τὰς" ;
+    powla:hasStringValue "τὰς" ;
+    lilaOntology:hasLemma ligreLemma:61173 ;
+    lila_corpus:hasCitStructure <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000021> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000019> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000021> a powla:Terminal ;
+    rdfs:label "λείας" ;
+    powla:hasStringValue "λείας" ;
+    lilaOntology:hasLemma ligreLemma:52913 ;
+    lila_corpus:hasCitStructure <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000022> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000020> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000022> a powla:Terminal ;
+    rdfs:label "καὶ" ;
+    powla:hasStringValue "καὶ" ;
+    lilaOntology:hasLemma ligreLemma:44225 ;
+    lila_corpus:hasCitStructure <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000023> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000021> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000023> a powla:Terminal ;
+    rdfs:label "εἴ" ;
+    powla:hasStringValue "εἴ" ;
+    lilaOntology:hasLemma ligreLemma:26209 ;
+    lila_corpus:hasCitStructure <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000024> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000022> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000024> a powla:Terminal ;
+    rdfs:label "τι" ;
+    powla:hasStringValue "τι" ;
+    lilaOntology:hasLemma ligreLemma:89326 ;
+    lila_corpus:hasCitStructure <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000025> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000023> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000025> a powla:Terminal ;
+    rdfs:label "ἔχουσι" ;
+    powla:hasStringValue "ἔχουσι" ;
+    lilaOntology:hasLemma ligreLemma:39353 ;
+    lila_corpus:hasCitStructure <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000026> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000024> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000026> a powla:Terminal ;
+    rdfs:label "ἐν" ;
+    powla:hasStringValue "ἐν" ;
+    lilaOntology:hasLemma ligreLemma:29577 ;
+    lila_corpus:hasCitStructure <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000027> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000025> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000027> a powla:Terminal ;
+    rdfs:label "παραθή|κην" ;
+    powla:hasStringValue "παραθή|κην" ;
+    lilaOntology:hasLemma ligreLemma:66377 ;
+    lila_corpus:hasCitStructure <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000028> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000026> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000028> a powla:Terminal ;
+    rdfs:label "κ[ο]μίζε̣σ̣θ̣α̣ι" ;
+    powla:hasStringValue "κ[ο]μίζε̣σ̣θ̣α̣ι" ;
+    lilaOntology:hasLemma ligreLemma:50120 ;
+    lila_corpus:hasCitStructure <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000029> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000027> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000029> a powla:Terminal ;
+    rdfs:label "?" ;
+    powla:hasStringValue "?" ;
+    lila_corpus:hasCitStructure <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000030> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000028> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000030> a powla:Terminal ;
+    rdfs:label "." ;
+    powla:hasStringValue "." ;
+    lila_corpus:hasCitStructure <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000031> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000029> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000031> a powla:Terminal ;
+    rdfs:label "εὐτύχει" ;
+    powla:hasStringValue "εὐτύχει" ;
+    lilaOntology:hasLemma ligreLemma:38802 ;
+    lila_corpus:hasCitStructure <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer> ;
+    powla:next <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000032> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000030> .
+
+<https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000032> a powla:Terminal ;
+    rdfs:label "." ;
+    powla:hasStringValue "." ;
+    lila_corpus:hasCitStructure <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/CiteStructure>,
+        <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/SentenceLayer> ;
+    powla:previous <https://ligre.ugent.be/data/corpora/PapyGreek/id/corpus/upz.1.76/upz.1.76_t_0000031> .
+
