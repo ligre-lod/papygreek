@@ -1,0 +1,32 @@
+# IGVLL loanwords whose Greek source word occurs in PapyGreek (through its LiGre lemma) and whose Latin word occurs in
+# CLaSSES (through its LiLa lemma), with the number of occurrences on each side.
+PREFIX lemonEty: <http://lari-datasets.ilc.cnr.it/lemonEty#>
+PREFIX lilaOntology: <http://lila-erc.eu/ontologies/lila/>
+PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?latin ?greek ?ligreLemma ?lilaLemma ?inPapyGreek ?inCLaSSES
+WHERE {
+  {
+    SELECT ?entry ?greek ?ligreLemma (COUNT(DISTINCT ?papygreekToken) AS ?inPapyGreek)
+    WHERE {
+      ?entry a ontolex:LexicalEntry ;
+             lemonEty:etymology/lemonEty:etymon/rdfs:label ?greek .
+      BIND(STRLANG(STR(?greek), "grc") AS ?greekWrittenRep)
+      ?ligreLemma ontolex:writtenRep ?greekWrittenRep .
+      ?papygreekToken lilaOntology:hasLemma ?ligreLemma .
+    }
+    GROUP BY ?entry ?greek ?ligreLemma
+  }
+  {
+    SELECT ?entry ?lilaLemma (COUNT(DISTINCT ?classesToken) AS ?inCLaSSES)
+    WHERE {
+      ?entry a ontolex:LexicalEntry ;
+             ontolex:canonicalForm ?lilaLemma .
+      ?classesToken lilaOntology:hasLemma ?lilaLemma .
+    }
+    GROUP BY ?entry ?lilaLemma
+  }
+  ?entry rdfs:label ?latin .
+}
+ORDER BY DESC(?inCLaSSES) DESC(?inPapyGreek)

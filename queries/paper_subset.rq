@@ -1,0 +1,56 @@
+# The part of LiGre, PapyGreek, IGVLL and CLaSSES that the queries in this folder need: every IGVLL loanword with its
+# Latin LiLa lemma and Greek source word, the LiGre lemmas written like those source words, and the PapyGreek and
+# CLaSSES words of those lemmas. The queries give the same results on this subset as on the full data.
+PREFIX lemonEty: <http://lari-datasets.ilc.cnr.it/lemonEty#>
+PREFIX lila_corpus: <http://lila-erc.eu/ontologies/lila_corpora/>
+PREFIX lilaOntology: <http://lila-erc.eu/ontologies/lila/>
+PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+PREFIX powla: <http://purl.org/powla/powla.owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+CONSTRUCT {
+  ?entry a ontolex:LexicalEntry ;
+         rdfs:label ?latin ;
+         ontolex:canonicalForm ?lilaLemma ;
+         lemonEty:etymology ?etymology .
+  ?etymology lemonEty:etymon ?etymon .
+  ?etymon rdfs:label ?greek .
+  ?ligreLemma ontolex:writtenRep ?greekWrittenRep .
+  ?papygreekToken lilaOntology:hasLemma ?ligreLemma ;
+                  powla:hasStringValue ?papygreekForm ;
+                  lila_corpus:hasCitStructure ?citeStructure .
+  ?classesToken lilaOntology:hasLemma ?lilaLemma ;
+                powla:hasStringValue ?classesForm ;
+                powla:hasLayer ?layer .
+}
+WHERE {
+  {
+    ?entry a ontolex:LexicalEntry ;
+           rdfs:label ?latin .
+    OPTIONAL { ?entry ontolex:canonicalForm ?lilaLemma . }
+    OPTIONAL {
+      ?entry lemonEty:etymology ?etymology .
+      ?etymology lemonEty:etymon ?etymon .
+      ?etymon rdfs:label ?greek .
+    }
+  }
+  UNION
+  {
+    ?entry lemonEty:etymology/lemonEty:etymon/rdfs:label ?greekLabel .
+    BIND(STRLANG(STR(?greekLabel), "grc") AS ?greekWrittenRep)
+    ?ligreLemma ontolex:writtenRep ?greekWrittenRep .
+    OPTIONAL {
+      ?papygreekToken lilaOntology:hasLemma ?ligreLemma ;
+                      powla:hasStringValue ?papygreekForm ;
+                      lila_corpus:hasCitStructure ?citeStructure .
+      FILTER(STRENDS(STR(?citeStructure), "/CiteStructure"))
+    }
+  }
+  UNION
+  {
+    ?entry ontolex:canonicalForm ?lilaLemma .
+    ?classesToken lilaOntology:hasLemma ?lilaLemma ;
+                  powla:hasStringValue ?classesForm ;
+                  powla:hasLayer ?layer .
+  }
+}

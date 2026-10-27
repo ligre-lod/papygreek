@@ -1,0 +1,37 @@
+# Where one IGVLL loanword occurs: the Greek source word in PapyGreek papyri and the Latin word in CLaSSES, with the
+# written forms. Change the Latin word in VALUES to look at another loanword.
+PREFIX lemonEty: <http://lari-datasets.ilc.cnr.it/lemonEty#>
+PREFIX lila_corpus: <http://lila-erc.eu/ontologies/lila_corpora/>
+PREFIX lilaOntology: <http://lila-erc.eu/ontologies/lila/>
+PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+PREFIX powla: <http://purl.org/powla/powla.owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?corpus ?text ?writtenForm (COUNT(?token) AS ?occurrences)
+WHERE {
+  VALUES ?latin { "epistula" }
+  ?entry a ontolex:LexicalEntry ;
+         rdfs:label ?latin .
+  {
+    ?entry lemonEty:etymology/lemonEty:etymon/rdfs:label ?greek .
+    BIND(STRLANG(STR(?greek), "grc") AS ?greekWrittenRep)
+    ?ligreLemma ontolex:writtenRep ?greekWrittenRep .
+    ?token lilaOntology:hasLemma ?ligreLemma ;
+           powla:hasStringValue ?writtenForm ;
+           lila_corpus:hasCitStructure ?citeStructure .
+    FILTER(STRENDS(STR(?citeStructure), "/CiteStructure"))
+    BIND("PapyGreek" AS ?corpus)
+    BIND(STRAFTER(STRBEFORE(STR(?citeStructure), "/CiteStructure"), "/corpus/") AS ?text)
+  }
+  UNION
+  {
+    ?entry ontolex:canonicalForm ?lilaLemma .
+    ?token lilaOntology:hasLemma ?lilaLemma ;
+           powla:hasStringValue ?writtenForm ;
+           powla:hasLayer ?layer .
+    BIND("CLaSSES" AS ?corpus)
+    BIND(STRAFTER(STRBEFORE(STR(?layer), "/DocumentLayer"), "/corpus/") AS ?text)
+  }
+}
+GROUP BY ?corpus ?text ?writtenForm
+ORDER BY ?corpus ?text ?writtenForm

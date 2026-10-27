@@ -1,0 +1,52 @@
+# How many IGVLL loanwords can be followed into each resource: the Greek source word found as a LiGre lemma, that
+# lemma attested in PapyGreek, the Latin word attested in CLaSSES, and attested on both sides.
+PREFIX lemonEty: <http://lari-datasets.ilc.cnr.it/lemonEty#>
+PREFIX lilaOntology: <http://lila-erc.eu/ontologies/lila/>
+PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?loanwords ?greekWordInLiGre ?greekWordInPapyGreek ?latinWordInCLaSSES ?inPapyGreekAndCLaSSES
+WHERE {
+  {
+    SELECT (COUNT(?entry) AS ?loanwords)
+    WHERE { ?entry a ontolex:LexicalEntry . }
+  }
+  {
+    SELECT (COUNT(DISTINCT ?entry) AS ?greekWordInLiGre)
+    WHERE {
+      ?entry a ontolex:LexicalEntry ;
+             lemonEty:etymology/lemonEty:etymon/rdfs:label ?greek .
+      BIND(STRLANG(STR(?greek), "grc") AS ?greekWrittenRep)
+      ?ligreLemma ontolex:writtenRep ?greekWrittenRep .
+    }
+  }
+  {
+    SELECT (COUNT(DISTINCT ?entry) AS ?latinWordInCLaSSES)
+    WHERE {
+      ?entry a ontolex:LexicalEntry ;
+             ontolex:canonicalForm ?lilaLemma .
+      ?classesToken lilaOntology:hasLemma ?lilaLemma .
+    }
+  }
+  {
+    SELECT (COUNT(DISTINCT ?inPapyGreek) AS ?greekWordInPapyGreek)
+           (COUNT(DISTINCT ?inCLaSSES) AS ?inPapyGreekAndCLaSSES)
+    WHERE {
+      {
+        SELECT DISTINCT ?inPapyGreek
+        WHERE {
+          ?inPapyGreek a ontolex:LexicalEntry ;
+                       lemonEty:etymology/lemonEty:etymon/rdfs:label ?greek .
+          BIND(STRLANG(STR(?greek), "grc") AS ?greekWrittenRep)
+          ?ligreLemma ontolex:writtenRep ?greekWrittenRep .
+          ?papygreekToken lilaOntology:hasLemma ?ligreLemma .
+        }
+      }
+      OPTIONAL {
+        ?inPapyGreek ontolex:canonicalForm ?lilaLemma .
+        FILTER EXISTS { ?classesToken lilaOntology:hasLemma ?lilaLemma }
+        BIND(?inPapyGreek AS ?inCLaSSES)
+      }
+    }
+  }
+}
