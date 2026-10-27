@@ -8,44 +8,51 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT ?loanwords ?greekWordInLiGre ?greekWordInPapyGreek ?latinWordInCLaSSES ?inPapyGreekAndCLaSSES
 WHERE {
   {
-    SELECT (COUNT(?entry) AS ?loanwords)
+    SELECT (COUNT(DISTINCT ?entry) AS ?loanwords)
     WHERE { ?entry a ontolex:LexicalEntry . }
   }
   {
     SELECT (COUNT(DISTINCT ?entry) AS ?greekWordInLiGre)
     WHERE {
-      ?entry a ontolex:LexicalEntry ;
-             lemonEty:etymology/lemonEty:etymon/rdfs:label ?greek .
+      ?entry lemonEty:etymology/lemonEty:etymon/rdfs:label ?greek .
       BIND(STRLANG(STR(?greek), "grc") AS ?greekWrittenRep)
       ?ligreLemma ontolex:writtenRep ?greekWrittenRep .
     }
   }
   {
+    SELECT (COUNT(DISTINCT ?entry) AS ?greekWordInPapyGreek)
+    WHERE {
+      ?entry lemonEty:etymology/lemonEty:etymon/rdfs:label ?greek .
+      BIND(STRLANG(STR(?greek), "grc") AS ?greekWrittenRep)
+      ?ligreLemma ontolex:writtenRep ?greekWrittenRep .
+      ?papygreekToken lilaOntology:hasLemma ?ligreLemma .
+    }
+  }
+  {
     SELECT (COUNT(DISTINCT ?entry) AS ?latinWordInCLaSSES)
     WHERE {
-      ?entry a ontolex:LexicalEntry ;
-             ontolex:canonicalForm ?lilaLemma .
+      ?entry ontolex:canonicalForm ?lilaLemma .
       ?classesToken lilaOntology:hasLemma ?lilaLemma .
     }
   }
   {
-    SELECT (COUNT(DISTINCT ?inPapyGreek) AS ?greekWordInPapyGreek)
-           (COUNT(DISTINCT ?inCLaSSES) AS ?inPapyGreekAndCLaSSES)
+    SELECT (COUNT(?entry) AS ?inPapyGreekAndCLaSSES)
     WHERE {
       {
-        SELECT DISTINCT ?inPapyGreek
+        SELECT DISTINCT ?entry
         WHERE {
-          ?inPapyGreek a ontolex:LexicalEntry ;
-                       lemonEty:etymology/lemonEty:etymon/rdfs:label ?greek .
+          ?entry lemonEty:etymology/lemonEty:etymon/rdfs:label ?greek .
           BIND(STRLANG(STR(?greek), "grc") AS ?greekWrittenRep)
           ?ligreLemma ontolex:writtenRep ?greekWrittenRep .
           ?papygreekToken lilaOntology:hasLemma ?ligreLemma .
         }
       }
-      OPTIONAL {
-        ?inPapyGreek ontolex:canonicalForm ?lilaLemma .
-        FILTER EXISTS { ?classesToken lilaOntology:hasLemma ?lilaLemma }
-        BIND(?inPapyGreek AS ?inCLaSSES)
+      {
+        SELECT DISTINCT ?entry
+        WHERE {
+          ?entry ontolex:canonicalForm ?lilaLemma .
+          ?classesToken lilaOntology:hasLemma ?lilaLemma .
+        }
       }
     }
   }

@@ -11,17 +11,21 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT ?latin ?greek ?corpus ?text ?writtenForm ?token
 WHERE {
   {
-    SELECT DISTINCT ?latin ?greek ?ligreLemma ?lilaLemma
+    SELECT DISTINCT ?entry ?latin ?greek ?ligreLemma
     WHERE {
       # VALUES ?latin { "epistula" }
-      ?entry a ontolex:LexicalEntry ;
-             rdfs:label ?latin ;
-             ontolex:canonicalForm ?lilaLemma ;
+      ?entry rdfs:label ?latin ;
              lemonEty:etymology/lemonEty:etymon/rdfs:label ?greek .
       BIND(STRLANG(STR(?greek), "grc") AS ?greekWrittenRep)
       ?ligreLemma ontolex:writtenRep ?greekWrittenRep .
-      FILTER EXISTS { ?papygreekToken lilaOntology:hasLemma ?ligreLemma }
-      FILTER EXISTS { ?classesToken lilaOntology:hasLemma ?lilaLemma }
+      ?papygreekToken lilaOntology:hasLemma ?ligreLemma .
+    }
+  }
+  {
+    SELECT DISTINCT ?entry ?lilaLemma
+    WHERE {
+      ?entry ontolex:canonicalForm ?lilaLemma .
+      ?classesToken lilaOntology:hasLemma ?lilaLemma .
     }
   }
   {
