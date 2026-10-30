@@ -1,0 +1,413 @@
+lemma	papygreek_pos	ligre_pos	decision	note
+ὁ	article	NOUN	ligre-pos-wrong	LiGre should tag ὁ as DET
+ὅς	pronoun	NOUN	ligre-pos-wrong	LiGre should tag it as PRON
+οὗτος	pronoun	NOUN	ligre-pos-wrong	LiGre should tag it as PRON
+ὁ	pronoun	NOUN	ligre-pos-wrong	pronominal use of the article (ὁ μέν… ὁ δέ); same lemma as article ὁ, as LiLa does for hic/is/ipse (one DET lemma); LiGre's NOUN is wrong
+δεῖνα	pronoun	NOUN	ligre-pos-wrong	LiGre should tag it as PRON
+ὅδε	pronoun	NOUN	ligre-pos-wrong	LiGre should tag it as PRON
+ὅσος	pronoun	NOUN	ligre-pos-wrong	LiGre should tag it as PRON
+ὅ	pronoun	NOUN	reject	form οἳ: PapyGreek lemma should be ὅς
+οὖν	adverb	PART	convention	particles, adverbs and conjunctions are tagged differently across traditions
+ἄν	adverb	PART	convention	particles, adverbs and conjunctions are tagged differently across traditions
+γάρ	adverb	PART	convention	particles, adverbs and conjunctions are tagged differently across traditions
+μέν	adverb	PART	convention	particles, adverbs and conjunctions are tagged differently across traditions
+τε	adverb	PART	convention	particles, adverbs and conjunctions are tagged differently across traditions
+δέ	adverb	PART	convention	particles, adverbs and conjunctions are tagged differently across traditions
+οὐδέ	adverb	PART	convention	particles, adverbs and conjunctions are tagged differently across traditions
+δή	adverb	PART	convention	particles, adverbs and conjunctions are tagged differently across traditions
+γε	adverb	PART	convention	particles, adverbs and conjunctions are tagged differently across traditions
+ποτέ	adverb	PART	convention	particles, adverbs and conjunctions are tagged differently across traditions
+πως	adverb	PART	convention	particles, adverbs and conjunctions are tagged differently across traditions
+τοίνυν	adverb	PART	convention	particles, adverbs and conjunctions are tagged differently across traditions
+καίπερ	adverb	PART	convention	particles, adverbs and conjunctions are tagged differently across traditions
+μηδέ	adverb	PART	convention	particles, adverbs and conjunctions are tagged differently across traditions
+πω	adverb	PART	convention	particles, adverbs and conjunctions are tagged differently across traditions
+δέ	conjunction	PART	convention	particles, adverbs and conjunctions are tagged differently across traditions
+τε	conjunction	PART	convention	particles, adverbs and conjunctions are tagged differently across traditions
+μηδέ	conjunction	PART	convention	particles, adverbs and conjunctions are tagged differently across traditions
+οὐδέ	conjunction	PART	convention	particles, adverbs and conjunctions are tagged differently across traditions
+μήτε	conjunction	PART	convention	particles, adverbs and conjunctions are tagged differently across traditions
+μέν	conjunction	PART	convention	particles, adverbs and conjunctions are tagged differently across traditions
+ἄν	conjunction	PART	convention	particles, adverbs and conjunctions are tagged differently across traditions
+ἐν	preposition	NOUN	ligre-pos-wrong	LiGre should tag ἐν as ADP
+χάρις	preposition	NOUN	convention	χάριν used as improper preposition
+φίλος	adjective	NOUN	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+ἥμισυς	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+ὅσος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+κύριος	adjective	NOUN	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+βασιλικός	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+ἀναγκαῖος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+Ἰουδαῖος	adjective	NOUN	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+θεῖος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+ἀντίγραφος	adjective	NOUN	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+πλείων	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+μέλας	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+γεωργός	adjective	NOUN	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+δημόσιος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+ἀριστερός	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+πόσος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+Αἰγύπτιος	adjective	NOUN	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+ἀγαθός	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+ἅγιος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+ἐλεύθερος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+ἐνοίκιος	adjective	NOUN	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+ἐπίτιμος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+δέκατος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+πρέσβυς	adjective	NOUN	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+ἑνδέκατος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+ἴσος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+εἰκοστός	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+κεφάλαιος	adjective	NOUN	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+τέλειος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+ἕκτος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+δίδραχμος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+διάφορος	adjective	NOUN	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+διπλόος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+λεπτός	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+λευκός	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+ξένος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+πάτριος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+περισσός	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+σύμβιος	adjective	NOUN	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+τέταρτος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+Ἑλληνικός	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+Καύνιος	adjective	NOUN	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+Κῷος	adjective	NOUN	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+Χῖος	adjective	NOUN	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+γυναικεῖος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+δίμηνος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+κακός	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+χαλκοῦς	adjective	NOUN	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+ἀρχαῖος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+ἐντολικός	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+ἔσχατος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+Μάρτιος	adjective	NOUN	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+αἴτιος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+γενέσιος	adjective	NOUN	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+εἷς	adjective	NOUN	ligre-pos-wrong	LiGre should tag εἷς as NUM
+κάπνειος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+κόσμιος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+μακρός	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+μόσχειος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+νεκρός	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+οἷος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+πυρρός	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+στατός	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+συκάμινος	adjective	NOUN	reject	forms point to συκαμίνινος, not the tree συκάμινος
+φρυγανίτης	adjective	NOUN	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+χήρα	adjective	NOUN	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+χλωρός	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+ἀριθμητικός	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+ἄσημος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+ἐθνικός	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+ἐρῆμος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ (ἔρημος)
+ἰατρικός	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+Λύδιος	adjective	NOUN	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+γαμικός	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+δίεδρος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+διπλάσιος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+διπρόσωπος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+κολοβός	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+κυρία	adjective	NOUN	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+κυριακός	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+ναυτικός	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+νηρός	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+ξηρός	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+ξύλινος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+οὐράνιος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+πάρεργος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+πιστός	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+πολλαπλάσιος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+ταυρικός	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+τρίκλινος	adjective	NOUN	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+τρίτομος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+τριέτης	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+φάλανθος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+χαλκιαῖος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+χωματικός	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+ἀπάνθρωπος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+ἀπότακτος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+ἀργός	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+ἀσφαλής	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+ἄκοπος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+ἄσυλος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+ἐγκύκλιος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+ἐρινεός	adjective	NOUN	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+ἐχθρός	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+ἑπτάμηνος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+ἔγγραπτος	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+ἔπαρχος	adjective	NOUN	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+ἥμερος	adjective	NOUN	reject	form ἡμέραν: PapyGreek lemma should be ἡμέρα
+Ῥοδιακός	adjective	NOUN	ligre-pos-wrong	LiGre should tag it as ADJ
+καί	adverb	CCONJ	convention	adverbial καί/ἀλλά ('also', 'but'): particles, adverbs and conjunctions are tagged differently across traditions
+ἀλλά	adverb	CCONJ	convention	adverbial καί/ἀλλά ('also', 'but'): particles, adverbs and conjunctions are tagged differently across traditions
+καλός	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+πολύς	adverb	ADJ	convention	neuter (or comparative) form of the adjective used adverbially
+πρότερος	adverb	ADJ	convention	neuter (or comparative) form of the adjective used adverbially
+ταχύς	adverb	ADJ	convention	neuter (or comparative) form of the adjective used adverbially
+πᾶς	adverb	ADJ	convention	neuter (or comparative) form of the adjective used adverbially
+ἀκόλουθος	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+ὅμοιος	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+λοιπός	adverb	ADJ	convention	neuter (or comparative) form of the adjective used adverbially
+ὀρθός	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+μόνος	adverb	ADJ	convention	neuter (or comparative) form of the adjective used adverbially
+σύντομος	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+ἄτοκος	adverb	ADJ	convention	neuter (or comparative) form of the adjective used adverbially
+εὔκαιρος	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+μέγας	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+εὔτακτος	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+μέτριος	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+μισοπόνηρος	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+οὐδείς	adverb	ADJ	convention	neuter (or comparative) form of the adjective used adverbially
+πλήρης	adverb	ADJ	convention	indeclinable πλήρης used adverbially
+συνεχής	adverb	ADJ	convention	neuter (or comparative) form of the adjective used adverbially
+ἀκριβής	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+ἄρα	adverb	ADJ	ligre-pos-wrong	particle ἄρα; LiGre should tag it as PART
+ἄριστος	adverb	ADJ	convention	neuter (or comparative) form of the adjective used adverbially
+ἡδύς	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+ὅλος	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+ὅσιος	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+κομψός	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+ἀσθενής	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+ἄλλος	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+ἑκούσιος	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+αὐθαίρετος	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+βαρύς	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+βραχύς	adverb	ADJ	convention	neuter (or comparative) form of the adjective used adverbially
+λαμπρός	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+πρόθυμος	adverb	ADJ	convention	neuter (or comparative) form of the adjective used adverbially
+σαφής	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+σπουδαῖος	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+συνήθης	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+φιλότιμος	adverb	ADJ	convention	neuter (or comparative) form of the adjective used adverbially
+ἀνυπέρθετος	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+ἑτοῖμος	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+ἡμιόλιος	adverb	ADJ	convention	neuter (or comparative) form of the adjective used adverbially
+ὀλίγος	adverb	ADJ	convention	neuter (or comparative) form of the adjective used adverbially
+ὕστερος	adverb	ADJ	convention	neuter (or comparative) form of the adjective used adverbially
+βραδύς	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+γενναῖος	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+δίκαιος	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+δυσχερής	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+εὐμαρής	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+εὐτυχής	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+εὐχερής	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+εὔθυμος	adverb	ADJ	convention	neuter (or comparative) form of the adjective used adverbially
+εὔτονος	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+θυμικός	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+κατάξιος	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+λυσιτελής	adverb	ADJ	convention	neuter (or comparative) form of the adjective used adverbially
+μαλακός	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+μηδαμός	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+μηδείς	adverb	ADJ	convention	neuter (or comparative) form of the adjective used adverbially
+μικρός	adverb	ADJ	convention	neuter (or comparative) form of the adjective used adverbially
+μικός	adverb	ADJ	reject	unclear lemma (form μικῶς)
+παντελής	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+παχυμερής	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+πικρός	adverb	ADJ	convention	neuter (or comparative) form of the adjective used adverbially
+πρῶτος	adverb	ADJ	convention	neuter (or comparative) form of the adjective used adverbially
+πότερος	adverb	ADJ	convention	neuter (or comparative) form of the adjective used adverbially
+στενός	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+τρίς	adverb	ADJ	ligre-pos-wrong	τρίς 'thrice'; LiGre should tag it as ADV
+φανερός	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+ἀγνώμων	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+ἀδιάφορος	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+ἀηδής	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+ἀκέραιος	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+ἀκαλός	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+ἀλλοῖος	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+ἀνοικονόμητος	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+ἀσυνείδητος	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+ἀσχήμων	adverb	ADJ	convention	neuter (or comparative) form of the adjective used adverbially
+ἀσύντακτος	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+ἀφειδής	adverb	ADJ	convention	neuter (or comparative) form of the adjective used adverbially
+ἁπλόος	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+ἄδικος	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+ἄμεμπτος	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+ἐξενίαυτος	adverb	ADJ	convention	neuter (or comparative) form of the adjective used adverbially
+ἐπιμελής	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+ἐπιστρεφής	adverb	ADJ	convention	neuter (or comparative) form of the adjective used adverbially
+ἱκανός	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+ὀλίγωρος	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+ὁμός	adverb	ADJ	reject	form ὅμως 'nevertheless': PapyGreek lemma should be ὅμως
+ὁπότερος	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+ὄρθριος	adverb	ADJ	convention	neuter (or comparative) form of the adjective used adverbially
+ὑγιής	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+ῥᾴδιος	adverb	ADJ	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+α	numeral	NOUN	reject	letter numeral matched to LiGre's letter name; wait for the numeral decision with Marco
+εἷς	numeral	NOUN	ligre-pos-wrong	LiGre should tag εἷς as NUM
+λ	numeral	NOUN	reject	letter numeral matched to LiGre's letter name; wait for the numeral decision with Marco
+κ	numeral	NOUN	reject	letter numeral matched to LiGre's letter name; wait for the numeral decision with Marco
+ἕξ	numeral	NOUN	ligre-pos-wrong	LiGre should tag ἕξ as NUM
+εἰκοστός	numeral	NOUN	ligre-pos-wrong	ordinal: LiGre should tag it as ADJ
+τέταρτος	numeral	NOUN	ligre-pos-wrong	ordinal: LiGre should tag it as ADJ
+μ	numeral	NOUN	reject	letter numeral matched to LiGre's letter name; wait for the numeral decision with Marco
+εἰκάς	numeral	NOUN	convention	εἰκάς 'twentieth day' is a noun
+ν	numeral	NOUN	reject	letter numeral matched to LiGre's letter name; wait for the numeral decision with Marco
+τ	numeral	NOUN	reject	letter numeral matched to LiGre's letter name; wait for the numeral decision with Marco
+ἕκτος	numeral	NOUN	ligre-pos-wrong	ordinal: LiGre should tag it as ADJ
+δέκατος	numeral	NOUN	ligre-pos-wrong	ordinal: LiGre should tag it as ADJ
+δωδέκατος	numeral	NOUN	ligre-pos-wrong	ordinal: LiGre should tag it as ADJ
+ἑνδέκατος	numeral	NOUN	ligre-pos-wrong	ordinal: LiGre should tag it as ADJ
+μή	adverb	SCONJ	ligre-pos-wrong	negation μή: LiGre should tag it as PART/ADV, SCONJ only for 'lest'
+διό	adverb	SCONJ	convention	particles, adverbs and conjunctions are tagged differently across traditions
+ὅτι	adverb	SCONJ	papygreek-pos-wrong	subordinating conjunction
+ἐάν	adverb	SCONJ	papygreek-pos-wrong	subordinating conjunction
+ἵνα	adverb	SCONJ	papygreek-pos-wrong	subordinating conjunction
+ὅμως	adverb	SCONJ	ligre-pos-wrong	ὅμως 'nevertheless'; LiGre should tag it as ADV
+ὥστε	adverb	SCONJ	papygreek-pos-wrong	subordinating conjunction
+ἄλλος	pronoun	ADJ	convention	pronominal adjective: DET/PRON/ADJ differ across traditions
+μηδείς	pronoun	ADJ	convention	pronominal adjective: DET/PRON/ADJ differ across traditions
+οὐδείς	pronoun	ADJ	convention	pronominal adjective: DET/PRON/ADJ differ across traditions
+σός	pronoun	ADJ	convention	pronominal adjective: DET/PRON/ADJ differ across traditions
+ἐμός	pronoun	ADJ	convention	pronominal adjective: DET/PRON/ADJ differ across traditions
+ἡμέτερος	pronoun	ADJ	convention	pronominal adjective: DET/PRON/ADJ differ across traditions
+ὁπότερος	pronoun	ADJ	convention	pronominal adjective: DET/PRON/ADJ differ across traditions
+ποῖος	pronoun	ADJ	convention	pronominal adjective: DET/PRON/ADJ differ across traditions
+ἕτερος	pronoun	ADJ	convention	pronominal adjective: DET/PRON/ADJ differ across traditions
+ὡς	conjunction	NOUN	ligre-pos-wrong	LiGre should tag ὡς as ADV/SCONJ
+φαίνω	verb	NOUN	ligre-pos-wrong	LiGre should tag it as VERB
+δεῖ	verb	NOUN	ligre-pos-wrong	LiGre should tag it as VERB
+ἀπολαμβάνω	verb	NOUN	ligre-pos-wrong	LiGre should tag it as VERB
+ἡγέομαι	verb	NOUN	ligre-pos-wrong	LiGre should tag it as VERB
+κατάγω	verb	NOUN	ligre-pos-wrong	LiGre should tag it as VERB
+ἀποσπάω	verb	NOUN	ligre-pos-wrong	LiGre should tag it as VERB
+συμφέρω	verb	NOUN	ligre-pos-wrong	LiGre should tag it as VERB
+ἀκολουθέω	verb	NOUN	ligre-pos-wrong	LiGre should tag it as VERB
+καθαροποιέω	verb	NOUN	ligre-pos-wrong	LiGre should tag it as VERB
+συντυγχάνω	verb	NOUN	ligre-pos-wrong	LiGre should tag it as VERB
+ἐπιφέρω	verb	NOUN	ligre-pos-wrong	LiGre should tag it as VERB
+αὐξάνω	verb	NOUN	ligre-pos-wrong	LiGre should tag it as VERB
+καθαίρω	verb	NOUN	ligre-pos-wrong	LiGre should tag it as VERB
+ἀναμιμνήσκω	verb	NOUN	ligre-pos-wrong	LiGre should tag it as VERB
+ἀναστρέφω	verb	NOUN	ligre-pos-wrong	LiGre should tag it as VERB
+ἀνομολογέομαι	verb	NOUN	ligre-pos-wrong	LiGre should tag it as VERB
+ἀντίκειμαι	verb	NOUN	ligre-pos-wrong	LiGre should tag it as VERB
+ἐλλείπω	verb	NOUN	ligre-pos-wrong	LiGre should tag it as VERB
+ὑπεραπαιτέω	verb	NOUN	ligre-pos-wrong	LiGre should tag it as VERB
+ὡς	adverb	NOUN	ligre-pos-wrong	LiGre should tag ὡς as ADV/SCONJ
+εὐθύς	adverb	NOUN	ligre-pos-wrong	εὐθύς/εὐθέως: LiGre should tag it as ADJ/ADV, not NOUN
+ἀναγκαῖος	adverb	NOUN	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+ἀσφαλής	adverb	NOUN	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+οὗτος	adverb	NOUN	reject	forms οὕτως/ταύτῃ: οὕτως deserves its own adverb lemma
+κύριος	adverb	NOUN	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+μήν	adverb	NOUN	reject	particle μήν; the LiGre candidate is μήν 'month'
+περισσός	adverb	NOUN	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+τάχος	adverb	NOUN	convention	adverbial accusative of the noun
+τέλειος	adverb	NOUN	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+ἴσος	adverb	NOUN	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+δέον	adverb	NOUN	reject	form δεόντως: adverb lemmatised under the participle
+θερμός	adverb	NOUN	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+κακός	adverb	NOUN	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+μακρός	adverb	NOUN	ligre-pos-wrong	neuter (or comparative) form of the adjective used adverbially; LiGre should tag it as ADJ
+οἷος	adverb	NOUN	ligre-pos-wrong	neuter (or comparative) form of the adjective used adverbially; LiGre should tag it as PRON/ADJ
+πανοικία	adverb	NOUN	reject	adverb πανοικεί lemmatised under the noun
+πλείων	adverb	NOUN	ligre-pos-wrong	neuter (or comparative) form of the adjective used adverbially; LiGre should tag it as ADJ
+πλεῖστος	adverb	NOUN	ligre-pos-wrong	neuter (or comparative) form of the adjective used adverbially; LiGre should tag it as ADJ
+πυκνός	adverb	NOUN	ligre-pos-wrong	neuter (or comparative) form of the adjective used adverbially; LiGre should tag it as ADJ
+πόσος	adverb	NOUN	ligre-pos-wrong	neuter (or comparative) form of the adjective used adverbially; LiGre should tag it as PRON/ADJ
+τῷ	adverb	NOUN	ligre-pos-wrong	adverb τῷ 'therefore'; LiGre should tag it as ADV
+ἄλογος	adverb	NOUN	reject	PapyGreek lemmatises the -ως adverb under the adjective; LiGre has a separate adverb lemma
+ὅς	adverb	NOUN	ligre-pos-wrong	οὗ 'where'; LiGre should tag ὅς as PRON
+ὅσος	adverb	NOUN	ligre-pos-wrong	neuter (or comparative) form of the adjective used adverbially; LiGre should tag it as PRON/ADJ
+οὔτε	conjunction	ADV	ligre-pos-wrong	LiGre should tag οὔτε as CCONJ
+καθότι	conjunction	ADV	convention	relative adverb used as subordinator: ADV/SCONJ differ across traditions
+καθάπερ	conjunction	ADV	convention	relative adverb used as subordinator: ADV/SCONJ differ across traditions
+καθά	conjunction	ADV	convention	relative adverb used as subordinator: ADV/SCONJ differ across traditions
+καθώς	conjunction	ADV	convention	relative adverb used as subordinator: ADV/SCONJ differ across traditions
+ὁπηνίκα	conjunction	ADV	convention	relative adverb used as subordinator: ADV/SCONJ differ across traditions
+μήποτε	conjunction	ADV	convention	relative adverb used as subordinator: ADV/SCONJ differ across traditions
+ὁπόταν	conjunction	ADV	convention	relative adverb used as subordinator: ADV/SCONJ differ across traditions
+ὥσπερ	conjunction	ADV	convention	relative adverb used as subordinator: ADV/SCONJ differ across traditions
+πρίν	conjunction	ADV	convention	relative adverb used as subordinator: ADV/SCONJ differ across traditions
+ἡνίκα	conjunction	ADV	convention	relative adverb used as subordinator: ADV/SCONJ differ across traditions
+ὁπότε	conjunction	ADV	convention	relative adverb used as subordinator: ADV/SCONJ differ across traditions
+ὅπου	conjunction	ADV	convention	relative adverb used as subordinator: ADV/SCONJ differ across traditions
+διάδοχος	noun	ADJ	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+ἅλς	noun	ADJ	ligre-pos-wrong	LiGre should tag ἅλς as NOUN
+Ἀργεῖος	noun	ADJ	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+ἐννήρης	noun	ADJ	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+Κρόνιος	noun	ADJ	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+Ἀφροδίσιος	noun	ADJ	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+ἔγγυος	noun	ADJ	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+Βάκχιος	noun	ADJ	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+δίκαιος	noun	ADJ	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+λοιπός	noun	ADJ	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+μνημόνειος	noun	ADJ	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+μοναχός	noun	ADJ	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+πατητός	noun	ADJ	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+συγγενής	noun	ADJ	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+φαμιλιαρικός	noun	ADJ	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+ἀνάδοχος	noun	ADJ	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+Ὀλύμπιος	noun	ADJ	convention	substantivised adjective or ethnic: NOUN/ADJ both defensible
+τρίτος	numeral	ADJ	convention	ordinal: ADJ in UD, numeral in AGDT
+πέμπτος	numeral	ADJ	convention	ordinal: ADJ in UD, numeral in AGDT
+πρῶτος	numeral	ADJ	convention	ordinal: ADJ in UD, numeral in AGDT
+ἐννέα	numeral	ADJ	ligre-pos-wrong	cardinal: LiGre should tag it as NUM
+πεντεκαιδέκατος	numeral	ADJ	convention	ordinal: ADJ in UD, numeral in AGDT
+τεσσαρεσκαιδέκατος	numeral	ADJ	convention	ordinal: ADJ in UD, numeral in AGDT
+ἔνατος	numeral	ADJ	convention	ordinal: ADJ in UD, numeral in AGDT
+ἕβδομος	numeral	ADJ	convention	ordinal: ADJ in UD, numeral in AGDT
+δυώδεκα	numeral	ADJ	ligre-pos-wrong	cardinal: LiGre should tag it as NUM
+πρότερος	numeral	ADJ	reject	form πρώτου: PapyGreek lemma should be πρῶτος
+τεσσαρακοστός	numeral	ADJ	convention	ordinal: ADJ in UD, numeral in AGDT
+ἑκκαιδέκατος	numeral	ADJ	convention	ordinal: ADJ in UD, numeral in AGDT
+ἑπτακαιδέκατος	numeral	ADJ	convention	ordinal: ADJ in UD, numeral in AGDT
+ὀγδοήκοντα	numeral	ADJ	ligre-pos-wrong	cardinal: LiGre should tag it as NUM
+ὄγδοος	numeral	ADJ	convention	ordinal: ADJ in UD, numeral in AGDT
+ἕκαστος	adjective	PRON	convention	pronominal adjective: DET/PRON/ADJ differ across traditions
+χωρίς	preposition	ADV	convention	improper preposition: adverb or preposition depending on the tradition
+μεταξύ	preposition	ADV	convention	improper preposition: adverb or preposition depending on the tradition
+ἄχρι	preposition	ADV	convention	improper preposition: adverb or preposition depending on the tradition
+ἔμπροσθεν	preposition	ADV	convention	improper preposition: adverb or preposition depending on the tradition
+ἐγγύς	preposition	ADV	convention	improper preposition: adverb or preposition depending on the tradition
+ἔξω	preposition	ADV	convention	improper preposition: adverb or preposition depending on the tradition
+πῶς	adverb	PRON	ligre-pos-wrong	interrogative adverb; LiGre should tag it as ADV
+ἆρα	adverb	PRON	ligre-pos-wrong	interrogative particle; LiGre should tag it as PART
+αὐτός	adverb	PRON	reject	PapyGreek error: the form is '.'
+ποῦ	adverb	PRON	ligre-pos-wrong	interrogative adverb; LiGre should tag it as ADV
+πότε	adverb	PRON	ligre-pos-wrong	interrogative adverb; LiGre should tag it as ADV
+τις	adverb	PRON	convention	τί 'why': adverbial use of the pronoun
+ἕκαστος	adverb	PRON	convention	pronominal adjective used adverbially
+ὅστις	adverb	PRON	convention	ὅτου used as conjunction ('since')
+ἅμα	preposition	ADJ	reject	both LiGre entries are mistagged (ADJ, PRON); should be ADV/ADP
+ἅμα	preposition	PRON	reject	both LiGre entries are mistagged (ADJ, PRON); should be ADV/ADP
+δίχα	preposition	ADJ	reject	both LiGre entries are mistagged (ADJ, PRON); should be ADV/ADP
+δίχα	preposition	PRON	reject	both LiGre entries are mistagged (ADJ, PRON); should be ADV/ADP
+δεύτερος	adjective	NUM	ligre-pos-wrong	ordinal: LiGre should tag it as ADJ, like τρίτος
+ἔξεστι	verb	ADJ	ligre-pos-wrong	LiGre should tag it as VERB
+ἅμα	adverb	ADJ	reject	both LiGre entries are mistagged (ADJ, PRON); should be ADV/ADP
+ἅμα	adverb	PRON	reject	both LiGre entries are mistagged (ADJ, PRON); should be ADV/ADP
+δίχα	adverb	ADJ	reject	both LiGre entries are mistagged (ADJ, PRON); should be ADV/ADP
+δίχα	adverb	PRON	reject	both LiGre entries are mistagged (ADJ, PRON); should be ADV/ADP
+ἐπάνω	preposition	ADV	convention	improper preposition: adverb or preposition depending on the tradition
+κατεναντίον	preposition	ADV	convention	improper preposition: adverb or preposition depending on the tradition
+ἔσω	adverb	ADP	convention	improper preposition: adverb or preposition depending on the tradition
+μέχρι	adverb	ADP	convention	improper preposition: adverb or preposition depending on the tradition
+νή	adverb	ADP	convention	improper preposition: adverb or preposition depending on the tradition
+τοσοῦτος	pronoun	ADV	ligre-pos-wrong	LiGre should tag it as PRON/ADJ
+πλήν	conjunction	ADP	convention	improper preposition: adverb or preposition depending on the tradition
+μέχρι	conjunction	ADP	convention	improper preposition: adverb or preposition depending on the tradition
+δηλονότι	adverb	VERB	ligre-pos-wrong	LiGre should tag it as ADV
+μήπω	adverb	VERB	ligre-pos-wrong	LiGre should tag it as ADV
+συντηρέω	adverb	VERB	reject	adverb συντετηρημένως lemmatised under the verb
+ξ	numeral	VERB	reject	letter numeral matched to LiGre's letter name; wait for the numeral decision with Marco
+εἰκοσιδύω	numeral	VERB	ligre-pos-wrong	cardinal: LiGre should tag it as NUM
+ἤ	adverb	CCONJ	convention	particles, adverbs and conjunctions are tagged differently across traditions
+πῶς	conjunction	PRON	ligre-pos-wrong	interrogative adverb; LiGre should tag it as ADV
+ὅσπερ	conjunction	PRON	convention	ὅπερ used as conjunction
+καί	untagged	CCONJ	papygreek-pos-wrong	PapyGreek has no PoS
+δέ	untagged	PART	papygreek-pos-wrong	PapyGreek has no PoS
+ὥστε	preposition	SCONJ	papygreek-pos-wrong	subordinating conjunction
+ἐναντίος	preposition	ADJ	convention	improper preposition: adverb or preposition depending on the tradition
+ἐντός	preposition	PRON	reject	both LiGre entries are mistagged (PRON, VERB); should be ADV/ADP
+ἐντός	preposition	VERB	reject	both LiGre entries are mistagged (PRON, VERB); should be ADV/ADP
+ἐφήμισυς	adjective	ADV	convention	adjective used adverbially
+οὐ	conjunction	ADJ	reject	crasis κοὐκ (καὶ οὐκ); not a single lemma
+οὐ	conjunction	ADV	reject	crasis κοὐκ (καὶ οὐκ); not a single lemma
+οὐ	conjunction	VERB	reject	crasis κοὐκ (καὶ οὐκ); not a single lemma
+ἐνώπιος	adjective	ADP	convention	improper preposition: adverb or preposition depending on the tradition
+μή	untagged	SCONJ	papygreek-pos-wrong	PapyGreek has no PoS
+ὁ	untagged	NOUN	ligre-pos-wrong	LiGre should tag ὁ as DET; PapyGreek has no PoS
+παραχρῆμα	noun	ADV	papygreek-pos-wrong	adverb
+εἶπον	untagged	VERB	papygreek-pos-wrong	PapyGreek has no PoS
