@@ -13,6 +13,8 @@ def parse_arguments():
     )
     parser.add_argument("--data-dir", type=Path, default=settings.DEFAULT_DATA_DIRECTORY)
     parser.add_argument("--output-dir", type=Path, default=settings.DEFAULT_OUTPUT_DIRECTORY)
+    parser.add_argument("--pos-review-dir", type=Path, default=settings.DEFAULT_POS_REVIEW_DIRECTORY,
+                        help="holds the hand-edited PoS decisions (decisions_*.tsv) and the review files (review_*.tsv)")
     parser.add_argument("--base-iri", default=settings.DEFAULT_BASE_IRI)
     parser.add_argument("--refresh", action="store_true", help="download the sources again")
     parser.add_argument("--skip-complete-file", action="store_true", help="only write one Turtle file per text")
@@ -25,6 +27,7 @@ def main():
     run_pipeline(PipelineOptions(
         data_directory=arguments.data_dir,
         output_directory=arguments.output_dir,
+        pos_review_directory=arguments.pos_review_dir,
         base_iri=arguments.base_iri,
         refresh_downloads=arguments.refresh,
         write_complete_file=not arguments.skip_complete_file,

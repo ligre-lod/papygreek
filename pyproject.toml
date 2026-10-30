@@ -13,4 +13,9 @@ dependencies = ["rdflib>=7.0"]
 papygreek-to-ligre = "papygreek_to_ligre.__main__:main"
 
 [tool.setuptools]
-packages = ["papygreek_to_ligre"]
+packages = [
+    "papygreek_to_ligre",
+    "papygreek_to_ligre.linking",
+    "papygreek_to_ligre.rdf",
+    "papygreek_to_ligre.sources",
+]

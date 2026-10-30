@@ -15,14 +15,14 @@ CLASSES_DIRECTORY = DATA_DIRECTORY / "classes"
 CLASSES_URL = "https://raw.githubusercontent.com/CIRCSE/CLaSSES/main/ttl/{}.ttl"
 CLASSES_PARTS = ["CEL", "BTT", "CIL", "GORDON", "ILLRP"]
 PAPYGREEK_TURTLE = REPOSITORY_DIRECTORY / "ttl" / "complete_papygreek.ttl.gz"
-DEFAULT_LIGRE_TURTLE = REPOSITORY_DIRECTORY.parent / "ligre_lemmabank" / "ttl" / "ligreTTLRDF.ttl"
+DEFAULT_LIGRE_TURTLE = REPOSITORY_DIRECTORY.parent / "ligre-webinterface" / "ligre_lemmabank" / "ttl" / "ligreTTLRDF.ttl"
 DEFAULT_IGVLL_TURTLE = REPOSITORY_DIRECTORY.parent.parent / "index-graecorum-vocabulorum" / "IGVLL.ttl"
 TURTLE_PREFIXES = {
     "lemonEty": "http://lari-datasets.ilc.cnr.it/lemonEty#",
     "lila_corpus": "http://lila-erc.eu/ontologies/lila_corpora/",
     "lilaLemma": "http://lila-erc.eu/data/id/lemma/",
     "lilaOntology": "http://lila-erc.eu/ontologies/lila/",
-    "ligreLemma": "https://ligre.ugent.be/data/id/lemma/",
+    "ligreLemma": "https://w3id.org/ligre/data/id/lemma/",
     "ontolex": "http://www.w3.org/ns/lemon/ontolex#",
     "powla": "http://purl.org/powla/powla.owl#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",

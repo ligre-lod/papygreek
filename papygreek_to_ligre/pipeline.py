@@ -5,14 +5,16 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from . import settings
-from .downloads import fetch_ligre_lemma_bank, fetch_papygreek_treebanks, find_treebank_files
-from .graph_builder import DocumentGraphBuilder, build_corpus_graph
-from .iris import CorpusIris
-from .lemma_bank import LemmaBank
-from .lemma_report import LemmaLinkingReport
-from .namespaces import ligre_lemma_namespace
-from .treebank_reader import read_treebank_document
-from .turtle_writer import OrderedTurtleWriter
+from .linking.lemma_bank import LemmaBank
+from .linking.linker import LemmaLinker
+from .linking.pos_decisions import load_pos_decisions
+from .linking.review import LinkingReview
+from .rdf.graph_builder import DocumentGraphBuilder, build_corpus_graph
+from .rdf.iris import CorpusIris
+from .rdf.namespaces import ligre_lemma_namespace
+from .rdf.turtle_writer import OrderedTurtleWriter
+from .sources.downloads import fetch_ligre_lemma_bank, fetch_papygreek_treebanks, find_treebank_files
+from .sources.treebank_reader import read_treebank_document
 
 logger = logging.getLogger(__name__)
 
@@ -21,6 +23,7 @@ logger = logging.getLogger(__name__)
 class PipelineOptions:
     data_directory: Path = settings.DEFAULT_DATA_DIRECTORY
     output_directory: Path = settings.DEFAULT_OUTPUT_DIRECTORY
+    pos_review_directory: Path = settings.DEFAULT_POS_REVIEW_DIRECTORY
     base_iri: str = settings.DEFAULT_BASE_IRI
     refresh_downloads: bool = False
     write_complete_file: bool = True
@@ -51,9 +54,10 @@ def run_pipeline(options):
 
     lemma_namespace = ligre_lemma_namespace(options.base_iri)
     iris = CorpusIris(options.base_iri)
-    lemma_bank = LemmaBank.from_turtle(lemma_bank_path)
-    lemma_report = LemmaLinkingReport()
-    document_builder = DocumentGraphBuilder(iris, lemma_namespace, lemma_bank, lemma_report)
+    pos_decisions = load_pos_decisions(options.pos_review_directory)
+    lemma_linker = LemmaLinker(LemmaBank.from_turtle(lemma_bank_path), pos_decisions)
+    linking_review = LinkingReview()
+    document_builder = DocumentGraphBuilder(iris, lemma_namespace, lemma_linker, linking_review)
 
     texts_directory = options.output_directory / settings.TEXTS_OUTPUT_DIRECTORY
     texts_directory.mkdir(parents=True, exist_ok=True)
@@ -77,6 +81,7 @@ def run_pipeline(options):
             if complete_file_writer is not None:
                 complete_file_writer.write_subjects(built_document.graph, built_document.subjects)
 
-    lemma_report.write_tsv(options.output_directory / settings.UNLINKED_LEMMAS_FILENAME)
-    logger.info(lemma_report.summary())
+    linking_review.write(options.pos_review_directory)
+    logger.info(linking_review.summary())
+    logger.info("Wrote the linking review files into %s", options.pos_review_directory)
     logger.info("Converted %d documents into %s", len(treebank_files), options.output_directory)

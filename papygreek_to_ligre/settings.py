@@ -10,12 +10,13 @@ LIGRE_LEMMA_BANK_URL = "https://raw.githubusercontent.com/ligre-lod/ligre_lemmab
 TRISMEGISTOS_TEXT_URL = "https://www.trismegistos.org/text/{}"
 PAPYRI_INFO_HGV_URL = "https://papyri.info/hgv/{}"
 
-DEFAULT_BASE_IRI = "https://ligre.ugent.be"
+DEFAULT_BASE_IRI = "https://w3id.org/ligre"
 CORPUS_NAME = "PapyGreek"
 CORPUS_TITLE = "PapyGreek Treebanks"
 
 DEFAULT_DATA_DIRECTORY = Path("data")
 DEFAULT_OUTPUT_DIRECTORY = Path("ttl")
+DEFAULT_POS_REVIEW_DIRECTORY = Path("pos_review")
 
 PAPYGREEK_ARCHIVE_FILENAME = "papygreek-treebanks.zip"
 PAPYGREEK_EXTRACTION_DIRECTORY = "papygreek-treebanks"
@@ -24,4 +25,10 @@ LEMMA_BANK_FILENAME = "ligreTTLRDF.ttl"
 TEXTS_OUTPUT_DIRECTORY = "texts"
 CORPUS_OUTPUT_FILENAME = "PapyGreek_corpus.ttl"
 COMPLETE_OUTPUT_FILENAME = "complete_papygreek.ttl.gz"
-UNLINKED_LEMMAS_FILENAME = "unlinked_lemmas.tsv"
+
+# Edited by hand
+LEMMA_POS_DECISIONS_FILENAME = "decisions_lemmas.tsv"
+
+# Written by every run
+LINKING_SUMMARY_FILENAME = "review_summary.tsv"
+POS_CLASH_LEMMAS_FILENAME = "review_lemmas.tsv"
