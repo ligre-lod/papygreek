@@ -1,5 +1,3 @@
-# Where one IGVLL loanword occurs: the Greek source word in PapyGreek papyri and the Latin word in CLaSSES, with the
-# written forms. Change the Latin word in VALUES to look at another loanword.
 PREFIX lemonEty: <http://lari-datasets.ilc.cnr.it/lemonEty#>
 PREFIX lila_corpus: <http://lila-erc.eu/ontologies/lila_corpora/>
 PREFIX lilaOntology: <http://lila-erc.eu/ontologies/lila/>

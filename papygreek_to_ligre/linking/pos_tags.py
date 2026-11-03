@@ -21,6 +21,12 @@ PAPYGREEK_POS_BY_AGDT_TAG = {
 }
 PAPYGREEK_POS_NAMES = frozenset(PAPYGREEK_POS_BY_AGDT_TAG.values()) | {UNTAGGED}
 
+LILA_GENDER_BY_AGDT_TAG = {
+    "m": LILA.masculine,
+    "f": LILA.feminine,
+    "n": LILA.neuter,
+}
+
 STRICT_UNIVERSAL_TAGS_BY_PAPYGREEK_POS = {
     "noun": {"NOUN", "PROPN"},
     "verb": {"VERB", "AUX"},
@@ -63,6 +69,10 @@ UNIVERSAL_TAGS = frozenset(UNIVERSAL_TAG_BY_LILA_PART_OF_SPEECH.values())
 
 def papygreek_pos(postag):
     return PAPYGREEK_POS_BY_AGDT_TAG.get(postag[:1], UNTAGGED)
+
+
+def lila_gender(postag):
+    return LILA_GENDER_BY_AGDT_TAG.get(postag[6:7])
 
 
 def strict_universal_tags(papygreek_pos_name):

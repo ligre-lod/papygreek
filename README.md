@@ -9,8 +9,8 @@ The PapyGreek treebanks consist of 558 documentary papyri written in Postclassic
 - `ttl/texts/` gets one Turtle file for each papyrus when you run the pipeline (not in the repository; the same data is in `ttl/complete_papygreek.ttl.gz`)
 - `ttl/PapyGreek_corpus.ttl` describes the corpus
 - `ttl/complete_papygreek.ttl.gz` provides one Turtle file containing the whole corpus
-- `pos_review/` holds the hand-made part-of-speech decisions used for linking (`decisions_*.tsv`) and the review files every run writes to make them (`review_*.tsv`; see *Linking workflow*)
-- `papygreek_to_ligre/` contains the conversion pipeline: `sources/` downloads and reads the treebanks, `linking/` links the lemmas to LiGre, `rdf/` builds and writes the Turtle files
+- `review/` holds the hand-made part-of-speech decisions used for linking (`decisions_*.tsv`) and the review files every run writes to make them (`review_*.tsv`, not tracked; see *Linking workflow*)
+- `papygreek_to_ligre/` contains the conversion pipeline: `download_papygreek/` downloads and reads the treebanks, `linking/` links the lemmas to LiGre, `rdf/` builds and writes the Turtle files
 
 ### Data model
 
@@ -25,14 +25,16 @@ A lemma is linked when its written form and part of speech match exactly one lem
 
 ### Linking workflow
 
-Every token goes through these steps; `pos_review/review_summary.tsv` counts the tokens per step. All files are in `pos_review/`: the `review_*.tsv` files are rewritten by every run, the `decisions_*.tsv` files are edited by hand.
+Every token goes through these steps; `review/review_summary.tsv` counts the tokens and the distinct lemmas per step. All files are in `review/`: the `review_*.tsv` files are rewritten by every run, the `decisions_*.tsv` files are edited by hand.
 
-1. **Strict match.** The PapyGreek lemma and part of speech match exactly one LiGre lemma. PapyGreek's AGDT tags are compared to LiGre's Universal Dependencies tags through `STRICT_UNIVERSAL_TAGS_BY_PAPYGREEK_POS` in `linking/pos_tags.py`.
+1. **Strict match.** The PapyGreek lemma and part of speech match exactly one LiGre lemma. PapyGreek's AGDT tags are compared to LiGre's Universal Dependencies tags through `STRICT_UNIVERSAL_TAGS_BY_PAPYGREEK_POS` in `linking/pos_tags.py`. When a noun matches several LiGre lemmas, its gender picks the one with the same gender (LiGre has a masculine and a feminine λίψ).
 2. **Part-of-speech clashes.** The lemma exists in LiGre, but only with another part of speech. These tokens stay unlinked until they are decided by hand:
    - `review_lemmas.tsv` lists every clashing lemma with its LiGre lemma ids, undecided ones first and then the most frequent.
-   - Decide each lemma in `decisions_lemmas.tsv` (`lemma`, `papygreek_pos`, `ligre_pos`, `decision`, `note`). A decision is one of `convention` (both tags are defensible), `ligre-pos-wrong`, `papygreek-pos-wrong` (all three link the token) or `reject` (keeps it unlinked).
+   - Decide each lemma in `decisions_lemmas.tsv` (`lemma`, `papygreek_pos`, `ligre_pos`, `decision`, `ligre_lemma`, `note`). A decision is one of `convention` (both tags are defensible), `ligre-pos-wrong`, `papygreek-pos-wrong` (all three link the token) or `reject` (keeps it unlinked). To correct a link by hand, put the id of the right LiGre lemma in `ligre_lemma`, with or without a decision: the token then links to that lemma (for example when PapyGreek's lemma is another word than the LiGre lemma spelled the same way). A lemma with a homograph number (`λίψ1`) applies to that homograph only, one without (`λίψ`) to all of them.
+   - **Several LiGre lemmas.** When a lemma matches several LiGre lemmas that gender cannot tell apart, it is listed as `ambiguous`; put the id of the right one in `ligre_lemma` or `reject` it.
+   - **Homographs.** PapyGreek numbers homographs (`λέγω1`, `λέγω2`). A numbered lemma that is linked to the only LiGre lemma with its spelling may be another word than PapyGreek's, so it is listed as `check homograph`. It is only linked once it is decided: `same-word` links it, a `ligre_lemma` links it to another LiGre lemma, `reject` keeps it unlinked.
    - Rerun the pipeline: decided lemmas get their status in the review files and link.
-3. **Lemmas missing from LiGre** are not linked and not reviewed: their tokens stay in the corpus without a lemma. The same holds for the few tokens whose lemma and part of speech match more than one LiGre lemma (`ambiguous`).
+3. **Lemmas missing from LiGre** are not linked: their tokens stay in the corpus without a lemma. `review_no_ligre_lemma.tsv` lists these lemmas, the most frequent first. The same holds for the few tokens whose lemma and part of speech match more than one LiGre lemma (`ambiguous`).
 
 ### Running the conversion
 
@@ -43,7 +45,7 @@ python -m papygreek_to_ligre
 
 Run it from the repository root; installing the package itself is not needed (`pip install .` also works, but leaves `build/` and `*.egg-info/` behind, which git ignores).
 
-The pipeline downloads the PapyGreek treebanks and the LiGre Lemma Bank into `data/` and writes the Turtle files into `ttl/`. It reads the decisions from and writes the review files into `pos_review/`. Options: `--base-iri`, `--output-dir`, `--data-dir`, `--pos-review-dir`, `--refresh`, `--skip-complete-file`.
+The pipeline downloads the PapyGreek treebanks and the LiGre Lemma Bank into `data/` and writes the Turtle files into `ttl/`. It reads the decisions from and writes the review files into `review/`. Options: `--base-iri`, `--output-dir`, `--data-dir`, `--review-dir`, `--refresh`, `--skip-complete-file`.
 
 ### Source
 

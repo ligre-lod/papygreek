@@ -16,7 +16,7 @@ CORPUS_TITLE = "PapyGreek Treebanks"
 
 DEFAULT_DATA_DIRECTORY = Path("data")
 DEFAULT_OUTPUT_DIRECTORY = Path("ttl")
-DEFAULT_POS_REVIEW_DIRECTORY = Path("pos_review")
+DEFAULT_REVIEW_DIRECTORY = Path("review")
 
 PAPYGREEK_ARCHIVE_FILENAME = "papygreek-treebanks.zip"
 PAPYGREEK_EXTRACTION_DIRECTORY = "papygreek-treebanks"
@@ -26,9 +26,8 @@ TEXTS_OUTPUT_DIRECTORY = "texts"
 CORPUS_OUTPUT_FILENAME = "PapyGreek_corpus.ttl"
 COMPLETE_OUTPUT_FILENAME = "complete_papygreek.ttl.gz"
 
-# Edited by hand
 LEMMA_POS_DECISIONS_FILENAME = "decisions_lemmas.tsv"
 
-# Written by every run
 LINKING_SUMMARY_FILENAME = "review_summary.tsv"
 POS_CLASH_LEMMAS_FILENAME = "review_lemmas.tsv"
+NO_LIGRE_LEMMA_FILENAME = "review_no_ligre_lemma.tsv"

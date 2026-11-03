@@ -1,5 +1,3 @@
-# How many IGVLL loanwords can be followed into each resource: the Greek source word found as a LiGre lemma, that
-# lemma attested in PapyGreek, the Latin word attested in CLaSSES, and attested on both sides.
 PREFIX lemonEty: <http://lari-datasets.ilc.cnr.it/lemonEty#>
 PREFIX lilaOntology: <http://lila-erc.eu/ontologies/lila/>
 PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>

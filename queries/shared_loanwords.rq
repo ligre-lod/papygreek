@@ -1,5 +1,3 @@
-# IGVLL loanwords whose Greek source word occurs in PapyGreek (through its LiGre lemma) and whose Latin word occurs in
-# CLaSSES (through its LiLa lemma), with the number of occurrences on each side.
 PREFIX lemonEty: <http://lari-datasets.ilc.cnr.it/lemonEty#>
 PREFIX lilaOntology: <http://lila-erc.eu/ontologies/lila/>
 PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>

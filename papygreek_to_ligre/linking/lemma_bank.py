@@ -19,6 +19,7 @@ HOMOGRAPH_NUMBER = re.compile(r"(?<=\D)\d+$")
 class LemmaEntry:
     lemma: object
     universal_tags: frozenset
+    genders: frozenset = frozenset()
 
     @property
     def lemma_id(self):
@@ -28,26 +29,39 @@ class LemmaEntry:
         return f"{'/'.join(sorted(self.universal_tags)) or '?'} {self.lemma_id}"
 
 
+def lemma_key(lemma):
+    return unicodedata.normalize("NFC", lemma.strip())
+
+
 def normalize_lemma(lemma):
-    return HOMOGRAPH_NUMBER.sub("", unicodedata.normalize("NFC", lemma.strip()))
+    return HOMOGRAPH_NUMBER.sub("", lemma_key(lemma))
+
+
+def has_homograph_number(lemma):
+    return HOMOGRAPH_NUMBER.search(lemma_key(lemma)) is not None
 
 
 class LemmaBank:
     def __init__(self, entries_by_written_representation):
         self.entries_by_written_representation = entries_by_written_representation
+        self.entries_by_id = {
+            entry.lemma_id: entry for entries in entries_by_written_representation.values() for entry in entries
+        }
 
     @classmethod
     def from_rows(cls, rows):
         universal_tags_by_lemma = defaultdict(set)
+        genders_by_lemma = defaultdict(set)
         written_representations_by_lemma = defaultdict(set)
-        for lemma, written_representation, universal_tag in rows:
+        for lemma, written_representation, universal_tag, genders in rows:
             written_representations_by_lemma[lemma].add(normalize_lemma(written_representation))
             if universal_tag:
                 universal_tags_by_lemma[lemma].add(universal_tag)
+            genders_by_lemma[lemma].update(genders)
 
         entries_by_written_representation = defaultdict(list)
         for lemma, written_representations in written_representations_by_lemma.items():
-            entry = LemmaEntry(lemma, frozenset(universal_tags_by_lemma[lemma]))
+            entry = LemmaEntry(lemma, frozenset(universal_tags_by_lemma[lemma]), frozenset(genders_by_lemma[lemma]))
             for written_representation in written_representations:
                 entries_by_written_representation[written_representation].append(entry)
         logger.info("Indexed %d written representations", len(entries_by_written_representation))
@@ -63,6 +77,9 @@ class LemmaBank:
     def candidates(self, lemma):
         return self.entries_by_written_representation.get(normalize_lemma(lemma), [])
 
+    def entry(self, lemma_id):
+        return self.entries_by_id.get(lemma_id)
+
 
 def lemma_rows_from_graph(graph):
     for lemma_iri in graph.subjects(RDF.type, LILA.Lemma):
@@ -70,6 +87,7 @@ def lemma_rows_from_graph(graph):
             UNIVERSAL_TAG_BY_LILA_PART_OF_SPEECH.get(part_of_speech)
             for part_of_speech in graph.objects(lemma_iri, LILA.hasPOS)
         ] or [None]
+        genders = frozenset(graph.objects(lemma_iri, LILA.hasGender))
         for written_representation in graph.objects(lemma_iri, ONTOLEX.writtenRep):
             for universal_tag in universal_tags:
-                yield lemma_iri, str(written_representation), universal_tag
+                yield lemma_iri, str(written_representation), universal_tag, genders
