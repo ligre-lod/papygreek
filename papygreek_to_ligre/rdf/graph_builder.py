@@ -165,17 +165,17 @@ class DocumentGraphBuilder:
             graph.add((token_node, RDF.type, POWLA.Terminal))
             graph.add((token_node, RDFS.label, Literal(word.form)))
             graph.add((token_node, POWLA.hasStringValue, Literal(word.form)))
-            self.add_lemma_link(graph, token_node, token)
+            self.add_lemma_link(graph, token_node, token, document_id)
             if word.line:
                 graph.add((token_node, LILA_CORPUS.hasCitStructure, citation_structure))
             graph.add((token_node, LILA_CORPUS.hasCitStructure, sentence_layer))
         for part in layout.parts:
             add_sequence_links(graph, self.token_iris(document_id, part.tokens))
 
-    def add_lemma_link(self, graph, token_node, token):
+    def add_lemma_link(self, graph, token_node, token, document_id):
         if not is_linkable(token.word):
             return
         result = self.lemma_linker.link(token.word)
-        self.linking_review.record(token, result)
+        self.linking_review.record(token, result, document_id)
         if result.is_linked:
             graph.add((token_node, LILA.hasLemma, result.lemma))

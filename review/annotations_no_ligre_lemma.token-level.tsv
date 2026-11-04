@@ -1,0 +1,5 @@
+token	document	sentence	word	form	papygreek_lemma	papygreek_postag	lemma	pos	status	applied_from	note	annotated
+aegyptus.90.43#1.1	aegyptus.90.43	1	1	Περικλῆς	Περικλέης	n-s---mn-	Περικλέης	PROPN	checked			2026-11-03T16:42:13
+aegyptus.90.43#1.2	aegyptus.90.43	1	2	Σαραπᾶτ̣ι	Σαραπάς	n-s---md-	Σαραπάς	PROPN	checked			2026-11-03T16:42:24
+aegyptus.90.43#2.4	aegyptus.90.43	2	4	Ἀμ[μ]ωνίῳ	Ἀμμώνιος	n-s---md-	Ἀμμώνιος	PROPN	checked			2026-11-03T16:42:33
+aegyptus.90.43#2.10	aegyptus.90.43	2	10	τεσσεράκοντα	τεσσαράκοντα	m--------	τεσσαράκοντα	NUM	checked			2026-11-03T16:43:04

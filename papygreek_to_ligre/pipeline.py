@@ -7,6 +7,7 @@ from pathlib import Path
 from . import settings
 from .linking.lemma_bank import LemmaBank
 from .linking.linker import LemmaLinker
+from .linking.not_a_word import NotAWord
 from .linking.pos_decisions import load_pos_decisions
 from .linking.review import LinkingReview
 from .rdf.graph_builder import DocumentGraphBuilder, build_corpus_graph
@@ -55,7 +56,8 @@ def run_pipeline(options):
     lemma_namespace = ligre_lemma_namespace(options.base_iri)
     iris = CorpusIris(options.base_iri)
     pos_decisions = load_pos_decisions(options.review_directory)
-    lemma_linker = LemmaLinker(LemmaBank.from_turtle(lemma_bank_path), pos_decisions)
+    not_a_word = NotAWord.load(options.review_directory)
+    lemma_linker = LemmaLinker(LemmaBank.from_turtle(lemma_bank_path), pos_decisions, not_a_word)
     linking_review = LinkingReview()
     document_builder = DocumentGraphBuilder(iris, lemma_namespace, lemma_linker, linking_review)
 

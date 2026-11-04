@@ -5,6 +5,7 @@ from dataclasses import dataclass
 from .. import settings
 from .lemma_bank import lemma_key
 from .linker import LINKING_STEPS, LinkStep
+from .not_a_word import MARKER_DESCRIPTIONS
 
 CHECK_HOMOGRAPH = "check homograph"
 OPEN_STATUSES = {"undecided", "ambiguous", CHECK_HOMOGRAPH}
@@ -12,6 +13,7 @@ OPEN_STATUSES = {"undecided", "ambiguous", CHECK_HOMOGRAPH}
 AUTOMATIC_LINKING = "1 automatic linking"
 MANUAL_REVIEW = "2 manual review"
 NO_LIGRE_LEMMA = "3 no LiGre lemma"
+NOT_A_WORD = "0 not a word"
 
 STATUS_BY_STEP = {
     LinkStep.UNDECIDED_POS_CLASH: "undecided",
@@ -37,6 +39,8 @@ def review_status(result):
 
 
 def workflow_step(result):
+    if result.step is LinkStep.NOT_A_WORD:
+        return NOT_A_WORD
     if result.step is LinkStep.MISSING:
         return NO_LIGRE_LEMMA
     return MANUAL_REVIEW if result.in_review else AUTOMATIC_LINKING
@@ -61,8 +65,9 @@ class LinkingReview:
         self.linked_lemmas = defaultdict(set)
         self.pos_clashes = {}
         self.missing_lemmas = Counter()
+        self.not_a_word_tokens = []
 
-    def record(self, token, result):
+    def record(self, token, result, document_id=""):
         self.step_counts[result.step] += 1
         self.outcome_counts[(workflow_step(result), result.step)] += 1
         self.outcome_lemmas[(workflow_step(result), result.step)].add(lemma_key(token.word.lemma))
@@ -72,6 +77,10 @@ class LinkingReview:
             self.record_pos_clash(lemma_key(token.word.lemma), result)
         elif result.step is LinkStep.MISSING:
             self.missing_lemmas[(lemma_key(token.word.lemma), result.papygreek_pos)] += 1
+        elif result.step is LinkStep.NOT_A_WORD:
+            word = token.word
+            self.not_a_word_tokens.append(
+                [result.not_a_word, document_id, token.sentence_id, word.id, word.form, word.lemma, word.postag])
 
     def record_pos_clash(self, lemma, result):
         key = (lemma, result.papygreek_pos, ligre_pos(result.candidates))
@@ -92,6 +101,7 @@ class LinkingReview:
         self.write_linking_summary(review_directory / settings.LINKING_SUMMARY_FILENAME)
         self.write_pos_clash_lemmas(review_directory / settings.POS_CLASH_LEMMAS_FILENAME)
         self.write_missing_lemmas(review_directory / settings.NO_LIGRE_LEMMA_FILENAME)
+        self.write_not_a_word(review_directory / settings.NOT_A_WORD_FILENAME)
 
     def write_linking_summary(self, path):
         total = sum(self.step_counts.values())
@@ -105,7 +115,7 @@ class LinkingReview:
             return [step, outcome, tokens, lemmas_of(keys, self.outcome_lemmas), linked,
                     lemmas_of(keys, self.linked_lemmas), f"{linked / total:.1%}" if total else ""]
 
-        rows = []
+        rows = self.not_a_word_summary_rows(total)
         for step in (AUTOMATIC_LINKING, MANUAL_REVIEW, NO_LIGRE_LEMMA):
             counts = [(link_step, self.outcome_counts[(step, link_step)]) for link_step in LinkStep
                       if self.outcome_counts[(step, link_step)]]
@@ -113,6 +123,26 @@ class LinkingReview:
             rows.append(row(step, "total", counts, [(step, link_step) for link_step, _ in counts]))
         rows.append(row("total", "", list(self.step_counts.items()), list(self.outcome_lemmas)))
         write_tsv(path, ["step", "outcome", "tokens", "lemmas", "linked", "linked_lemmas", "share_linked"], rows)
+
+    def not_a_word_summary_rows(self, total):
+        """One row per marker, so the excluded tokens can be traced to the rule that excluded them."""
+        if not self.not_a_word_tokens:
+            return []
+        tokens_by_marker = Counter(row[0] for row in self.not_a_word_tokens)
+        lemmas_by_marker = defaultdict(set)
+        for row in self.not_a_word_tokens:
+            lemmas_by_marker[row[0]].add(lemma_key(row[5]))
+        rows = [[NOT_A_WORD, marker, count, len(lemmas_by_marker[marker]), 0, 0, f"{0:.1%}"]
+                for marker, count in sorted(tokens_by_marker.items(), key=lambda item: (-item[1], item[0]))]
+        rows.append([NOT_A_WORD, "total", len(self.not_a_word_tokens), len(set().union(*lemmas_by_marker.values())),
+                     0, 0, f"{0:.1%}"])
+        return rows
+
+    def write_not_a_word(self, path):
+        order = {marker: index for index, marker in enumerate(MARKER_DESCRIPTIONS)}
+        rows = sorted(self.not_a_word_tokens, key=lambda row: (order.get(row[0], len(order)), row[1], row[2], row[3]))
+        write_tsv(path, ["marker", "document", "sentence", "word", "form", "lemma", "postag", "marker_description"],
+                  [row + [MARKER_DESCRIPTIONS.get(row[0], "")] for row in rows])
 
     def write_pos_clash_lemmas(self, path):
         def open_first_then_most_frequent(item):
