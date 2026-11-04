@@ -16,10 +16,15 @@ logger = logging.getLogger(__name__)
 ANNOTATIONS_FILENAME = settings.NO_LIGRE_LEMMA_ANNOTATIONS_FILENAME
 TOKEN_LEVEL_BACKUP_SUFFIX = ".token-level.tsv"
 STATUSES = ("checked", "unsure", NOT_A_WORD_STATUS)
+# How a lemma relates to another one, given in `related` (a LiGre lemma id, or the key of another PapyGreek lemma here):
+# written_rep: the same lemma in another spelling, an extra ontolex:writtenRep of that lemma (Σεραπίων of Σαραπίων);
+# lemma_variant: a lemma of its own, linked to the other with lila:lemmaVariant (ἑκατέρως of ἑκάτερος).
+RELATIONS = ("", "written_rep", "lemma_variant")
 COLUMNS = (
-    "papygreek_lemma", "papygreek_pos", "tokens", "lemma", "pos", "ligre_lemma", "status", "note", "annotated",
+    "papygreek_lemma", "papygreek_pos", "tokens", "lemma", "pos", "ligre_lemma", "relation", "related",
+    "status", "note", "annotated",
 )
-ANNOTATION_FIELDS = ("lemma", "pos", "ligre_lemma", "status", "note", "annotated")
+ANNOTATION_FIELDS = ("lemma", "pos", "ligre_lemma", "relation", "related", "status", "note", "annotated")
 
 
 def row_key(row):
@@ -41,7 +46,7 @@ class AnnotationStore:
             self.convert_token_level(rows)
         else:
             for row in rows:
-                self.rows[row_key(row)] = {column: row.get(column, "") for column in COLUMNS}
+                self.rows[row_key(row)] = {column: row.get(column) or "" for column in COLUMNS}
 
     def convert_token_level(self, token_rows):
         """The first version stored one row per token: keep one row per lemma, back up the old file."""
@@ -65,9 +70,11 @@ class AnnotationStore:
                     len(token_rows), len(self.rows), backup)
         self.save()
 
-    def annotate(self, group, lemma, pos, ligre_lemma, status, note):
+    def annotate(self, group, lemma, pos, ligre_lemma, relation, related, status, note):
         if status not in STATUSES:
             raise ValueError(f"unknown status {status!r}")
+        if relation not in RELATIONS:
+            raise ValueError(f"unknown relation {relation!r}")
         with self.lock:
             self.rows[group.key] = {
                 "papygreek_lemma": group.lemma,
@@ -76,6 +83,8 @@ class AnnotationStore:
                 "lemma": lemma,
                 "pos": pos,
                 "ligre_lemma": ligre_lemma,
+                "relation": relation,
+                "related": related,
                 "status": status,
                 "note": note,
                 "annotated": datetime.datetime.now().isoformat(timespec="seconds"),

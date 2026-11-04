@@ -189,6 +189,10 @@ class Corpus:
             (fold(written), written, entries)
             for written, entries in self.lemma_bank.entries_by_written_representation.items()
         )
+        self.written_by_id = defaultdict(list)
+        for _, written, entries in self.search_index:
+            for entry in entries:
+                self.written_by_id[entry.lemma_id].append(written)
         self.find_look_alikes()
         logger.info("%d lemmas to annotate (%d tokens in %d documents)",
                     len(self.groups), len(self.targets), len(self.documents))
@@ -314,6 +318,12 @@ class Corpus:
             "head": {"form": head.get("orig_form", ""), "lemma": head.get("lemma_reg", ""),
                      "sentence": target.sentence, "word": int(head_id)} if head else None,
         }
+
+    def ligre_label(self, lemma_id):
+        entry = self.lemma_bank.entry(lemma_id)
+        if entry is None:
+            return lemma_id
+        return f"{' / '.join(self.written_by_id.get(lemma_id, [])) or '?'} (LiGre {entry.describe()})"
 
     def search_ligre(self, query, limit=30):
         folded = fold(query.strip())

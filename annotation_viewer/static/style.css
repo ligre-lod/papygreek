@@ -78,6 +78,7 @@ kbd { font: 11px var(--ui); border: 1px solid var(--border); border-radius: 3px;
 .lemma-list .sub { grid-column: 2 / -1; color: var(--muted); font-size: 11px; }
 .lemma-list .count { color: var(--muted); font-variant-numeric: tabular-nums; font-size: 12px; }
 .flag { color: var(--todo); font-weight: 600; }
+.translated { color: var(--accent); font-weight: 600; }
 .flags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
 .flags .chip { background: var(--todo-bg); color: var(--todo); }
 
@@ -155,6 +156,12 @@ kbd { font: 11px var(--ui); border: 1px solid var(--border); border-radius: 3px;
 .pos-grid button { padding: 4px 2px; font-size: 13px; }
 .pos-grid button.suggested { border-color: var(--accent); border-width: 2px; }
 .pos-grid button.selected { background: var(--accent); color: var(--accent-text); border-color: var(--accent); }
+.relation-choice { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px; }
+.relation-choice button { padding: 4px 2px; font-size: 13px; }
+.relation-choice button.selected { background: var(--accent); color: var(--accent-text); border-color: var(--accent); }
+#relation-search { margin-top: 6px; font-family: var(--greek); font-size: 16px; }
+.ligre li.heading { cursor: default; color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .04em; }
+.ligre li.heading:hover { background: transparent; }
 .hint { color: var(--muted); font-size: 12px; margin-top: 4px; }
 .actions { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
 .occurrences { list-style: none; margin: 0; padding: 0; font-family: var(--greek); font-size: 15px; }

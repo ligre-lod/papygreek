@@ -12,7 +12,7 @@ from papygreek_to_ligre.linking.pos_tags import UNIVERSAL_TAGS
 
 from papygreek_to_ligre.linking.not_a_word import MARKER_DESCRIPTIONS, NOT_A_WORD_STATUS
 
-from .annotations import STATUSES
+from .annotations import RELATIONS, STATUSES
 
 logger = logging.getLogger(__name__)
 
@@ -31,6 +31,8 @@ class ViewerApp:
         self.corpus = corpus
         self.annotations = annotations
         self.translations = translations
+        self.translated_documents = {identifier for identifier, document in corpus.documents.items()
+                                     if translations.has_translation(document.hgv_ids)}
         self.ligre_tag_counts = {tag: 0 for tag in POS_ORDER}
         for entry in corpus.lemma_bank.entries_by_id.values():
             for tag in entry.universal_tags:
@@ -50,14 +52,51 @@ class ViewerApp:
             self.annotations.save()
 
     def public_annotations(self):
-        return {key: {column: row[column] for column in ("lemma", "pos", "ligre_lemma", "status", "note")}
+        return {key: {**{column: row[column] for column in ("lemma", "pos", "ligre_lemma", "relation", "related",
+                                                             "status", "note")},
+                      "related_label": self.related_label(row["related"])}
                 for key, row in self.annotations.rows.items() if key in self.corpus.groups}
+
+    def related_label(self, related):
+        """A LiGre lemma id, or the key of another PapyGreek lemma (with its annotated lemma, if any)."""
+        if not related:
+            return ""
+        if related in self.corpus.groups:
+            row = self.annotations.rows.get(related)
+            group = self.corpus.groups[related]
+            annotated = f" → {row['lemma']} · {row['pos']}" if row and row["lemma"] else ", not annotated yet"
+            return f"{group.lemma} (PapyGreek {group.pos}{annotated})"
+        return self.corpus.ligre_label(related)
+
+    def check_relation(self, group, relation, related):
+        if relation not in RELATIONS:
+            raise ApiError(f"unknown relation {relation!r}")
+        if not relation:
+            return
+        if not related:
+            raise ApiError("choose the lemma this one is related to")
+        if related == group.key:
+            raise ApiError("a lemma cannot be related to itself")
+        if related not in self.corpus.groups and self.corpus.lemma_bank.entry(related) is None:
+            raise ApiError(f"{related!r} is neither a LiGre lemma id nor a PapyGreek lemma here")
+        if relation != "written_rep":
+            return
+        # Spellings point straight at their lemma: no chains of spellings.
+        target = self.annotations.rows.get(related)
+        if target and target["relation"] == "written_rep":
+            raise ApiError(f"{self.corpus.groups[related].lemma} is itself a spelling of "
+                           f"{self.related_label(target['related'])}: choose that lemma instead")
+        pointing_here = [self.corpus.groups[key].lemma for key, row in self.annotations.rows.items()
+                         if row["relation"] == "written_rep" and row["related"] == group.key and key in self.corpus.groups]
+        if pointing_here:
+            raise ApiError(f"{', '.join(pointing_here)} already point here as other spellings of this lemma: "
+                           f"make this the lemma, or point those at the other lemma first")
 
     def overview(self, _query):
         groups = sorted(self.corpus.groups.values(), key=lambda group: (-len(group.targets), group.lemma))
         annotations = self.public_annotations()
         return {
-            "lemmas": [self.corpus.summary(group) for group in groups],
+            "lemmas": [{**self.corpus.summary(group), "translated": self.translated_texts(group)} for group in groups],
             "annotations": annotations,
             "stale_annotations": len(self.annotations.rows) - len(annotations),
             "tokens_total": len(self.corpus.targets),
@@ -65,6 +104,10 @@ class ViewerApp:
             "annotations_file": str(self.annotations.path),
             "not_a_word": self.not_a_word_summary(annotations),
         }
+
+    def translated_texts(self, group):
+        """How many of the texts this lemma occurs in have a papyri.info translation."""
+        return len({target.document for target in group.targets} & self.translated_documents)
 
     def not_a_word_summary(self, annotations):
         """Tokens left out as not a word, per marker: automatic (pipeline rules) and by hand (here)."""
@@ -80,7 +123,10 @@ class ViewerApp:
         key = query.get("key", [""])[0]
         if key not in self.corpus.groups:
             raise ApiError(f"unknown lemma {key!r}")
-        return self.corpus.lemma_payload(key)
+        payload = self.corpus.lemma_payload(key)
+        for occurrence in payload["occurrences"]:
+            occurrence["translated"] = occurrence["document"] in self.translated_documents
+        return payload
 
     def document(self, query):
         document_id = query.get("id", [""])[0]
@@ -100,11 +146,13 @@ class ViewerApp:
         lemma = str(body.get("lemma", "")).strip()
         pos = body.get("pos", "")
         ligre_lemma = str(body.get("ligre_lemma", "") or "").strip()
+        relation = str(body.get("relation", "") or "")
+        related = str(body.get("related", "") or "").strip()
         status = body.get("status", "")
         if group is None:
             raise ApiError(f"unknown lemma {body.get('key')!r}")
         if status == NOT_A_WORD_STATUS:
-            lemma, pos, ligre_lemma = "", "", ""
+            lemma, pos, ligre_lemma, relation, related = "", "", "", "", ""
         elif not lemma:
             raise ApiError("the lemma is empty")
         elif pos not in UNIVERSAL_TAGS:
@@ -113,7 +161,13 @@ class ViewerApp:
             raise ApiError(f"LiGre has no lemma with id {ligre_lemma!r}")
         if status not in STATUSES:
             raise ApiError(f"unknown status {status!r}")
-        self.annotations.annotate(group, lemma, pos, ligre_lemma, status, str(body.get("note", "")).strip())
+        if not relation:
+            related = ""
+        self.check_relation(group, relation, related)
+        if relation == "written_rep" and related not in self.corpus.groups:
+            ligre_lemma = related  # another spelling of a LiGre lemma: its tokens link to that lemma
+        self.annotations.annotate(group, lemma, pos, ligre_lemma, relation, related, status,
+                                  str(body.get("note", "")).strip())
         return self.overview({})
 
     def remove(self, body):

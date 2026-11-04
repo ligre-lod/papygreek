@@ -71,6 +71,9 @@ class Translations:
         temporary_path.write_text(json.dumps(self.index, indent=1, sort_keys=True), encoding="utf-8")
         temporary_path.replace(self.index_path)
 
+    def has_translation(self, hgv_ids):
+        return any(self.index.get(hgv_id) for hgv_id in hgv_ids)
+
     def probed(self, hgv_ids):
         return all(hgv_id in self.index for hgv_id in hgv_ids)
 

@@ -3,8 +3,11 @@
 const state = {
   lemmas: [], lemmaByKey: new Map(), ann: {}, tags: [], tokensTotal: 0,
   lemma: null, occurrence: 0, doc: null, tokenDetails: new Map(),
-  form: { lemma: "", pos: "", ligre_lemma: "", note: "" }, ligre: [], busy: false,
+  form: emptyForm(""), ligre: [], busy: false,
 };
+function emptyForm(lemma) {
+  return { lemma, pos: "", ligre_lemma: "", relation: "", related: "", relatedLabel: "", note: "" };
+}
 const STORAGE_KEY = "missing-lemma-viewer:last-lemma";
 
 // ---------- helpers ----------
@@ -63,7 +66,18 @@ const formatYear = (value) => {
   return year < 0 ? `${-year} BCE` : `${year} CE`;
 };
 const NOT_A_WORD = "not-a-word";
-const decision = (row) => (row.status === NOT_A_WORD ? "not a word" : `${row.lemma} · ${row.pos}`);
+const RELATION_TEXT = { written_rep: "other spelling of", lemma_variant: "lemma variant of" };
+const RELATION_HINT = {
+  "": "A lemma of its own.",
+  written_rep: "The same lemma in another spelling (Σεραπίων for Σαραπίων): an extra written representation of that lemma, not a lemma of its own.",
+  lemma_variant: "A lemma of its own, for a competing lemmatisation of the same word (ἑκατέρως and ἑκάτερος): linked to the other with lila:lemmaVariant.",
+};
+const relatedShort = (related) => (related.includes("|") ? related.split("|")[0] : `LiGre ${related}`);
+const decision = (row) => {
+  if (row.status === NOT_A_WORD) return "not a word";
+  const relation = row.relation ? ` (${RELATION_TEXT[row.relation]} ${relatedShort(row.related)})` : "";
+  return `${row.lemma} · ${row.pos}${relation}`;
+};
 const link = (href, text) => h("a", { href, target: "_blank", rel: "noopener" }, text);
 
 // ---------- overview, progress, lemma list ----------
@@ -105,6 +119,7 @@ function filteredLemmas() {
       case "open": return !row;
       case "flagged": return !row && lemma.flags.length > 0;
       case "near": return lemma.flags.includes("near LiGre match");
+      case "translated": return lemma.translated > 0;
       case "unsure": return row?.status === "unsure";
       case "notaword": return row?.status === NOT_A_WORD;
       case "done": return Boolean(row);
@@ -127,9 +142,11 @@ function renderSidebar() {
   fill(document.getElementById("lemma-list"), ...shown.map((lemma) => {
     const row = state.ann[lemma.key];
     return h("li", { class: lemma.key === activeKey ? "active" : "" },
-      h("button", { onclick: () => openLemma(lemma.key), title: lemma.flags.join(", ") },
+      h("button", { onclick: () => openLemma(lemma.key), title: [...lemma.flags,
+        ...(lemma.translated ? [`${lemma.translated} text${lemma.translated === 1 ? "" : "s"} with a translation`] : [])].join(", ") },
         h("span", { class: `dot ${row?.status || ""}` }),
-        h("span", { class: "w" }, lemma.lemma, lemma.flags.length ? h("span", { class: "flag" }, " ⚑") : null),
+        h("span", { class: "w" }, lemma.lemma, lemma.flags.length ? h("span", { class: "flag" }, " ⚑") : null,
+          lemma.translated ? h("span", { class: "translated" }, " Ⓣ") : null),
         h("span", { class: "count" }, lemma.tokens),
         h("span", { class: "sub" }, lemma.pos, row ? ` → ${decision(row)}` : "")));
   }));
@@ -161,9 +178,10 @@ async function openLemma(key) {
     remember(key);
     history.replaceState(null, "", `#${encodeURIComponent(key)}`);
     const row = state.ann[key];
-    state.form = row
-      ? { lemma: row.lemma, pos: row.pos, ligre_lemma: row.ligre_lemma, note: row.note }
-      : { lemma: payload.lemma, pos: "", ligre_lemma: "", note: "" };
+    state.form = row && row.status !== NOT_A_WORD
+      ? { lemma: row.lemma, pos: row.pos, ligre_lemma: row.ligre_lemma, relation: row.relation || "",
+          related: row.related || "", relatedLabel: row.related_label || "", note: row.note }
+      : { ...emptyForm(payload.lemma), note: row?.note || "" };
     renderSidebar();
     await selectOccurrence(0);
     renderPanel();
@@ -216,7 +234,8 @@ function renderOccurrences() {
     class: index === state.occurrence ? "self" : "", onclick: () => selectOccurrence(index),
   },
     h("span", {}, `${index + 1}`),
-    h("span", {}, h("span", { class: "src" }, `${item.document}, line ${item.line || "–"} · ${item.info}`),
+    h("span", {}, h("span", { class: "src" }, `${item.document}, line ${item.line || "–"} · ${item.info}`,
+        item.translated ? h("span", { class: "translated", title: "papyri.info has a translation of this text" }, " Ⓣ") : null),
       item.before ? `${item.before} ` : "", h("mark", {}, item.form), item.after ? ` ${item.after}` : ""))));
   const self = list.querySelector("li.self");
   if (self) self.scrollIntoView({ block: "nearest" });
@@ -343,6 +362,107 @@ function annotationState(row) {
     row.note ? h("div", {}, `Note: ${row.note}`) : null);
 }
 
+// ---------- relation to another lemma ----------
+function withinOneEdit(a, b) {
+  if (a === b || Math.abs(a.length - b.length) > 1) return false;
+  let i = 0;
+  while (i < a.length && i < b.length && a[i] === b[i]) i += 1;
+  if (a.length === b.length) return a.slice(i + 1) === b.slice(i + 1);
+  return a.length > b.length ? a.slice(i + 1) === b.slice(i) : a.slice(i) === b.slice(i + 1);
+}
+
+function papygreekTarget(lemma) {
+  const row = state.ann[lemma.key];
+  const annotated = row && row.lemma ? ` → ${row.lemma} · ${row.pos}` : ", not annotated yet";
+  return { related: lemma.key, label: `${lemma.lemma} (PapyGreek ${lemma.pos}${annotated})`, pos: row?.lemma ? row.pos : "",
+    ligre: false, main: lemma.lemma, sub: `PapyGreek ${lemma.pos} · ${lemma.tokens} token${lemma.tokens === 1 ? "" : "s"}${row && row.status !== NOT_A_WORD ? ` · ${decision(row)}` : ""}` };
+}
+
+function ligreTarget(result) {
+  const tags = result.tags.join("/") || "?";
+  return { related: result.id, label: `${result.written} (LiGre ${tags} ${result.id})`, pos: "", ligre: true,
+    main: result.written, sub: `LiGre ${tags} · ${result.id}` };
+}
+
+function relationSuggestions() {
+  const own = fold(stripHomograph(state.lemma.lemma));
+  return state.lemmas.filter((lemma) => lemma.key !== state.lemma.key && withinOneEdit(own, fold(stripHomograph(lemma.lemma))))
+    .slice(0, 8).map(papygreekTarget);
+}
+
+function setRelation(relation) {
+  const form = state.form;
+  const linkedThroughRelation = form.relation === "written_rep" && form.related && !form.related.includes("|");
+  if (linkedThroughRelation && form.ligre_lemma === form.related) form.ligre_lemma = "";
+  form.relation = relation;
+  if (!relation) { form.related = ""; form.relatedLabel = ""; }
+  if (relation === "written_rep" && form.related && !form.related.includes("|")) form.ligre_lemma = form.related;
+  renderPanel();
+}
+
+function chooseRelated(target) {
+  const form = state.form;
+  if (form.relation === "written_rep" && form.ligre_lemma && form.ligre_lemma === form.related) form.ligre_lemma = "";
+  form.related = target.related;
+  form.relatedLabel = target.label;
+  if (form.relation === "written_rep") {
+    if (target.ligre) form.ligre_lemma = target.related;
+    if (target.pos) form.pos = target.pos;  // another spelling shares the part of speech of its lemma
+  }
+  renderPanel();
+}
+
+let relationTimer = null;
+function searchRelated(text) {
+  clearTimeout(relationTimer);
+  const query = fold(stripHomograph(text.trim()));
+  if (!query) { renderRelationResults(relationSuggestions(), "PapyGreek lemmas one letter apart"); return; }
+  const papygreek = state.lemmas.filter((lemma) => lemma.key !== state.lemma.key && lemma.folded.startsWith(query))
+    .slice(0, 10).map(papygreekTarget);
+  renderRelationResults(papygreek, "");
+  relationTimer = setTimeout(async () => {
+    try {
+      const ligre = (await api(`/api/ligre?q=${encodeURIComponent(stripHomograph(text.trim()))}`)).results.slice(0, 15).map(ligreTarget);
+      renderRelationResults([...papygreek, ...ligre], "");
+    } catch (error) {
+      toast(error.message, true);
+    }
+  }, 150);
+}
+
+function renderRelationResults(targets, heading) {
+  const list = document.getElementById("relation-results");
+  if (!list) return;
+  fill(list,
+    heading && targets.length ? h("li", { class: "heading" }, heading) : null,
+    ...targets.map((target) => h("li", { title: `${RELATION_TEXT[state.form.relation]} this lemma`, onclick: () => chooseRelated(target) },
+      h("span", { class: "w" }, target.main), h("span", { class: "t" }, target.sub))));
+}
+
+function relationSection() {
+  const form = state.form;
+  const pointingHere = Object.entries(state.ann).filter(([, row]) => row.related === state.lemma.key);
+  return h("section", {},
+    h("h3", {}, "Relation to another lemma"),
+    h("div", { class: "relation-choice" }, [["", "Own lemma"], ["written_rep", "Other spelling of…"], ["lemma_variant", "Lemma variant of…"]]
+      .map(([value, label]) => h("button", { class: form.relation === value ? "selected" : "", onclick: () => setRelation(value) }, label))),
+    h("div", { class: "hint" }, RELATION_HINT[form.relation]),
+    form.relation && form.related
+      ? h("span", { class: "linked" }, `${RELATION_TEXT[form.relation]} ${form.relatedLabel || form.related}`,
+        h("button", { title: "Choose another lemma", onclick: () => { form.related = ""; form.relatedLabel = "";
+          if (form.relation === "written_rep") form.ligre_lemma = ""; renderPanel(); } }, "✕"))
+      : null,
+    form.relation && !form.related ? [
+      h("input", { type: "search", id: "relation-search", lang: "grc", autocomplete: "off", spellcheck: "false",
+        placeholder: "Find a PapyGreek or LiGre lemma…", oninput: (event) => searchRelated(event.target.value) }),
+      h("ul", { class: "ligre", id: "relation-results" }),
+    ] : null,
+    pointingHere.length ? h("div", { class: "hint" }, "Related to this lemma: ",
+      pointingHere.map(([key, row], index) => [index ? ", " : "",
+        h("a", { href: "#", onclick: (event) => { event.preventDefault(); openLemma(key); } }, state.lemmaByKey.get(key)?.lemma || key),
+        ` (${RELATION_TEXT[row.relation]})`])) : null);
+}
+
 function renderOccurrenceDetails() {
   const container = document.getElementById("occurrence-details");
   if (!container) return;
@@ -432,6 +552,8 @@ function renderPanel() {
       }, index < 9 ? h("kbd", {}, index + 1) : null, " ", tag, h("span", { class: "n" }, ligre ? `${ligre} in LiGre` : "none in LiGre")))),
       h("div", { class: "hint" }, `Framed tags are compatible with PapyGreek's ${lemma.pos}; none is preselected.`)),
 
+    relationSection(),
+
     h("section", {},
       h("h3", {}, "Note (optional)"),
       h("input", { type: "text", value: state.form.note, oninput: (event) => { state.form.note = event.target.value; }, onkeydown: saveOnEnter })),
@@ -447,6 +569,7 @@ function renderPanel() {
   renderOccurrenceDetails();
   updateDiff();
   renderLigre();
+  if (document.getElementById("relation-search")) searchRelated("");
 }
 
 function updateDiff() {
@@ -465,9 +588,13 @@ async function save(status) {
   if (state.busy || !state.lemma) return;
   if (status !== NOT_A_WORD && !state.form.lemma.trim()) { toast("Enter a lemma first.", true); return; }
   if (status !== NOT_A_WORD && !state.form.pos) { toast("Choose a part of speech first.", true); return; }
+  if (status !== NOT_A_WORD && state.form.relation && !state.form.related) {
+    toast(`Choose the lemma this is ${RELATION_TEXT[state.form.relation]}, or pick “Own lemma”.`, true); return;
+  }
   state.busy = true;
   try {
-    applyOverview(await api("/api/annotate", { key: state.lemma.key, status, ...state.form, lemma: state.form.lemma.trim() }));
+    const { relatedLabel, ...form } = state.form;
+    applyOverview(await api("/api/annotate", { key: state.lemma.key, status, ...form, lemma: form.lemma.trim() }));
     toast(`Saved ${state.lemma.lemma}.`);
     const next = nextUnannotated();
     if (next) await openLemma(next);
