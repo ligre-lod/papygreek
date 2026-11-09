@@ -1,0 +1,19 @@
+step	outcome	tokens	lemmas	linked	linked_lemmas	share_linked
+0 not a word	lemma gap	21	21	0	0	0.0%
+0 not a word	placeholder γ	9	1	0	0	0.0%
+0 not a word	lemma gap G	4	4	0	0	0.0%
+0 not a word	unresolved abbreviation	2	2	0	0	0.0%
+0 not a word	vacat	2	1	0	0	0.0%
+0 not a word	placeholder TO_ADD	1	1	0	0	0.0%
+0 not a word	postag as lemma	1	1	0	0	0.0%
+0 not a word	total	40	31	0	0	0.0%
+1 automatic linking	strict	31841	2986	31841	2986	57.9%
+1 automatic linking	total	31841	2986	31841	2986	57.9%
+2 manual review	lemma decision	12670	275	12670	275	23.0%
+2 manual review	undecided homograph	676	44	0	0	0.0%
+2 manual review	rejected	608	92	0	0	0.0%
+2 manual review	ambiguous	19	2	0	0	0.0%
+2 manual review	total	13973	401	12670	275	23.0%
+3 no LiGre lemma	lemma not in LiGre	9115	2056	0	0	0.0%
+3 no LiGre lemma	total	9115	2056	0	0	0.0%
+total		54969	5360	44511	3176	81.0%

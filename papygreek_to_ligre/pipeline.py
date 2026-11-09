@@ -7,14 +7,16 @@ from pathlib import Path
 from . import settings
 from .linking.lemma_bank import LemmaBank
 from .linking.linker import LemmaLinker
+from .linking.not_a_word import NotAWord
 from .linking.pos_decisions import load_pos_decisions
 from .linking.review import LinkingReview
+from .rdf.dataset_description import DatasetStatistics, bind_description_prefixes, describe_corpus
 from .rdf.graph_builder import DocumentGraphBuilder, build_corpus_graph
 from .rdf.iris import CorpusIris
 from .rdf.namespaces import ligre_lemma_namespace
 from .rdf.turtle_writer import OrderedTurtleWriter
-from .download_papygreek.downloads import fetch_ligre_lemma_bank, fetch_papygreek_treebanks, find_treebank_files
-from .download_papygreek.treebank_reader import read_treebank_document
+from .sources.downloads import fetch_ligre_lemma_bank, fetch_papygreek_treebanks, find_treebank_files
+from .sources.treebank_reader import read_treebank_document
 
 logger = logging.getLogger(__name__)
 
@@ -44,7 +46,6 @@ def open_complete_file_writer(stack, options, corpus_graph, corpus):
     output_file = stack.enter_context(gzip.open(complete_path, "wt", encoding="utf-8"))
     writer = OrderedTurtleWriter(output_file, corpus_graph.namespace_manager)
     writer.write_prefixes()
-    writer.write_subject(corpus_graph, corpus)
     return writer
 
 
@@ -55,7 +56,8 @@ def run_pipeline(options):
     lemma_namespace = ligre_lemma_namespace(options.base_iri)
     iris = CorpusIris(options.base_iri)
     pos_decisions = load_pos_decisions(options.review_directory)
-    lemma_linker = LemmaLinker(LemmaBank.from_turtle(lemma_bank_path), pos_decisions)
+    lemma_bank = LemmaBank.from_turtle(lemma_bank_path)
+    lemma_linker = LemmaLinker(lemma_bank, pos_decisions, NotAWord())
     linking_review = LinkingReview()
     document_builder = DocumentGraphBuilder(iris, lemma_namespace, lemma_linker, linking_review)
 
@@ -65,7 +67,9 @@ def run_pipeline(options):
     treebank_files = find_treebank_files(treebank_directory)
     corpus = iris.corpus()
     corpus_graph = build_corpus_graph(iris, lemma_namespace, [path.stem for path in treebank_files])
-    write_turtle_file(options.output_directory / settings.CORPUS_OUTPUT_FILENAME, corpus_graph, [corpus])
+    bind_description_prefixes(corpus_graph)
+    statistics = DatasetStatistics()
+    statistics.add(corpus_graph, [corpus])
 
     logger.info("Converting %d PapyGreek treebanks", len(treebank_files))
     with ExitStack() as stack:
@@ -78,8 +82,13 @@ def run_pipeline(options):
                 built_document.graph,
                 [corpus, *built_document.subjects],
             )
+            statistics.add(built_document.graph, built_document.subjects)
             if complete_file_writer is not None:
                 complete_file_writer.write_subjects(built_document.graph, built_document.subjects)
+        described = [corpus, *describe_corpus(corpus_graph, corpus, lemma_namespace["LemmaBank"], statistics)]
+        if complete_file_writer is not None:
+            complete_file_writer.write_subjects(corpus_graph, described)
+    write_turtle_file(options.output_directory / settings.CORPUS_OUTPUT_FILENAME, corpus_graph, described)
 
     linking_review.write(options.review_directory)
     logger.info(linking_review.summary())

@@ -4,3 +4,4 @@ __pycache__/
 build/
 /ttl/texts/
 /review/review_*.tsv
+!/review/review_summary.tsv

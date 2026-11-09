@@ -3,6 +3,7 @@ from enum import Enum
 from typing import Optional
 
 from .lemma_bank import has_homograph_number
+from .not_a_word import NotAWord
 from .pos_decisions import LemmaDecision, check_ligre_lemmas
 from .pos_tags import lila_gender, papygreek_pos, strict_universal_tags
 
@@ -15,6 +16,7 @@ class LinkStep(Enum):
     REJECTED = "rejected"
     AMBIGUOUS = "ambiguous"
     MISSING = "lemma not in LiGre"
+    NOT_A_WORD = "not a word"
 
 
 LINKING_STEPS = {LinkStep.STRICT, LinkStep.LEMMA_DECISION}
@@ -29,6 +31,7 @@ class LinkResult:
     lemma: Optional[object] = None
     decision: Optional[object] = None
     homograph_check: bool = False
+    not_a_word: Optional[str] = None
 
     @property
     def is_linked(self):
@@ -36,13 +39,17 @@ class LinkResult:
 
 
 class LemmaLinker:
-    def __init__(self, lemma_bank, pos_decisions):
+    def __init__(self, lemma_bank, pos_decisions, not_a_word=None):
         check_ligre_lemmas(pos_decisions, lemma_bank)
         self.lemma_bank = lemma_bank
         self.pos_decisions = pos_decisions
+        self.not_a_word = not_a_word or NotAWord()
 
     def link(self, word):
         pos = papygreek_pos(word.postag)
+        marker = self.not_a_word.marker(word)
+        if marker is not None:
+            return LinkResult(LinkStep.NOT_A_WORD, pos, (), not_a_word=marker)
         candidates = tuple(self.lemma_bank.candidates(word.lemma))
         if not candidates:
             return LinkResult(LinkStep.MISSING, pos, candidates)

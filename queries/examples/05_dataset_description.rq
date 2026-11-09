@@ -1,0 +1,13 @@
+PREFIX void: <http://rdfs.org/ns/void#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+
+SELECT ?version ?triples ?entities ?links ?linkedLemmas
+WHERE {
+  <https://w3id.org/ligre/data/corpora/PapyGreek/id/corpus> dcat:version ?version ;
+      void:triples ?triples ;
+      void:entities ?entities ;
+      void:subset ?linkset .
+  ?linkset a void:Linkset ;
+           void:triples ?links ;
+           void:distinctObjects ?linkedLemmas .
+}

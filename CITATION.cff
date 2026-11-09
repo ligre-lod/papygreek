@@ -1,0 +1,66 @@
+cff-version: 1.2.0
+message: "If you use PapyGreek–LiGre, please cite it using the metadata below, and also cite the PapyGreek Treebanks it is derived from (see references)."
+type: dataset
+title: "PapyGreek–LiGre: the PapyGreek Treebanks as Linked Open Data, linked to the LiGre Lemma Bank"
+version: 1.0.0
+date-released: 2026-11-06
+license: CC-BY-SA-4.0
+url: "https://w3id.org/ligre/data/corpora/PapyGreek/id/corpus"
+repository-code: "https://github.com/ligre-lod/papygreek"
+authors:
+  - family-names: Lemay
+    given-names: Paulien
+    orcid: "https://orcid.org/0009-0004-2388-9233"
+    affiliation: Ghent University
+abstract: >-
+  The PapyGreek Treebanks (558 documentary papyri in Postclassical Greek,
+  ca. 300 BCE-700 CE, morphosyntactically annotated by the Digital Grammar of
+  Greek Documentary Papyri project) as linked open data, modelled after the
+  corpora of the LiLa Knowledge Base, with every token linked where possible
+  to its lemma in the LiGre Lemma Bank for Ancient Greek.
+keywords:
+  - Ancient Greek
+  - Postclassical Greek
+  - documentary papyri
+  - treebank
+  - lemmatization
+  - linked open data
+  - LiGre
+  - LiLa
+references:
+  - type: data
+    title: "PapyGreek Treebanks v3.0"
+    version: v3.0
+    doi: 10.5281/zenodo.8428823
+    date-released: 2023-10-10
+    license: CC-BY-SA-4.0
+    repository: "https://github.com/papygreek/papygreek-treebanks"
+    authors:
+      - family-names: Vierros
+        given-names: Marja
+      - family-names: Henriksson
+        given-names: Erik
+      - family-names: Yordanova
+        given-names: Polina
+      - family-names: Alaranta
+        given-names: Arttu
+      - family-names: Lahtinen
+        given-names: Petri
+      - family-names: Vesterinen
+        given-names: Jamie
+      - family-names: Huitula
+        given-names: Iida
+      - family-names: Kock
+        given-names: Sari
+  - type: data
+    title: "LiGre Lemma Bank: a Lemma Bank for Ancient Greek as Linked Open Data"
+    version: 0.1.0
+    doi: 10.5281/zenodo.24085997
+    repository: "https://github.com/ligre-lod/ligre_lemmabank"
+    authors:
+      - family-names: Lemay
+        given-names: Paulien
+      - family-names: Swaelens
+        given-names: Colin
+      - family-names: Passarotti
+        given-names: Marco
