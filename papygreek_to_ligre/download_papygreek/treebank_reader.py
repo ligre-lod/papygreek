@@ -41,15 +41,6 @@ def read_word(element):
 
 
 def remove_expansion_wrappers(form):
-    """Drop the extra parentheses PapyGreek puts around abbreviated words.
-
-    PapyGreek writes both the abbreviated word and its expansion in
-    parentheses, so "κώ(μης)" comes out as "(κώ(μης))" and the symbol
-    expansion "(ἔτους)" as "((ἔτους))". In Leiden, parentheses only mark the
-    expansion and never nest, so any pair that contains another pair is this
-    wrapper and is removed. "(|...|)" groups are a different PapyGreek mark
-    and are left alone.
-    """
     stack, groups = [], []
     for position, character in enumerate(form):
         if character == "(":

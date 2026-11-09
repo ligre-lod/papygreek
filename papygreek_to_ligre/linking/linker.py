@@ -31,7 +31,7 @@ class LinkResult:
     lemma: Optional[object] = None
     decision: Optional[object] = None
     homograph_check: bool = False
-    not_a_word: Optional[str] = None  # the marker that excluded the token
+    not_a_word: Optional[str] = None
 
     @property
     def is_linked(self):

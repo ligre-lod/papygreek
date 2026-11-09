@@ -1,0 +1,19 @@
+PREFIX powla: <http://purl.org/powla/powla.owl#>
+PREFIX lila_corpus: <http://lila-erc.eu/ontologies/lila_corpora/>
+PREFIX lilaOntology: <http://lila-erc.eu/ontologies/lila/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+
+SELECT ?title ?line ?form ?token
+WHERE {
+  ?token lilaOntology:hasLemma <https://w3id.org/ligre/data/id/lemma/13455> ;
+         powla:hasStringValue ?form .
+  ?lineUnit powla:hasChild ?token ;
+            lila_corpus:hasRefType "Linea" ;
+            rdfs:label ?line .
+  ?token lila_corpus:hasCitStructure ?structure .
+  ?structure powla:hasDocument ?document .
+  ?document dc:title ?title .
+  FILTER(STRENDS(STR(?structure), "/CiteStructure"))
+}
+ORDER BY ?title ?token

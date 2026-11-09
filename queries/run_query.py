@@ -15,7 +15,7 @@ CLASSES_DIRECTORY = DATA_DIRECTORY / "classes"
 CLASSES_URL = "https://raw.githubusercontent.com/CIRCSE/CLaSSES/main/ttl/{}.ttl"
 CLASSES_PARTS = ["CEL", "BTT", "CIL", "GORDON", "ILLRP"]
 PAPYGREEK_TURTLE = REPOSITORY_DIRECTORY / "ttl" / "complete_papygreek.ttl.gz"
-DEFAULT_LIGRE_TURTLE = REPOSITORY_DIRECTORY.parent / "ligre-webinterface" / "ligre_lemmabank" / "ttl" / "ligreTTLRDF.ttl"
+DEFAULT_LIGRE_TURTLE = REPOSITORY_DIRECTORY.parent / "ligre-webinterface" / "ligre_lemmabank" / "ttl" / "ligre_lemmabank.ttl"
 DEFAULT_IGVLL_TURTLE = REPOSITORY_DIRECTORY.parent.parent / "index-graecorum-vocabulorum" / "IGVLL.ttl"
 TURTLE_PREFIXES = {
     "lemonEty": "http://lari-datasets.ilc.cnr.it/lemonEty#",

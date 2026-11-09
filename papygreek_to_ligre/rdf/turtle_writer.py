@@ -1,6 +1,6 @@
 import re
 
-from rdflib import Literal, URIRef
+from rdflib import BNode, Literal, URIRef
 from rdflib.namespace import DC, RDF, RDFS
 
 from .namespaces import LILA, LILA_CORPUS, POWLA
@@ -70,16 +70,22 @@ class OrderedTurtleWriter:
 
     def format_predicate_objects(self, graph, subject, predicate):
         objects = sorted(graph.objects(subject, predicate), key=natural_sort_key)
-        formatted_objects = f",\n{OBJECT_INDENT}".join(self.format_term(term) for term in objects)
+        formatted_objects = f",\n{OBJECT_INDENT}".join(self.format_term(term, graph) for term in objects)
         return f"{self.format_predicate(predicate)} {formatted_objects}"
 
     def format_predicate(self, predicate):
         return "a" if predicate == RDF.type else self.format_term(predicate)
 
-    def format_term(self, term):
+    def format_term(self, term, graph=None):
+        if isinstance(term, BNode):
+            return self.format_blank_node(graph, term)
         if isinstance(term, Literal):
             return self.format_literal(term)
         return self.format_iri(term)
+
+    def format_blank_node(self, graph, node):
+        predicates = sorted(set(graph.predicates(node)), key=predicate_sort_key)
+        return "[ " + " ; ".join(self.format_predicate_objects(graph, node, predicate) for predicate in predicates) + " ]"
 
     def format_literal(self, literal):
         if literal.datatype is None:

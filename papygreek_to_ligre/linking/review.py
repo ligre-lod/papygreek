@@ -125,7 +125,6 @@ class LinkingReview:
         write_tsv(path, ["step", "outcome", "tokens", "lemmas", "linked", "linked_lemmas", "share_linked"], rows)
 
     def not_a_word_summary_rows(self, total):
-        """One row per marker, so the excluded tokens can be traced to the rule that excluded them."""
         if not self.not_a_word_tokens:
             return []
         tokens_by_marker = Counter(row[0] for row in self.not_a_word_tokens)

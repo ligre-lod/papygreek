@@ -1,0 +1,57 @@
+{
+  "upload_type": "dataset",
+  "title": "PapyGreek–LiGre: the PapyGreek Treebanks as Linked Open Data, linked to the LiGre Lemma Bank",
+  "description": "<p>The <a href=\"https://doi.org/10.5281/zenodo.8428823\">PapyGreek Treebanks v3.0</a> (558 documentary papyri in Postclassical Greek, ca. 300 BCE–700 CE, morphosyntactically annotated by the Digital Grammar of Greek Documentary Papyri project) as linked open data, modelled after the corpora of the <a href=\"https://lila-erc.eu/\">LiLa Knowledge Base</a> (POWLA, LiLa corpus ontology). Every token is linked, where possible, to its lemma in the <a href=\"https://github.com/ligre-lod/ligre_lemmabank\">LiGre Lemma Bank</a> for Ancient Greek.</p><p>This archive is a snapshot of the GitHub repository at the release tag. The data dump is <code>ttl/complete_papygreek.ttl.gz</code>; its VoID/DCAT description, with statistics and the linkset to the LiGre Lemma Bank, is <code>ttl/PapyGreek_corpus.ttl</code>. The archive also contains the conversion pipeline, the hand-made linking decisions and annotations in <code>review/</code>, the annotation viewer used to make them, and example SPARQL queries in <code>queries/examples/</code>.</p><p>Corpus IRI: <a href=\"https://w3id.org/ligre/data/corpora/PapyGreek/id/corpus\">https://w3id.org/ligre/data/corpora/PapyGreek/id/corpus</a>. Knowledge base description: <a href=\"https://ligre-lod.github.io/.well-known/void\">https://ligre-lod.github.io/.well-known/void</a>.</p><p>Data: CC BY-SA 4.0, derived from the PapyGreek Treebanks (CC BY-SA 4.0). Code: MIT.</p>",
+  "creators": [
+    {
+      "name": "Lemay, Paulien",
+      "orcid": "0009-0004-2388-9233",
+      "affiliation": "Ghent University"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "access_right": "open",
+  "language": "grc",
+  "keywords": [
+    "Ancient Greek",
+    "Postclassical Greek",
+    "documentary papyri",
+    "treebank",
+    "lemmatization",
+    "linked open data",
+    "LiGre",
+    "LiLa",
+    "RDF"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.8428823",
+      "relation": "isDerivedFrom",
+      "resource_type": "dataset"
+    },
+    {
+      "identifier": "https://w3id.org/ligre/data/corpora/PapyGreek/id/corpus",
+      "relation": "isAlternateIdentifier",
+      "resource_type": "dataset"
+    },
+    {
+      "identifier": "https://ligre-lod.github.io/.well-known/void",
+      "relation": "hasMetadata"
+    },
+    {
+      "identifier": "https://github.com/ligre-lod/ligre_lemmabank",
+      "relation": "references",
+      "resource_type": "dataset"
+    },
+    {
+      "identifier": "https://papygreek.com/",
+      "relation": "references",
+      "resource_type": "other"
+    },
+    {
+      "identifier": "http://lila-erc.eu/ontologies/lila_corpora/",
+      "relation": "references",
+      "resource_type": "other"
+    }
+  ]
+}
