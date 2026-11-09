@@ -1,4 +1,14 @@
+import re
 from pathlib import Path
+
+CITATION_PATH = Path(__file__).resolve().parent.parent / "CITATION.cff"
+
+
+def citation_field(name):
+    """The release metadata is set in CITATION.cff only (see RELEASING.md)."""
+    match = re.search(rf"^{name}:\s*\"?([^\s\"]+)\"?\s*$", CITATION_PATH.read_text(encoding="utf-8"), re.M)
+    return match.group(1) if match else ""
+
 
 PAPYGREEK_VERSION = "v3.0"
 PAPYGREEK_DOI = "https://doi.org/10.5281/zenodo.8428823"
@@ -19,7 +29,7 @@ DEFAULT_BASE_IRI = "https://w3id.org/ligre"
 CORPUS_NAME = "PapyGreek"
 CORPUS_TITLE = "PapyGreek Treebanks"
 
-CORPUS_VERSION = "1.0.0"
+CORPUS_VERSION = citation_field("version")
 CORPUS_REPOSITORY_URL = "https://github.com/ligre-lod/papygreek"
 CORPUS_RELEASE_URL = f"{CORPUS_REPOSITORY_URL}/releases/tag/v{CORPUS_VERSION}"
 CORPUS_DOWNLOAD_URL = (
@@ -38,8 +48,8 @@ CORPUS_CREATORS = (
     {"name": "Paulien Lemay", "iri": "https://orcid.org/0009-0004-2388-9233"},
 )
 CORPUS_PUBLISHER = {"name": "Ghent University", "iri": "https://ror.org/00cv9y106"}
-CORPUS_ISSUED = "2026-11-06"
-CORPUS_DOI = ""
+CORPUS_ISSUED = citation_field("date-released")
+CORPUS_DOI = f"https://doi.org/{citation_field('doi')}" if citation_field("doi") else ""
 CORPUS_BIBLIOGRAPHIC_CITATION = ""
 
 DEFAULT_DATA_DIRECTORY = Path("data")

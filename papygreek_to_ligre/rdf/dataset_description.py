@@ -1,4 +1,3 @@
-import datetime
 from collections import Counter
 
 from rdflib import BNode, Literal, Namespace, URIRef
@@ -61,8 +60,7 @@ def knowledge_base_iri(lemma_bank):
     return URIRef(str(lemma_bank).split("/data/id/lemma/")[0] + "/data/id/KnowledgeBase")
 
 
-def describe_corpus(graph, corpus, lemma_bank, statistics, today=None):
-    today = today or datetime.date.today()
+def describe_corpus(graph, corpus, lemma_bank, statistics):
     agents = []
     graph.add((corpus, RDF.type, VOID.Dataset))
     graph.add((corpus, RDF.type, DCAT.Dataset))
@@ -83,7 +81,6 @@ def describe_corpus(graph, corpus, lemma_bank, statistics, today=None):
     if settings.CORPUS_DOI:
         graph.add((corpus, DCTERMS.identifier, Literal(settings.CORPUS_DOI)))
     graph.add((corpus, DCAT_VERSION, Literal(settings.CORPUS_VERSION)))
-    graph.add((corpus, DCTERMS.modified, Literal(today.isoformat(), datatype=XSD.date)))
     if settings.CORPUS_ISSUED:
         graph.add((corpus, DCTERMS.issued, Literal(settings.CORPUS_ISSUED, datatype=XSD.date)))
     if settings.CORPUS_BIBLIOGRAPHIC_CITATION:

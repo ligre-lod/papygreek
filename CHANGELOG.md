@@ -3,7 +3,7 @@
 All notable changes to PapyGreek–LiGre are listed here. Releases follow
 [semantic versioning](https://semver.org/).
 
-## [1.0.0] - unreleased
+## [Unreleased]
 
 First release.
 
@@ -19,10 +19,7 @@ First release.
 - Example SPARQL queries in `queries/examples/`.
 - Licences (data CC BY-SA 4.0, code MIT), `CITATION.cff` and `.zenodo.json`
   for archiving releases on Zenodo.
+- Pinned sources: the PapyGreek Treebanks release v3.0 and the LiGre Lemma
+  Bank release v0.1.0, so that the corpus and its IRIs can be rebuilt exactly.
 
-### Changed
-- The sources are pinned: the PapyGreek Treebanks to release v3.0 (identical to
-  its `main` branch at the time) and the LiGre Lemma Bank to release v0.1.0, so
-  that the corpus and its IRIs can be rebuilt exactly.
-
-[1.0.0]: https://github.com/ligre-lod/papygreek/releases/tag/v1.0.0
+[Unreleased]: https://github.com/ligre-lod/papygreek/commits/main
