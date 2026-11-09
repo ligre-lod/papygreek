@@ -1,5 +1,6 @@
 # PapyGreek–LiGre: the PapyGreek Treebanks linked to the LiGre Lemma Bank
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24089052.svg)](https://doi.org/10.5281/zenodo.24089052)
 [![Data: CC BY-SA 4.0](https://img.shields.io/badge/data-CC%20BY--SA%204.0-lightgrey.svg)](LICENSE-DATA.md)
 [![Code: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
 
@@ -18,7 +19,7 @@ The PapyGreek treebanks consist of 558 documentary papyri written in Postclassic
 | Linked to | [LiGre Lemma Bank](https://github.com/ligre-lod/ligre_lemmabank) (`lilaOntology:hasLemma`; the release pinned in `papygreek_to_ligre/settings.py`) |
 | Vocabularies | POWLA, LiLa ontology and LiLa corpus ontology, Dublin Core, RDFS |
 | Licence | Data [CC BY-SA 4.0](LICENSE-DATA.md); code [MIT](LICENSE) |
-| Archived releases | Zenodo, with a DOI per release (see [Versioning and releases](#versioning-and-releases)) |
+| Archived releases | Zenodo: <https://doi.org/10.5281/zenodo.24089052> (all versions), with a DOI per release (see [Versioning and releases](#versioning-and-releases)) |
 
 The corpus is part of the LiGre Knowledge Base
 (<https://w3id.org/ligre/data/id/KnowledgeBase>), together with the
@@ -47,7 +48,7 @@ A lemma is linked when its written form and part of speech match exactly one lem
 
 ## Statistics
 
-Release 0.1.0, from the VoID description and `review/review_summary.tsv`:
+From the VoID description and `review/review_summary.tsv`:
 
 | | |
 |---|---|
@@ -169,8 +170,19 @@ The treebanks are created by the PapyGreek project and licensed under [CC BY-SA 
 
 ## Citation
 
-If you use this corpus, please cite it with the DOI of the release you used on Zenodo (see
-[CITATION.cff](CITATION.cff)), and cite the PapyGreek Treebanks it is derived from:
+If you use this corpus, cite it with its Zenodo DOI. The concept DOI always resolves to the latest
+release; to cite the exact version you used, take the DOI of that release from the Zenodo record:
+
+> Lemay, P. (2026). *PapyGreek–LiGre: the PapyGreek Treebanks as Linked Open Data, linked to the LiGre
+> Lemma Bank* [Data set]. Zenodo. https://doi.org/10.5281/zenodo.24089052
+
+| Version | DOI |
+|---|---|
+| All versions (concept DOI) | <https://doi.org/10.5281/zenodo.24089052> |
+| 0.1.0 | <https://doi.org/10.5281/zenodo.24089053> |
+
+Citation metadata is also in [CITATION.cff](CITATION.cff). Please also cite the PapyGreek Treebanks
+the corpus is derived from:
 
 > Vierros, M., Henriksson, E., Yordanova, P., Alaranta, A., Lahtinen, P., Vesterinen, J., Huitula, I., & Kock, S. (2023). *PapyGreek Treebanks v3.0*. Zenodo. https://doi.org/10.5281/zenodo.8428823
 

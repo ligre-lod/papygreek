@@ -5,6 +5,12 @@ All notable changes to PapyGreek–LiGre are listed here. Releases follow
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-11-09
+
+### Added
+- The Zenodo concept DOI (10.5281/zenodo.24089052) in the README, `CITATION.cff` and, from this
+  release on, as `dcterms:identifier` of the corpus in its dataset description.
+
 ## [0.1.0] - 2026-11-09
 
 First release.
@@ -24,5 +30,6 @@ First release.
 - Pinned sources: the PapyGreek Treebanks release v3.0 and the LiGre Lemma
   Bank release v0.1.0, so that the corpus and its IRIs can be rebuilt exactly.
 
-[Unreleased]: https://github.com/ligre-lod/papygreek/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/ligre-lod/papygreek/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/ligre-lod/papygreek/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/ligre-lod/papygreek/releases/tag/v0.1.0
