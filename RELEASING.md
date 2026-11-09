@@ -17,7 +17,7 @@ description take them from there.
 3. **Prepare the release:**
 
    ```bash
-   python scripts/generate_release.py prepare 1.0.0
+   python scripts/generate_release.py prepare 0.1.0
    ```
 
    This moves the unreleased changes in `CHANGELOG.md` under the new version
@@ -30,9 +30,9 @@ description take them from there.
 5. **Commit, tag and push:**
 
    ```bash
-   git commit -am "Release 1.0.0"
-   git tag -a v1.0.0 -m "PapyGreek–LiGre 1.0.0"
-   git push origin main v1.0.0
+   git commit -am "Release 0.1.0"
+   git tag -a v0.1.0 -m "PapyGreek–LiGre 0.1.0"
+   git push origin main v0.1.0
    ```
 
    The release workflow (`.github/workflows/release.yaml`) checks that

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Prepare or check a release.
 
-    python scripts/generate_release.py prepare 1.0.0   # set version and date, rebuild the corpus
-    python scripts/generate_release.py check 1.0.0     # check that everything says 1.0.0, print the release notes
+    python scripts/generate_release.py prepare 0.1.0   # set version and date, rebuild the corpus
+    python scripts/generate_release.py check 0.1.0     # check that everything says 0.1.0, print the release notes
 """
 import datetime
 import re
@@ -38,6 +38,8 @@ def prepare(version):
     changelog = CHANGELOG.read_text()
     if "## [Unreleased]" not in changelog:
         fail("CHANGELOG.md has no '## [Unreleased]' section")
+    if f"## [{version}]" in changelog:
+        fail(f"CHANGELOG.md already has a section for {version}")
     link = re.search(r"^\[Unreleased\]: (\S+)$", changelog, re.M)
     if not link:
         fail("CHANGELOG.md has no '[Unreleased]: ...' link")

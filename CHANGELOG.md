@@ -5,6 +5,8 @@ All notable changes to PapyGreek–LiGre are listed here. Releases follow
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-11-09
+
 First release.
 
 ### Added
@@ -22,4 +24,5 @@ First release.
 - Pinned sources: the PapyGreek Treebanks release v3.0 and the LiGre Lemma
   Bank release v0.1.0, so that the corpus and its IRIs can be rebuilt exactly.
 
-[Unreleased]: https://github.com/ligre-lod/papygreek/commits/main
+[Unreleased]: https://github.com/ligre-lod/papygreek/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/ligre-lod/papygreek/releases/tag/v0.1.0

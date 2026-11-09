@@ -47,7 +47,7 @@ A lemma is linked when its written form and part of speech match exactly one lem
 
 ## Statistics
 
-Release 1.0.0, from the VoID description and `review/review_summary.tsv`:
+Release 0.1.0, from the VoID description and `review/review_summary.tsv`:
 
 | | |
 |---|---|
