@@ -7,8 +7,7 @@ from pathlib import Path
 
 from pyoxigraph import QueryTriples, RdfFormat, Store, serialize
 
-QUERIES_DIRECTORY = Path(__file__).resolve().parent
-REPOSITORY_DIRECTORY = QUERIES_DIRECTORY.parent
+REPOSITORY_DIRECTORY = Path(__file__).resolve().parent.parent
 DATA_DIRECTORY = REPOSITORY_DIRECTORY / "data" / "queries"
 STORE_DIRECTORY = DATA_DIRECTORY / "store"
 CLASSES_DIRECTORY = DATA_DIRECTORY / "classes"
@@ -31,7 +30,7 @@ TURTLE_PREFIXES = {
 
 def read_settings_from_command_line():
     parser = argparse.ArgumentParser(description="Run a SPARQL query over PapyGreek, LiGre, IGVLL and CLaSSES.")
-    parser.add_argument("query", type=Path, help="a .rq file, e.g. queries/shared_loanwords.rq")
+    parser.add_argument("query", type=Path, help="a .rq file, e.g. queries/loanwords/shared_loanwords.rq")
     parser.add_argument("--ligre-turtle", type=Path, default=DEFAULT_LIGRE_TURTLE)
     parser.add_argument("--igvll-turtle", type=Path, default=DEFAULT_IGVLL_TURTLE)
     parser.add_argument("--output", type=Path, help="also write the results to this CSV file (Turtle for a CONSTRUCT query)")
