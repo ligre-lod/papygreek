@@ -55,6 +55,7 @@ references:
   - type: data
     title: "LiGre Lemma Bank: a Lemma Bank for Ancient Greek as Linked Open Data"
     version: 0.1.0
+    doi: 10.5281/zenodo.24085997
     repository: "https://github.com/ligre-lod/ligre_lemmabank"
     authors:
       - family-names: Lemay

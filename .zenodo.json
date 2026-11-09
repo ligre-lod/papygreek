@@ -39,7 +39,7 @@
       "relation": "hasMetadata"
     },
     {
-      "identifier": "https://github.com/ligre-lod/ligre_lemmabank",
+      "identifier": "10.5281/zenodo.24085997",
       "relation": "references",
       "resource_type": "dataset"
     },
