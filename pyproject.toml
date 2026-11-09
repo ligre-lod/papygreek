@@ -20,5 +20,5 @@ packages = [
     "papygreek_to_ligre",
     "papygreek_to_ligre.linking",
     "papygreek_to_ligre.rdf",
-    "papygreek_to_ligre.download_papygreek",
+    "papygreek_to_ligre.sources",
 ]

@@ -15,8 +15,8 @@ from .rdf.graph_builder import DocumentGraphBuilder, build_corpus_graph
 from .rdf.iris import CorpusIris
 from .rdf.namespaces import ligre_lemma_namespace
 from .rdf.turtle_writer import OrderedTurtleWriter
-from .download_papygreek.downloads import fetch_ligre_lemma_bank, fetch_papygreek_treebanks, find_treebank_files
-from .download_papygreek.treebank_reader import read_treebank_document
+from .sources.downloads import fetch_ligre_lemma_bank, fetch_papygreek_treebanks, find_treebank_files
+from .sources.treebank_reader import read_treebank_document
 
 logger = logging.getLogger(__name__)
 
