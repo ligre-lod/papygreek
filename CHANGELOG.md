@@ -11,8 +11,8 @@ All notable changes to PapyGreek–LiGre are listed here. Releases follow
 - Columns in `review/decisions_ambiguous.tsv` that record what each decision
   changes in the LiGre Lemma Bank (`ligre_change`: `none`, `correct` or `add`,
   with `ligre_id`, `ligre_new_lemma`, `ligre_new_pos`, `ligre_new_gender`),
-  filled in for all decisions: 138 LiGre lemmas to correct and 61 to add. The
-  pipeline checks them; the linking does not depend on them.
+  filled in for all decisions. The pipeline checks them; the linking does not
+  depend on them.
 - Written representations and lemma variants for LiGre: `ligre_change`
   `add-wr` (decision `ligre-spelling-missing`) adds a spelling to a LiGre
   lemma, and the column `ligre_variant_of` makes a lemma to add a lemma
@@ -41,8 +41,9 @@ All notable changes to PapyGreek–LiGre are listed here. Releases follow
   reads `decisions_wr_lv.tsv` as well.
 - `scripts/export_ligre_corrections.py` writes the LiGre changes in
   `review/decisions_ambiguous.tsv` and `review/decisions_wr_lv.tsv` as a LiGre corrections file,
-  `ligre_corrections/papygreek-review.tsv` (136 corrections, 3 merges and 69
-  lemmas to add), ready for a pull request on the lemma bank.
+  `ligre_corrections/papygreek-review.tsv`, ready for a pull request on the
+  lemma bank. The first export, 136 corrections, 3 merges and 71 lemmas to
+  add, is in LiGre 0.4.0.
 
 ### Changed
 - `review/decisions_ambiguous.tsv` has no `note` column any more: the
@@ -62,8 +63,11 @@ All notable changes to PapyGreek–LiGre are listed here. Releases follow
   `ligre-lemma-missing` and `crasis`. The former rejects link to an existing
   LiGre lemma (καλῶς, οὕτως, the lemma PapyGreek should have, ...), to the
   LiGre lemma that stays after a merge (ἅμα, δίχα, ἐντός), or to a lemma LiGre
-  will add (61 -ως adverbs, the particle μήν, μικρῶς and a NUM lemma for each
-  letter numeral). 81.3% of the tokens are linked; 420 more wait for LiGre.
+  added (61 -ως adverbs, the particle μήν and a NUM lemma for each letter
+  numeral).
+- The corpus links to LiGre 0.4.0, which contains the changes from this
+  review: 45,869 of the 54,969 tokens considered for linking (83.4%) are
+  linked, against 44,511 (81.0%) in 0.1.1.
 
 ## [0.1.1] - 2026-11-09
 
