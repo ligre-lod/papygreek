@@ -1,24 +1,23 @@
 import csv
-from collections import Counter, defaultdict
+from collections import Counter
 from dataclasses import dataclass
 
 from .. import settings
 from .lemma_bank import lemma_key
 from .linker import LINKING_STEPS, LinkStep
-from .not_a_word import MARKER_DESCRIPTIONS
+from .pos_decisions import POS_DECISION_FILE_COLUMNS, is_undecided, read_pos_file_rows
+from .variants import RULE_ORDER, variant_candidates
+from .wr_lv_decisions import read_wr_lv_rows, updated_rows, write_wr_lv_rows
 
 CHECK_HOMOGRAPH = "check homograph"
+HOMOGRAPH = "homograph, linked to the only LiGre lemma"
 OPEN_STATUSES = {"undecided", "ambiguous", CHECK_HOMOGRAPH}
-
-AUTOMATIC_LINKING = "1 automatic linking"
-MANUAL_REVIEW = "2 manual review"
-NO_LIGRE_LEMMA = "3 no LiGre lemma"
-NOT_A_WORD = "0 not a word"
 
 STATUS_BY_STEP = {
     LinkStep.UNDECIDED_POS_CLASH: "undecided",
     LinkStep.UNDECIDED_HOMOGRAPH: CHECK_HOMOGRAPH,
     LinkStep.REJECTED: "reject",
+    LinkStep.TO_ADD_TO_LIGRE: "waits for LiGre",
     LinkStep.AMBIGUOUS: "ambiguous",
 }
 
@@ -31,56 +30,40 @@ class PosClash:
 
 
 def review_status(result):
+    if result.decision is not None and result.decision.adds_to_ligre:
+        return f"{result.decision.value} (in LiGre)" if result.is_linked else f"{result.decision.value} (waits for LiGre)"
     if result.homograph_check:
-        return result.decision.value if result.decision else CHECK_HOMOGRAPH
-    if result.step in (LinkStep.LEMMA_DECISION, LinkStep.REJECTED) and result.decision:
+        if result.decision:
+            return result.decision.value
+        return HOMOGRAPH if result.step is LinkStep.HOMOGRAPH else CHECK_HOMOGRAPH
+    if result.step in (LinkStep.LEMMA_DECISION, LinkStep.REJECTED, LinkStep.TO_ADD_TO_LIGRE) and result.decision:
         return result.decision.value
     return STATUS_BY_STEP[result.step]
-
-
-def workflow_step(result):
-    if result.step is LinkStep.NOT_A_WORD:
-        return NOT_A_WORD
-    if result.step is LinkStep.MISSING:
-        return NO_LIGRE_LEMMA
-    return MANUAL_REVIEW if result.in_review else AUTOMATIC_LINKING
 
 
 def ligre_pos(candidates):
     return "/".join(sorted({tag for candidate in candidates for tag in candidate.universal_tags})) or "?"
 
 
-def write_tsv(path, header, rows):
+def write_rows(path, columns, rows):
     with path.open("w", newline="", encoding="utf-8") as output_file:
-        writer = csv.writer(output_file, delimiter="\t")
-        writer.writerow(header)
+        writer = csv.DictWriter(output_file, columns, delimiter="\t", lineterminator="\n")
+        writer.writeheader()
         writer.writerows(rows)
 
 
 class LinkingReview:
     def __init__(self):
         self.step_counts = Counter()
-        self.outcome_counts = Counter()
-        self.outcome_lemmas = defaultdict(set)
-        self.linked_lemmas = defaultdict(set)
         self.pos_clashes = {}
         self.missing_lemmas = Counter()
-        self.not_a_word_tokens = []
 
     def record(self, token, result, document_id=""):
         self.step_counts[result.step] += 1
-        self.outcome_counts[(workflow_step(result), result.step)] += 1
-        self.outcome_lemmas[(workflow_step(result), result.step)].add(lemma_key(token.word.lemma))
-        if result.step in LINKING_STEPS:
-            self.linked_lemmas[(workflow_step(result), result.step)].add(lemma_key(token.word.lemma))
         if result.in_review:
             self.record_pos_clash(lemma_key(token.word.lemma), result)
         elif result.step is LinkStep.MISSING:
             self.missing_lemmas[(lemma_key(token.word.lemma), result.papygreek_pos)] += 1
-        elif result.step is LinkStep.NOT_A_WORD:
-            word = token.word
-            self.not_a_word_tokens.append(
-                [result.not_a_word, document_id, token.sentence_id, word.id, word.form, word.lemma, word.postag])
 
     def record_pos_clash(self, lemma, result):
         key = (lemma, result.papygreek_pos, ligre_pos(result.candidates))
@@ -96,64 +79,33 @@ class LinkingReview:
         steps = ", ".join(f"{count} {step.value}" for step, count in self.step_counts.most_common())
         return f"Lemmas: {linked}/{total} tokens linked ({linked / total if total else 0:.1%}): {steps}"
 
-    def write(self, review_directory):
+    def write(self, review_directory, lemma_bank):
         review_directory.mkdir(parents=True, exist_ok=True)
-        self.write_linking_summary(review_directory / settings.LINKING_SUMMARY_FILENAME)
-        self.write_pos_clash_lemmas(review_directory / settings.POS_CLASH_LEMMAS_FILENAME)
-        self.write_missing_lemmas(review_directory / settings.NO_LIGRE_LEMMA_FILENAME)
-        self.write_not_a_word(review_directory / settings.NOT_A_WORD_FILENAME)
+        self.update_ambiguous_decisions(review_directory / settings.AMBIGUOUS_DECISIONS_FILENAME)
+        self.update_wr_lv_decisions(review_directory / settings.WR_LV_DECISIONS_FILENAME, lemma_bank)
 
-    def write_linking_summary(self, path):
-        total = sum(self.step_counts.values())
-
-        def lemmas_of(keys, lemma_sets):
-            return len(set().union(*(lemma_sets[key] for key in keys)))
-
-        def row(step, outcome, counts, keys):
-            tokens = sum(count for _, count in counts)
-            linked = sum(count for link_step, count in counts if link_step in LINKING_STEPS)
-            return [step, outcome, tokens, lemmas_of(keys, self.outcome_lemmas), linked,
-                    lemmas_of(keys, self.linked_lemmas), f"{linked / total:.1%}" if total else ""]
-
-        rows = self.not_a_word_summary_rows(total)
-        for step in (AUTOMATIC_LINKING, MANUAL_REVIEW, NO_LIGRE_LEMMA):
-            counts = [(link_step, self.outcome_counts[(step, link_step)]) for link_step in LinkStep
-                      if self.outcome_counts[(step, link_step)]]
-            rows += [row(step, link_step.value, [(link_step, count)], [(step, link_step)]) for link_step, count in counts]
-            rows.append(row(step, "total", counts, [(step, link_step) for link_step, _ in counts]))
-        rows.append(row("total", "", list(self.step_counts.items()), list(self.outcome_lemmas)))
-        write_tsv(path, ["step", "outcome", "tokens", "lemmas", "linked", "linked_lemmas", "share_linked"], rows)
-
-    def not_a_word_summary_rows(self, total):
-        if not self.not_a_word_tokens:
-            return []
-        tokens_by_marker = Counter(row[0] for row in self.not_a_word_tokens)
-        lemmas_by_marker = defaultdict(set)
-        for row in self.not_a_word_tokens:
-            lemmas_by_marker[row[0]].add(lemma_key(row[5]))
-        rows = [[NOT_A_WORD, marker, count, len(lemmas_by_marker[marker]), 0, 0, f"{0:.1%}"]
-                for marker, count in sorted(tokens_by_marker.items(), key=lambda item: (-item[1], item[0]))]
-        rows.append([NOT_A_WORD, "total", len(self.not_a_word_tokens), len(set().union(*lemmas_by_marker.values())),
-                     0, 0, f"{0:.1%}"])
-        return rows
-
-    def write_not_a_word(self, path):
-        order = {marker: index for index, marker in enumerate(MARKER_DESCRIPTIONS)}
-        rows = sorted(self.not_a_word_tokens, key=lambda row: (order.get(row[0], len(order)), row[1], row[2], row[3]))
-        write_tsv(path, ["marker", "document", "sentence", "word", "form", "lemma", "postag", "marker_description"],
-                  [row + [MARKER_DESCRIPTIONS.get(row[0], "")] for row in rows])
-
-    def write_pos_clash_lemmas(self, path):
-        def open_first_then_most_frequent(item):
-            return (item[1].status not in OPEN_STATUSES, -item[1].tokens, item[0])
-
-        rows = [
-            [clash.status, lemma, papygreek_pos, clash_ligre_pos, clash.ligre_lemmas]
-            for (lemma, papygreek_pos, clash_ligre_pos), clash
-            in sorted(self.pos_clashes.items(), key=open_first_then_most_frequent)
+    def update_ambiguous_decisions(self, path):
+        clashes = {key: clash for key, clash in self.pos_clashes.items()}
+        kept, seen = [], set()
+        for row in read_pos_file_rows(path):
+            key = (lemma_key(row["lemma"]), row["papygreek_pos"], row["ligre_pos"])
+            clash = clashes.get(key)
+            if clash is not None:
+                seen.add(key)
+                row.update(status=clash.status, tokens=str(clash.tokens), candidates=clash.ligre_lemmas)
+            if not is_undecided(row) or (clash is not None and clash.status in OPEN_STATUSES):
+                kept.append(row)
+        new_rows = [
+            {**dict.fromkeys(POS_DECISION_FILE_COLUMNS, ""), "lemma": lemma, "papygreek_pos": papygreek_pos,
+             "ligre_pos": clash_ligre_pos, "status": clash.status, "tokens": str(clash.tokens),
+             "candidates": clash.ligre_lemmas}
+            for (lemma, papygreek_pos, clash_ligre_pos), clash in clashes.items()
+            if (lemma, papygreek_pos, clash_ligre_pos) not in seen and clash.status in OPEN_STATUSES
         ]
-        write_tsv(path, ["status", "lemma", "papygreek_pos", "ligre_pos", "ligre_lemmas"], rows)
+        undecided = sorted([row for row in kept if is_undecided(row)] + new_rows,
+                           key=lambda row: (-int(row["tokens"] or 0), row["lemma"]))
+        write_rows(path, POS_DECISION_FILE_COLUMNS, undecided + [row for row in kept if not is_undecided(row)])
 
-    def write_missing_lemmas(self, path):
-        rows = [[lemma, papygreek_pos] for (lemma, papygreek_pos), _ in self.missing_lemmas.most_common()]
-        write_tsv(path, ["lemma", "papygreek_pos"], rows)
+    def update_wr_lv_decisions(self, path, lemma_bank):
+        candidates = variant_candidates(self.missing_lemmas, lemma_bank)
+        write_wr_lv_rows(path, updated_rows(read_wr_lv_rows(path), candidates, RULE_ORDER))

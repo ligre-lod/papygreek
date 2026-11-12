@@ -27,7 +27,6 @@ MARKERS = (
     Marker("postag as lemma", "the lemma field holds a part-of-speech tag (u--------)",
            lambda word: "-" in word.lemma and POSTAG_AS_LEMMA.fullmatch(word.lemma) is not None),
 )
-MARKER_DESCRIPTIONS = {marker.name: marker.description for marker in MARKERS}
 
 
 class NotAWord:

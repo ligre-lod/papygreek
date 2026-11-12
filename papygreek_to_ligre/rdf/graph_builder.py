@@ -178,4 +178,5 @@ class DocumentGraphBuilder:
         result = self.lemma_linker.link(token.word)
         self.linking_review.record(token, result, document_id)
         if result.is_linked:
-            graph.add((token_node, LILA.hasLemma, result.lemma))
+            for lemma in (result.lemma, *result.extra_lemmas):
+                graph.add((token_node, LILA.hasLemma, lemma))

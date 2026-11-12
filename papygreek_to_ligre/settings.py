@@ -17,7 +17,7 @@ PAPYGREEK_REPOSITORY_URL = "https://github.com/papygreek/papygreek-treebanks"
 PAPYGREEK_PORTAL_URL = "https://papygreek.com/"
 PAPYGREEK_LICENSE_URL = "https://creativecommons.org/licenses/by-sa/4.0/"
 
-LIGRE_LEMMA_BANK_VERSION = "v0.1.0"
+LIGRE_LEMMA_BANK_VERSION = "v0.4.0"
 LIGRE_LEMMA_BANK_URL = (
     f"https://raw.githubusercontent.com/ligre-lod/ligre_lemmabank/{LIGRE_LEMMA_BANK_VERSION}/ttl/ligre_lemmabank.ttl"
 )
@@ -64,9 +64,6 @@ TEXTS_OUTPUT_DIRECTORY = "texts"
 CORPUS_OUTPUT_FILENAME = "PapyGreek_corpus.ttl"
 COMPLETE_OUTPUT_FILENAME = "complete_papygreek.ttl.gz"
 
-LEMMA_POS_DECISIONS_FILENAME = "decisions_lemmas.tsv"
+AMBIGUOUS_DECISIONS_FILENAME = "decisions_ambiguous.tsv"
+WR_LV_DECISIONS_FILENAME = "decisions_wr_lv.tsv"
 
-LINKING_SUMMARY_FILENAME = "review_summary.tsv"
-POS_CLASH_LEMMAS_FILENAME = "review_lemmas.tsv"
-NO_LIGRE_LEMMA_FILENAME = "review_no_ligre_lemma.tsv"
-NOT_A_WORD_FILENAME = "review_not_a_word.tsv"

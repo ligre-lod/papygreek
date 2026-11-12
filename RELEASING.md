@@ -23,8 +23,7 @@ description take them from there.
    This moves the unreleased changes in `CHANGELOG.md` under the new version
    and today's date, sets both in `CITATION.cff`, and rebuilds the corpus
    (`python -m papygreek_to_ligre --refresh`, which downloads the pinned
-   PapyGreek and LiGre releases again). Check the linking summary it prints
-   and `review/review_summary.tsv`.
+   PapyGreek and LiGre releases again). Check the linking summary it prints.
 4. **Check** that the example queries in `queries/examples/` still run, and
    update the statistics in the README if they changed.
 5. **Commit, tag and push:**
