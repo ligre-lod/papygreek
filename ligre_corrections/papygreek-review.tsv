@@ -1,0 +1,211 @@
+action	ligre_id	lemma	pos	gender	new_lemma	new_pos	new_gender	replaced_by	reason	evidence	submitted_by
+correct	193	ἀγαθός	NOUN	n	ἀγαθός	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἀγαθός as adjective	https://orcid.org/0009-0004-2388-9233
+correct	407	ἅγιος	NOUN	n	ἅγιος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἅγιος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	2338	αἴτιος	NOUN	m	αἴτιος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): αἴτιος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	2790	ἀκολουθέω	NOUN	m	ἀκολουθέω	VERB			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἀκολουθέω as verb	https://orcid.org/0009-0004-2388-9233
+correct	2843	ἄκοπος	NOUN	n	ἄκοπος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἄκοπος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	3923	ἅλς	ADJ		ἅλς	NOUN	m		wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἅλς as noun	https://orcid.org/0009-0004-2388-9233
+correct	4060	ἅμα	ADJ		ἅμα	ADV			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἅμα as adverb; ἅμα as preposition	https://orcid.org/0009-0004-2388-9233
+correct	5253	ἀναγκαῖος	NOUN	n	ἀναγκαῖος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἀναγκαῖος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	5863	ἀναμιμνήσκω	NOUN	m	ἀναμιμνήσκω	VERB			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἀναμιμνήσκω as verb	https://orcid.org/0009-0004-2388-9233
+correct	6371	ἀναστρέφω	NOUN	n	ἀναστρέφω	VERB			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἀναστρέφω as verb	https://orcid.org/0009-0004-2388-9233
+correct	7878	ἀνομολογέομαι	NOUN	n	ἀνομολογέομαι	VERB			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἀνομολογέομαι as verb	https://orcid.org/0009-0004-2388-9233
+correct	8575	ἀντίκειμαι	NOUN	m	ἀντίκειμαι	VERB			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἀντίκειμαι as verb	https://orcid.org/0009-0004-2388-9233
+correct	9831	ἀπάνθρωπος	NOUN	n	ἀπάνθρωπος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἀπάνθρωπος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	11257	ἀπολαμβάνω	NOUN	f	ἀπολαμβάνω	VERB			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἀπολαμβάνω as verb	https://orcid.org/0009-0004-2388-9233
+correct	11943	ἀποσπάω	NOUN	m	ἀποσπάω	VERB			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἀποσπάω as verb	https://orcid.org/0009-0004-2388-9233
+correct	12132	ἀπότακτος	NOUN	n	ἀπότακτος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἀπότακτος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	12723	ἄρα	ADJ		ἄρα	PART			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἄρα as adverb	https://orcid.org/0009-0004-2388-9233
+correct	12724	ἆρα	PRON		ἆρα	PART			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἆρα as adverb	https://orcid.org/0009-0004-2388-9233
+correct	12854	ἀργός	NOUN	m	ἀργός	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἀργός as adjective	https://orcid.org/0009-0004-2388-9233
+correct	13036	ἀριθμητικός	NOUN	n	ἀριθμητικός	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἀριθμητικός as adjective	https://orcid.org/0009-0004-2388-9233
+correct	13065	ἀριστερός	NOUN	f	ἀριστερός	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἀριστερός as adjective	https://orcid.org/0009-0004-2388-9233
+correct	13672	ἀρχαῖος	NOUN	f	ἀρχαῖος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἀρχαῖος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	13927	ἄσημος	NOUN	m	ἄσημος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἄσημος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	14443	ἄσυλος	NOUN	n	ἄσυλος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἄσυλος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	14540	ἀσφαλής	NOUN	n	ἀσφαλής	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἀσφαλής as adjective	https://orcid.org/0009-0004-2388-9233
+correct	15054	αὐξάνω	NOUN	f	αὐξάνω	VERB			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): αὐξάνω as verb	https://orcid.org/0009-0004-2388-9233
+correct	16762	βασιλικός	NOUN	f	βασιλικός	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): βασιλικός as adjective	https://orcid.org/0009-0004-2388-9233
+correct	18299	γαμικός	NOUN	n	γαμικός	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): γαμικός as adjective	https://orcid.org/0009-0004-2388-9233
+correct	19459	γυναικεῖος	NOUN	n	γυναικεῖος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): γυναικεῖος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	19927	δεῖ	NOUN	n	δεῖ	VERB			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): δεῖ as verb	https://orcid.org/0009-0004-2388-9233
+correct	19987	δεῖνα	NOUN	m	δεῖνα	PRON			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): δεῖνα as pronoun	https://orcid.org/0009-0004-2388-9233
+correct	20158	δέκατος	NOUN	f	δέκατος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): δέκατος as adjective; δέκατος as numeral	https://orcid.org/0009-0004-2388-9233
+correct	20448	δεύτερος	NUM		δεύτερος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): δεύτερος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	20506	δηλονότι	VERB		δηλονότι	ADV			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): δηλονότι as adverb	https://orcid.org/0009-0004-2388-9233
+correct	20599	δημόσιος	NOUN	m	δημόσιος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): δημόσιος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	22417	δίδραχμος	NOUN	n	δίδραχμος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): δίδραχμος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	22452	δίεδρος	NOUN	n	δίεδρος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): δίεδρος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	22983	δίμηνος	NOUN	f	δίμηνος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): δίμηνος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	23234	διπλάσιος	NOUN	n	διπλάσιος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): διπλάσιος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	23254	διπλόος	NOUN	n	διπλόος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): διπλόος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	23271	διπρόσωπος	NOUN	f	διπρόσωπος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): διπρόσωπος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	23458	δίχα	ADJ		δίχα	ADV			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): δίχα as adverb; δίχα as preposition	https://orcid.org/0009-0004-2388-9233
+correct	25254	δυώδεκα	ADJ		δυώδεκα	NUM			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): δυώδεκα as numeral	https://orcid.org/0009-0004-2388-9233
+correct	25313	δωδέκατος	NOUN	f	δωδέκατος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): δωδέκατος as numeral	https://orcid.org/0009-0004-2388-9233
+correct	25504	ἔγγραπτος	NOUN	n	ἔγγραπτος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἔγγραπτος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	25917	ἐγκύκλιος	NOUN	n	ἐγκύκλιος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἐγκύκλιος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	26204	ἐθνικός	NOUN	m	ἐθνικός	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἐθνικός as adjective	https://orcid.org/0009-0004-2388-9233
+correct	26345	εἰκοσιδύω	VERB		εἰκοσιδύω	NUM			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): εἰκοσιδύω as numeral	https://orcid.org/0009-0004-2388-9233
+correct	26369	εἰκοστός	NOUN	f	εἰκοστός	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): εἰκοστός as adjective; εἰκοστός as numeral	https://orcid.org/0009-0004-2388-9233
+correct	26520	εἷς	NOUN	n	εἷς	NUM			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): εἷς as adjective; εἷς as numeral	https://orcid.org/0009-0004-2388-9233
+correct	28170	ἕκτος	NOUN	m	ἕκτος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἕκτος as adjective; ἕκτος as numeral	https://orcid.org/0009-0004-2388-9233
+correct	28648	ἐλεύθερος	NOUN	f	ἐλεύθερος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἐλεύθερος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	28814	ἐλλείπω	NOUN	m	ἐλλείπω	VERB			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἐλλείπω as verb	https://orcid.org/0009-0004-2388-9233
+correct	28823	Ἑλληνικός	NOUN	f	Ἑλληνικός	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): Ἑλληνικός as adjective	https://orcid.org/0009-0004-2388-9233
+correct	29577	ἐν	NOUN	m	ἐν	ADP			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἐν as preposition	https://orcid.org/0009-0004-2388-9233
+correct	29961	ἑνδέκατος	NOUN	f	ἑνδέκατος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἑνδέκατος as adjective; ἑνδέκατος as numeral	https://orcid.org/0009-0004-2388-9233
+correct	30484	ἐννέα	ADJ		ἐννέα	NUM			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἐννέα as numeral	https://orcid.org/0009-0004-2388-9233
+correct	30914	ἐντολικός	NOUN	n	ἐντολικός	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἐντολικός as adjective	https://orcid.org/0009-0004-2388-9233
+correct	30933	ἐντός	PRON		ἐντός	ADV			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἐντός as preposition	https://orcid.org/0009-0004-2388-9233
+correct	31080	ἕξ	NOUN	n	ἕξ	NUM			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἕξ as numeral	https://orcid.org/0009-0004-2388-9233
+correct	31723	ἔξεστι	ADJ		ἔξεστι	VERB			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἔξεστι as verb	https://orcid.org/0009-0004-2388-9233
+correct	35389	ἐπίτιμος	NOUN	n	ἐπίτιμος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἐπίτιμος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	35499	ἐπιφέρω	NOUN	m	ἐπιφέρω	VERB			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἐπιφέρω as verb	https://orcid.org/0009-0004-2388-9233
+correct	35927	ἑπτάμηνος	NOUN	f	ἑπτάμηνος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἑπτάμηνος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	36260	ἐρῆμος	NOUN	f	ἐρῆμος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἐρῆμος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	36760	ἔσχατος	NOUN	f	ἔσχατος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἔσχατος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	37686	εὐθύς	NOUN	f	εὐθύς	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): εὐθύς as adverb	https://orcid.org/0009-0004-2388-9233
+correct	39311	ἐχθρός	NOUN	m	ἐχθρός	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἐχθρός as adjective	https://orcid.org/0009-0004-2388-9233
+correct	39833	ἡγέομαι	NOUN	n	ἡγέομαι	VERB			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἡγέομαι as verb	https://orcid.org/0009-0004-2388-9233
+correct	39866	ὅς	NOUN	m	ὅς	PRON			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ὅς as adverb; ὅς as pronoun	https://orcid.org/0009-0004-2388-9233
+correct	40404	ἥμισυς	NOUN	n	ἥμισυς	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἥμισυς as adjective	https://orcid.org/0009-0004-2388-9233
+correct	41020	θεῖος	NOUN	n	θεῖος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): θεῖος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	42443	ἰατρικός	NOUN	n	ἰατρικός	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἰατρικός as adjective	https://orcid.org/0009-0004-2388-9233
+correct	43570	ἴσος	NOUN	n	ἴσος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἴσος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	43964	καθαίρω	NOUN	m	καθαίρω	VERB			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): καθαίρω as verb	https://orcid.org/0009-0004-2388-9233
+correct	44000	καθαροποιέω	NOUN	f	καθαροποιέω	VERB			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): καθαροποιέω as verb	https://orcid.org/0009-0004-2388-9233
+correct	44547	κακός	NOUN	n	κακός	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): κακός as adjective	https://orcid.org/0009-0004-2388-9233
+correct	45249	κάπνειος	NOUN	f	κάπνειος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): κάπνειος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	45796	κατάγω	NOUN	f	κατάγω	VERB			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): κατάγω as verb	https://orcid.org/0009-0004-2388-9233
+correct	50005	κολοβός	NOUN	n	κολοβός	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): κολοβός as adjective	https://orcid.org/0009-0004-2388-9233
+correct	50562	κόσμιος	NOUN	m	κόσμιος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): κόσμιος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	51988	κυριακός	NOUN	f	κυριακός	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): κυριακός as adjective	https://orcid.org/0009-0004-2388-9233
+correct	53184	λεπτός	NOUN	n	λεπτός	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): λεπτός as adjective	https://orcid.org/0009-0004-2388-9233
+correct	53352	λευκός	NOUN	f	λευκός	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): λευκός as adjective	https://orcid.org/0009-0004-2388-9233
+correct	54995	μακρός	NOUN	f	μακρός	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): μακρός as adjective; μακρός as adverb	https://orcid.org/0009-0004-2388-9233
+correct	56072	μέλας	NOUN	f	μέλας	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): μέλας as adjective	https://orcid.org/0009-0004-2388-9233
+correct	57262	μή	SCONJ		μή	ADV			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): μή as adverb	https://orcid.org/0009-0004-2388-9233
+correct	57395	μήπω	VERB		μήπω	ADV			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): μήπω as adverb	https://orcid.org/0009-0004-2388-9233
+correct	58545	μόσχειος	NOUN	n	μόσχειος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): μόσχειος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	59452	ναυτικός	NOUN	m	ναυτικός	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ναυτικός as adjective	https://orcid.org/0009-0004-2388-9233
+correct	59620	νεκρός	NOUN	m	νεκρός	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): νεκρός as adjective	https://orcid.org/0009-0004-2388-9233
+correct	60170	νηρός	NOUN	n	νηρός	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): νηρός as adjective	https://orcid.org/0009-0004-2388-9233
+correct	60879	ξένος	NOUN	m	ξένος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ξένος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	60944	ξηρός	NOUN	f	ξηρός	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ξηρός as adjective	https://orcid.org/0009-0004-2388-9233
+correct	61020	ξύλινος	NOUN	n	ξύλινος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ξύλινος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	61173	ὁ	NOUN	m	ὁ	DET			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ὁ as article; ὁ as pronoun; ὁ as untagged	https://orcid.org/0009-0004-2388-9233
+correct	61224	ὀγδοήκοντα	ADJ		ὀγδοήκοντα	NUM			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ὀγδοήκοντα as numeral	https://orcid.org/0009-0004-2388-9233
+correct	61275	ὅδε	NOUN	m	ὅδε	DET			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ὅδε as pronoun	https://orcid.org/0009-0004-2388-9233
+correct	61788	οἷος	NOUN	m	οἷος	DET			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): οἷος as adjective; οἷος as adverb	https://orcid.org/0009-0004-2388-9233
+correct	62950	ὅμως	SCONJ		ὅμως	ADV			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ὁμός as adverb; ὅμως as adverb	https://orcid.org/0009-0004-2388-9233
+correct	64298	ὅσος	NOUN	m	ὅσος	DET			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ὅσος as adjective; ὅσος as adverb; ὅσος as pronoun	https://orcid.org/0009-0004-2388-9233
+correct	64558	οὐράνιος	NOUN	n	οὐράνιος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): οὐράνιος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	64659	οὔτε	ADV		οὔτε	CCONJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): οὔτε as conjunction	https://orcid.org/0009-0004-2388-9233
+correct	64670	οὗτος	NOUN	m	οὗτος	DET			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): οὗτος as pronoun	https://orcid.org/0009-0004-2388-9233
+correct	67746	πάρεργος	NOUN	n	πάρεργος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): πάρεργος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	68245	πάτριος	NOUN	m	πάτριος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): πάτριος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	70129	περισσός	NOUN	n	περισσός	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): περισσός as adjective	https://orcid.org/0009-0004-2388-9233
+correct	71116	πιστός	NOUN	n	πιστός	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): πιστός as adjective	https://orcid.org/0009-0004-2388-9233
+correct	71410	πλεῖστος	NOUN	m	πλεῖστος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): πλεῖστος as adverb	https://orcid.org/0009-0004-2388-9233
+correct	71414	πλείων	NOUN	m	πλείων	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): πλείων as adjective; πλείων as adverb	https://orcid.org/0009-0004-2388-9233
+correct	72168	πολλαπλάσιος	NOUN	n	πολλαπλάσιος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): πολλαπλάσιος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	73439	πόσος	NOUN	n	πόσος	DET			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): πόσος as adjective; πόσος as adverb	https://orcid.org/0009-0004-2388-9233
+correct	73486	πότε	PRON		πότε	ADV			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): πότε as adverb	https://orcid.org/0009-0004-2388-9233
+correct	73578	ποῦ	PRON		ποῦ	ADV			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ποῦ as adverb	https://orcid.org/0009-0004-2388-9233
+correct	78523	πυκνός	NOUN	n	πυκνός	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): πυκνός as adverb	https://orcid.org/0009-0004-2388-9233
+correct	78880	πυρρός	NOUN	m	πυρρός	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): πυρρός as adjective	https://orcid.org/0009-0004-2388-9233
+correct	79008	πῶς	PRON		πῶς	ADV			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): πῶς as adverb; πῶς as conjunction	https://orcid.org/0009-0004-2388-9233
+correct	79496	Ῥοδιακός	NOUN	n	Ῥοδιακός	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): Ῥοδιακός as adjective	https://orcid.org/0009-0004-2388-9233
+correct	82515	στατός	NOUN	m	στατός	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): στατός as adjective	https://orcid.org/0009-0004-2388-9233
+correct	84843	συμφέρω	NOUN	n	συμφέρω	VERB			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): συμφέρω as verb	https://orcid.org/0009-0004-2388-9233
+correct	86886	συντυγχάνω	NOUN	m	συντυγχάνω	VERB			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): συντυγχάνω as verb	https://orcid.org/0009-0004-2388-9233
+correct	88132	ταυρικός	NOUN	n	ταυρικός	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ταυρικός as adjective	https://orcid.org/0009-0004-2388-9233
+correct	88443	τέλειος	NOUN	n	τέλειος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): τέλειος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	88729	τέταρτος	NOUN	m	τέταρτος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): τέταρτος as adjective; τέταρτος as numeral	https://orcid.org/0009-0004-2388-9233
+correct	89635	τοσοῦτος	ADV		τοσοῦτος	DET			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): τοσοῦτος as pronoun	https://orcid.org/0009-0004-2388-9233
+correct	90024	τριέτης	NOUN	n	τριέτης	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): τριέτης as adjective	https://orcid.org/0009-0004-2388-9233
+correct	90262	τρίς	ADJ		τρίς	ADV			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): τρίς as adverb	https://orcid.org/0009-0004-2388-9233
+correct	90382	τρίτομος	NOUN	n	τρίτομος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): τρίτομος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	91035	τῷ	NOUN	m	τῷ	ADV			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): τῷ as adverb	https://orcid.org/0009-0004-2388-9233
+correct	92028	ὑπεραπαιτέω	NOUN	f	ὑπεραπαιτέω	VERB			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ὑπεραπαιτέω as verb	https://orcid.org/0009-0004-2388-9233
+correct	94608	φαίνω	NOUN	m	φαίνω	VERB			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): φαίνω as verb	https://orcid.org/0009-0004-2388-9233
+correct	94663	φάλανθος	NOUN	n	φάλανθος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): φάλανθος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	97156	χαλκιαῖος	NOUN	f	χαλκιαῖος	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): χαλκιαῖος as adjective	https://orcid.org/0009-0004-2388-9233
+correct	98149	χλωρός	NOUN	f	χλωρός	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): χλωρός as adjective	https://orcid.org/0009-0004-2388-9233
+correct	98985	χωματικός	NOUN	n	χωματικός	ADJ			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): χωματικός as adjective	https://orcid.org/0009-0004-2388-9233
+correct	99964	ὡς	NOUN	m	ὡς	ADV			wrong part of speech in LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ὡς as adverb; ὡς as conjunction	https://orcid.org/0009-0004-2388-9233
+merge	4061	ἅμα	PRON					4060	the same lemma as 4060 once both are corrected	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἅμα as adverb; ἅμα as preposition	https://orcid.org/0009-0004-2388-9233
+merge	23459	δίχα	PRON					23458	the same lemma as 23458 once both are corrected	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): δίχα as adverb; δίχα as preposition	https://orcid.org/0009-0004-2388-9233
+merge	30934	ἐντός	VERB					30933	the same lemma as 30933 once both are corrected	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἐντός as preposition	https://orcid.org/0009-0004-2388-9233
+add					Λυσίμαχος	PROPN	m		lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): Λυσίμαχος as noun	https://orcid.org/0009-0004-2388-9233
+add					Σεβαστός	PROPN	m		lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): Σεβαστός as noun	https://orcid.org/0009-0004-2388-9233
+add					α	NUM			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): α as numeral	https://orcid.org/0009-0004-2388-9233
+add					αὐθαιρέτως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): αὐθαίρετος as adverb	https://orcid.org/0009-0004-2388-9233
+add					βαρέως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): βαρύς as adverb	https://orcid.org/0009-0004-2388-9233
+add					βραδέως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): βραδύς as adverb	https://orcid.org/0009-0004-2388-9233
+add					γενναίως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): γενναῖος as adverb	https://orcid.org/0009-0004-2388-9233
+add					δικαίως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): δίκαιος as adverb	https://orcid.org/0009-0004-2388-9233
+add					δυσχερῶς	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): δυσχερής as adverb	https://orcid.org/0009-0004-2388-9233
+add					εὐκαίρως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): εὔκαιρος as adverb	https://orcid.org/0009-0004-2388-9233
+add					εὐμαρῶς	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): εὐμαρής as adverb	https://orcid.org/0009-0004-2388-9233
+add					εὐτάκτως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): εὔτακτος as adverb	https://orcid.org/0009-0004-2388-9233
+add					εὐτυχῶς	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): εὐτυχής as adverb	https://orcid.org/0009-0004-2388-9233
+add					εὐτόνως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): εὔτονος as adverb	https://orcid.org/0009-0004-2388-9233
+add					εὐχερῶς	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): εὐχερής as adverb	https://orcid.org/0009-0004-2388-9233
+add					θερμῶς	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): θερμός as adverb	https://orcid.org/0009-0004-2388-9233
+add					θυμικῶς	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): θυμικός as adverb	https://orcid.org/0009-0004-2388-9233
+add					κ	NUM			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): κ as numeral	https://orcid.org/0009-0004-2388-9233
+add					κακῶς	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): κακός as adverb	https://orcid.org/0009-0004-2388-9233
+add					καταξίως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): κατάξιος as adverb	https://orcid.org/0009-0004-2388-9233
+add					κομψῶς	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): κομψός as adverb	https://orcid.org/0009-0004-2388-9233
+add					λ	NUM			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): λ as numeral	https://orcid.org/0009-0004-2388-9233
+add					λαμπρῶς	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): λαμπρός as adverb	https://orcid.org/0009-0004-2388-9233
+add					μ	NUM			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): μ as numeral	https://orcid.org/0009-0004-2388-9233
+add					μήν	PART			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): μήν as adverb	https://orcid.org/0009-0004-2388-9233
+add					μαλακῶς	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): μαλακός as adverb	https://orcid.org/0009-0004-2388-9233
+add					μετρίως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): μέτριος as adverb	https://orcid.org/0009-0004-2388-9233
+add					μικρῶς	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): μικός as adverb	https://orcid.org/0009-0004-2388-9233
+add					μισοπονήρως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): μισοπόνηρος as adverb	https://orcid.org/0009-0004-2388-9233
+add					ν	NUM			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ν as numeral	https://orcid.org/0009-0004-2388-9233
+add					ξ	NUM			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ξ as numeral	https://orcid.org/0009-0004-2388-9233
+add					παντελῶς	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): παντελής as adverb	https://orcid.org/0009-0004-2388-9233
+add					παχυμερῶς	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): παχυμερής as adverb	https://orcid.org/0009-0004-2388-9233
+add					περισσῶς	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): περισσός as adverb	https://orcid.org/0009-0004-2388-9233
+add					σαφῶς	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): σαφής as adverb	https://orcid.org/0009-0004-2388-9233
+add					σπουδαίως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): σπουδαῖος as adverb	https://orcid.org/0009-0004-2388-9233
+add					στενῶς	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): στενός as adverb	https://orcid.org/0009-0004-2388-9233
+add					συνήθως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): συνήθης as adverb	https://orcid.org/0009-0004-2388-9233
+add					συντόμως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): σύντομος as adverb	https://orcid.org/0009-0004-2388-9233
+add					τ	NUM			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): τ as numeral	https://orcid.org/0009-0004-2388-9233
+add					φανερῶς	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): φανερός as adverb	https://orcid.org/0009-0004-2388-9233
+add					ἀγνωμόνως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἀγνώμων as adverb	https://orcid.org/0009-0004-2388-9233
+add					ἀδίκως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἄδικος as adverb	https://orcid.org/0009-0004-2388-9233
+add					ἀδιαφόρως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἀδιάφορος as adverb	https://orcid.org/0009-0004-2388-9233
+add					ἀηδῶς	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἀηδής as adverb	https://orcid.org/0009-0004-2388-9233
+add					ἀκάλως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἀκαλός as adverb	https://orcid.org/0009-0004-2388-9233
+add					ἀκεραίως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἀκέραιος as adverb	https://orcid.org/0009-0004-2388-9233
+add					ἀκολούθως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἀκόλουθος as adverb	https://orcid.org/0009-0004-2388-9233
+add					ἀκριβῶς	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἀκριβής as adverb	https://orcid.org/0009-0004-2388-9233
+add					ἀλλοίως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἀλλοῖος as adverb	https://orcid.org/0009-0004-2388-9233
+add					ἀλόγως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἄλογος as adverb	https://orcid.org/0009-0004-2388-9233
+add					ἀμέμπτως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἄμεμπτος as adverb	https://orcid.org/0009-0004-2388-9233
+add					ἀναγκαίως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἀναγκαῖος as adverb	https://orcid.org/0009-0004-2388-9233
+add					ἀνοικονομήτως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἀνοικονόμητος as adverb	https://orcid.org/0009-0004-2388-9233
+add					ἀνυπερθέτως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἀνυπέρθετος as adverb	https://orcid.org/0009-0004-2388-9233
+add					ἀσθενῶς	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἀσθενής as adverb	https://orcid.org/0009-0004-2388-9233
+add					ἀσυνειδήτως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἀσυνείδητος as adverb	https://orcid.org/0009-0004-2388-9233
+add					ἀσυντάκτως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἀσύντακτος as adverb	https://orcid.org/0009-0004-2388-9233
+add					ἀσφαλῶς	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἀσφαλής as adverb	https://orcid.org/0009-0004-2388-9233
+add					ἐπιμελῶς	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἐπιμελής as adverb	https://orcid.org/0009-0004-2388-9233
+add					ἑκουσίως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἑκούσιος as adverb	https://orcid.org/0009-0004-2388-9233
+add					ἑτοίμως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἑτοῖμος as adverb	https://orcid.org/0009-0004-2388-9233
+add					ἱκανῶς	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ἱκανός as adverb	https://orcid.org/0009-0004-2388-9233
+add					ὀλιγώρως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ὀλίγωρος as adverb	https://orcid.org/0009-0004-2388-9233
+add					ὀρθῶς	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ὀρθός as adverb	https://orcid.org/0009-0004-2388-9233
+add					ὁμοίως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ὅμοιος as adverb	https://orcid.org/0009-0004-2388-9233
+add					ὁποτέρως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ὁπότερος as adverb	https://orcid.org/0009-0004-2388-9233
+add					ὁσίως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ὅσιος as adverb	https://orcid.org/0009-0004-2388-9233
+add					ὅλως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ὅλος as adverb	https://orcid.org/0009-0004-2388-9233
+add					ὑγιῶς	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ὑγιής as adverb	https://orcid.org/0009-0004-2388-9233
+add					ῥᾳδίως	ADV			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ῥᾴδιος as adverb	https://orcid.org/0009-0004-2388-9233

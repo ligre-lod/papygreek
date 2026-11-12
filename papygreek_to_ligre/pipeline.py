@@ -55,8 +55,8 @@ def run_pipeline(options):
 
     lemma_namespace = ligre_lemma_namespace(options.base_iri)
     iris = CorpusIris(options.base_iri)
-    pos_decisions = load_pos_decisions(options.review_directory)
     lemma_bank = LemmaBank.from_turtle(lemma_bank_path)
+    pos_decisions = load_pos_decisions(options.review_directory, lemma_bank)
     lemma_linker = LemmaLinker(lemma_bank, pos_decisions, NotAWord())
     linking_review = LinkingReview()
     document_builder = DocumentGraphBuilder(iris, lemma_namespace, lemma_linker, linking_review)
@@ -90,7 +90,7 @@ def run_pipeline(options):
             complete_file_writer.write_subjects(corpus_graph, described)
     write_turtle_file(options.output_directory / settings.CORPUS_OUTPUT_FILENAME, corpus_graph, described)
 
-    linking_review.write(options.review_directory)
+    linking_review.write(options.review_directory, lemma_bank)
     logger.info(linking_review.summary())
     logger.info("Wrote the linking review files into %s", options.review_directory)
     logger.info("Converted %d documents into %s", len(treebank_files), options.output_directory)

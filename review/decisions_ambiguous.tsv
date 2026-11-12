@@ -1,0 +1,425 @@
+lemma	papygreek_pos	ligre_pos	decision	ligre_lemma	ligre_change	ligre_id	ligre_new_lemma	ligre_new_pos	ligre_new_gender	ligre_variant_of	status	tokens	candidates
+μή	conjunction	ADV									undecided	30	ADV 57262
+δεύτερος	numeral	ADJ									undecided	6	ADJ 20448
+ξένος1	noun	ADJ									undecided	4	ADJ 60879
+εἷς	noun	NUM									undecided	3	NUM 26520
+Σεβαστός	adjective	PROPN									undecided	2	PROPN 100048
+οὔτε	adverb	CCONJ									undecided	2	CCONJ 64659
+ὅμως	conjunction	ADV									undecided	2	ADV 62950
+αὐτός	adverb	PRON									undecided	1	PRON 15421
+ἐπίτιμος	noun	ADJ									undecided	1	ADJ 35389
+ὁ	article	NOUN	ligre-pos-wrong		correct	61173		DET			ligre-pos-wrong	6038	NOUN 61173
+ὅς	pronoun	NOUN	ligre-pos-wrong		correct	39866		PRON			ligre-pos-wrong	552	NOUN 39866
+οὗτος	pronoun	NOUN	ligre-pos-wrong		correct	64670		DET			ligre-pos-wrong	342	NOUN 64670
+ὁ	pronoun	NOUN	ligre-pos-wrong		correct	61173		DET			ligre-pos-wrong	233	NOUN 61173
+δεῖνα	pronoun	NOUN	ligre-pos-wrong		correct	19987		PRON			ligre-pos-wrong	18	NOUN 19987
+ὅδε	pronoun	NOUN	ligre-pos-wrong		correct	61275		DET			ligre-pos-wrong	14	NOUN 61275
+ὅσος	pronoun	NOUN	ligre-pos-wrong		correct	64298		DET			ligre-pos-wrong	3	NOUN 64298
+ὅ	pronoun	NOUN	papygreek-lemma-wrong	39866	none						papygreek-lemma-wrong	1	NOUN 61174
+οὖν	adverb	PART	convention		none						convention	281	PART 26247
+ἄν	adverb	PART	convention		none						convention	44	PART 5150
+γάρ	adverb	PART	convention		none						convention	213	PART 18331
+μέν	adverb	PART	convention		none						convention	142	PART 56345
+τε	adverb	PART	convention		none						convention	60	PART 40673
+δέ	adverb	PART	convention		none						convention	24	PART 19911
+οὐδέ	adverb	PART	convention		none						convention	20	PART 64450
+δή	adverb	PART	convention		none						convention	10	PART 20475
+γε	adverb	PART	convention		none						convention	9	PART 18404
+ποτέ	adverb	PART	convention		none						convention	8	PART 63583
+πως	adverb	PART	convention		none						convention	7	PART 79009
+τοίνυν	adverb	PART	convention		none						convention	5	PART 89410
+καίπερ	adverb	PART	convention		none						convention	3	PART 44284
+μηδέ	adverb	PART	convention		none						convention	3	PART 57276
+πω	adverb	PART	convention		none						convention	2	PART 64460
+δέ	conjunction	PART	convention		none						convention	844	PART 19911
+τε	conjunction	PART	convention		none						convention	67	PART 40673
+μηδέ	conjunction	PART	convention		none						convention	29	PART 57276
+οὐδέ	conjunction	PART	convention		none						convention	15	PART 64450
+μήτε	conjunction	PART	convention		none						convention	13	PART 57419
+μέν	conjunction	PART	convention		none						convention	2	PART 56345
+ἄν	conjunction	PART	convention		none						convention	1	PART 5150
+ἐν	preposition	NOUN	ligre-pos-wrong		correct	29577		ADP			ligre-pos-wrong	724	NOUN 29577
+χάρις	preposition	NOUN	convention		none						convention	24	NOUN 97423
+φίλος	adjective	NOUN	convention		none						convention	62	NOUN 95758
+ἥμισυς	adjective	NOUN	ligre-pos-wrong		correct	40404		ADJ			ligre-pos-wrong	33	NOUN 40404
+ὅσος	adjective	NOUN	ligre-pos-wrong		correct	64298		DET			ligre-pos-wrong	28	NOUN 64298
+κύριος	adjective	NOUN	convention		none						convention	24	NOUN 52000
+βασιλικός	adjective	NOUN	ligre-pos-wrong		correct	16762		ADJ			ligre-pos-wrong	22	NOUN 16762
+ἀναγκαῖος	adjective	NOUN	ligre-pos-wrong		correct	5253		ADJ			ligre-pos-wrong	22	NOUN 5253
+Ἰουδαῖος	adjective	NOUN	convention		none						convention	20	NOUN 43143
+θεῖος	adjective	NOUN	ligre-pos-wrong		correct	41020		ADJ			ambiguous	1	NOUN 41020 NOUN 41021
+ἀντίγραφος	adjective	NOUN	convention		none						convention	17	NOUN 8419
+πλείων	adjective	NOUN	ligre-pos-wrong		correct	71414		ADJ			ligre-pos-wrong	16	NOUN 71414
+μέλας	adjective	NOUN	ligre-pos-wrong		correct	56072		ADJ			ligre-pos-wrong	13	NOUN 56072
+γεωργός	adjective	NOUN	convention		none						convention	11	NOUN 18710
+δημόσιος	adjective	NOUN	ligre-pos-wrong		correct	20599		ADJ			ligre-pos-wrong	11	NOUN 20599
+ἀριστερός	adjective	NOUN	ligre-pos-wrong		correct	13065		ADJ			ligre-pos-wrong	10	NOUN 13065
+πόσος	adjective	NOUN	ligre-pos-wrong		correct	73439		DET			ligre-pos-wrong	8	NOUN 73439
+Αἰγύπτιος	adjective	NOUN	convention		none						convention	7	NOUN 1855
+ἀγαθός	adjective	NOUN	ligre-pos-wrong		correct	193		ADJ			ligre-pos-wrong	7	NOUN 193
+ἅγιος	adjective	NOUN	ligre-pos-wrong		correct	407		ADJ			ligre-pos-wrong	7	NOUN 407
+ἐλεύθερος	adjective	NOUN	ligre-pos-wrong		correct	28648		ADJ			ligre-pos-wrong	7	NOUN 28648
+ἐνοίκιος	adjective	NOUN	convention		none						convention	7	NOUN 30607
+ἐπίτιμος	adjective	NOUN	ligre-pos-wrong		correct	35389		ADJ			ligre-pos-wrong	7	NOUN 35389
+δέκατος	adjective	NOUN	ligre-pos-wrong		correct	20158		ADJ			ligre-pos-wrong	6	NOUN 20158
+πρέσβυς	adjective	NOUN	convention		none						convention	6	NOUN 73752
+ἑνδέκατος	adjective	NOUN	ligre-pos-wrong		correct	29961		ADJ			ligre-pos-wrong	6	NOUN 29961
+ἴσος	adjective	NOUN	ligre-pos-wrong		correct	43570		ADJ			ligre-pos-wrong	6	NOUN 43570
+εἰκοστός	adjective	NOUN	ligre-pos-wrong		correct	26369		ADJ			ligre-pos-wrong	5	NOUN 26369
+κεφάλαιος	adjective	NOUN	convention		none						convention	5	NOUN 48599
+τέλειος	adjective	NOUN	ligre-pos-wrong		correct	88443		ADJ			ligre-pos-wrong	5	NOUN 88443
+ἕκτος	adjective	NOUN	ligre-pos-wrong		correct	28170		ADJ			ligre-pos-wrong	5	NOUN 28170
+δίδραχμος	adjective	NOUN	ligre-pos-wrong		correct	22417		ADJ			ligre-pos-wrong	4	NOUN 22417
+διάφορος	adjective	NOUN	convention		none						convention	4	NOUN 22246
+διπλόος	adjective	NOUN	ligre-pos-wrong		correct	23254		ADJ			ligre-pos-wrong	4	NOUN 23254
+λεπτός	adjective	NOUN	ligre-pos-wrong		correct	53184		ADJ			ligre-pos-wrong	4	NOUN 53184
+λευκός	adjective	NOUN	ligre-pos-wrong		correct	53352		ADJ			ligre-pos-wrong	4	NOUN 53352
+ξένος	adjective	NOUN	ligre-pos-wrong		correct	60879		ADJ			ligre-pos-wrong	2	NOUN 60879
+πάτριος	adjective	NOUN	ligre-pos-wrong		correct	68245		ADJ			ligre-pos-wrong	4	NOUN 68245
+περισσός	adjective	NOUN	ligre-pos-wrong		correct	70129		ADJ			ligre-pos-wrong	4	NOUN 70129
+σύμβιος	adjective	NOUN	convention		none						convention	4	NOUN 84260
+τέταρτος	adjective	NOUN	ligre-pos-wrong		correct	88729		ADJ			ligre-pos-wrong	4	NOUN 88729
+Ἑλληνικός	adjective	NOUN	ligre-pos-wrong		correct	28823		ADJ			ligre-pos-wrong	4	NOUN 28823
+Καύνιος	adjective	NOUN	convention		none						convention	3	NOUN 47999
+Κῷος	adjective	NOUN	convention		none						convention	3	NOUN 52253
+Χῖος	adjective	NOUN	convention		none						convention	3	NOUN 98015
+γυναικεῖος	adjective	NOUN	ligre-pos-wrong		correct	19459		ADJ			ligre-pos-wrong	3	NOUN 19459
+δίμηνος	adjective	NOUN	ligre-pos-wrong		correct	22983		ADJ			ligre-pos-wrong	3	NOUN 22983
+κακός	adjective	NOUN	ligre-pos-wrong		correct	44547		ADJ			ligre-pos-wrong	3	NOUN 44547
+χαλκοῦς	adjective	NOUN	convention		none						convention	3	NOUN 97252
+ἀρχαῖος	adjective	NOUN	ligre-pos-wrong		correct	13672		ADJ			ligre-pos-wrong	3	NOUN 13672
+ἐντολικός	adjective	NOUN	ligre-pos-wrong		correct	30914		ADJ			ligre-pos-wrong	3	NOUN 30914
+ἔσχατος	adjective	NOUN	ligre-pos-wrong		correct	36760		ADJ			ligre-pos-wrong	3	NOUN 36760
+Μάρτιος	adjective	NOUN	convention		none						convention	2	NOUN 55326
+αἴτιος	adjective	NOUN	ligre-pos-wrong		correct	2338		ADJ			ligre-pos-wrong	2	NOUN 2338
+γενέσιος	adjective	NOUN	convention		none						convention	2	NOUN 18532
+εἷς	adjective	NOUN	ligre-pos-wrong		correct	26520		NUM			ligre-pos-wrong	2	NOUN 26520
+κάπνειος	adjective	NOUN	ligre-pos-wrong		correct	45249		ADJ			ligre-pos-wrong	2	NOUN 45249
+κόσμιος	adjective	NOUN	ligre-pos-wrong		correct	50562		ADJ			ligre-pos-wrong	2	NOUN 50562
+μακρός	adjective	NOUN	ligre-pos-wrong		correct	54995		ADJ			ligre-pos-wrong	2	NOUN 54995
+μόσχειος	adjective	NOUN	ligre-pos-wrong		correct	58545		ADJ			ligre-pos-wrong	2	NOUN 58545
+νεκρός	adjective	NOUN	ligre-pos-wrong		correct	59620		ADJ			ligre-pos-wrong	2	NOUN 59620
+οἷος	adjective	NOUN	ligre-pos-wrong		correct	61788		DET			ligre-pos-wrong	2	NOUN 61788
+πυρρός	adjective	NOUN	ligre-pos-wrong		correct	78880		ADJ			ligre-pos-wrong	2	NOUN 78880
+στατός	adjective	NOUN	ligre-pos-wrong		correct	82515		ADJ			ligre-pos-wrong	2	NOUN 82515
+συκάμινος	adjective	NOUN	papygreek-lemma-wrong	84094	none						papygreek-lemma-wrong	2	NOUN 84097
+φρυγανίτης	adjective	NOUN	convention		none						convention	2	NOUN 96578
+χήρα	adjective	NOUN	convention		none						convention	2	NOUN 97882
+χλωρός	adjective	NOUN	ligre-pos-wrong		correct	98149		ADJ			ligre-pos-wrong	2	NOUN 98149
+ἀριθμητικός	adjective	NOUN	ligre-pos-wrong		correct	13036		ADJ			ligre-pos-wrong	2	NOUN 13036
+ἄσημος	adjective	NOUN	ligre-pos-wrong		correct	13927		ADJ			ligre-pos-wrong	2	NOUN 13927
+ἐθνικός	adjective	NOUN	ligre-pos-wrong		correct	26204		ADJ			ligre-pos-wrong	2	NOUN 26204
+ἐρῆμος	adjective	NOUN	ligre-pos-wrong		correct	36260		ADJ			ligre-pos-wrong	2	NOUN 36260
+ἰατρικός	adjective	NOUN	ligre-pos-wrong		correct	42443		ADJ			ligre-pos-wrong	2	NOUN 42443
+Λύδιος	adjective	NOUN	convention		none						convention	1	NOUN 54456
+γαμικός	adjective	NOUN	ligre-pos-wrong		correct	18299		ADJ			ligre-pos-wrong	1	NOUN 18299
+δίεδρος	adjective	NOUN	ligre-pos-wrong		correct	22452		ADJ			ligre-pos-wrong	1	NOUN 22452
+διπλάσιος	adjective	NOUN	ligre-pos-wrong		correct	23234		ADJ			ligre-pos-wrong	1	NOUN 23234
+διπρόσωπος	adjective	NOUN	ligre-pos-wrong		correct	23271		ADJ			ligre-pos-wrong	1	NOUN 23271
+κολοβός	adjective	NOUN	ligre-pos-wrong		correct	50005		ADJ			ligre-pos-wrong	1	NOUN 50005
+κυρία	adjective	NOUN	convention		none						convention	1	NOUN 51987
+κυριακός	adjective	NOUN	ligre-pos-wrong		correct	51988		ADJ			ligre-pos-wrong	1	NOUN 51988
+ναυτικός	adjective	NOUN	ligre-pos-wrong		correct	59452		ADJ			ligre-pos-wrong	1	NOUN 59452
+νηρός	adjective	NOUN	ligre-pos-wrong		correct	60170		ADJ			ligre-pos-wrong	1	NOUN 60170
+ξηρός	adjective	NOUN	ligre-pos-wrong		correct	60944		ADJ			ligre-pos-wrong	1	NOUN 60944
+ξύλινος	adjective	NOUN	ligre-pos-wrong		correct	61020		ADJ			ligre-pos-wrong	1	NOUN 61020
+οὐράνιος	adjective	NOUN	ligre-pos-wrong		correct	64558		ADJ			ligre-pos-wrong	1	NOUN 64558
+πάρεργος	adjective	NOUN	ligre-pos-wrong		correct	67746		ADJ			ligre-pos-wrong	1	NOUN 67746
+πιστός	adjective	NOUN	ligre-pos-wrong		correct	71116		ADJ					
+πολλαπλάσιος	adjective	NOUN	ligre-pos-wrong		correct	72168		ADJ			ligre-pos-wrong	1	NOUN 72168
+ταυρικός	adjective	NOUN	ligre-pos-wrong		correct	88132		ADJ			ligre-pos-wrong	1	NOUN 88132
+τρίκλινος	adjective	NOUN	convention		none						convention	1	NOUN 90079
+τρίτομος	adjective	NOUN	ligre-pos-wrong		correct	90382		ADJ			ligre-pos-wrong	1	NOUN 90382
+τριέτης	adjective	NOUN	ligre-pos-wrong		correct	90024		ADJ			ligre-pos-wrong	1	NOUN 90024
+φάλανθος	adjective	NOUN	ligre-pos-wrong		correct	94663		ADJ			ligre-pos-wrong	1	NOUN 94663
+χαλκιαῖος	adjective	NOUN	ligre-pos-wrong		correct	97156		ADJ			ligre-pos-wrong	1	NOUN 97156
+χωματικός	adjective	NOUN	ligre-pos-wrong		correct	98985		ADJ			ligre-pos-wrong	1	NOUN 98985
+ἀπάνθρωπος	adjective	NOUN	ligre-pos-wrong		correct	9831		ADJ			ligre-pos-wrong	1	NOUN 9831
+ἀπότακτος	adjective	NOUN	ligre-pos-wrong		correct	12132		ADJ			ligre-pos-wrong	1	NOUN 12132
+ἀργός	adjective	NOUN	ligre-pos-wrong		correct	12854		ADJ					
+ἀσφαλής	adjective	NOUN	ligre-pos-wrong		correct	14540		ADJ			ligre-pos-wrong	1	NOUN 14540
+ἄκοπος	adjective	NOUN	ligre-pos-wrong		correct	2843		ADJ			ligre-pos-wrong	1	NOUN 2843
+ἄσυλος	adjective	NOUN	ligre-pos-wrong		correct	14443		ADJ			ligre-pos-wrong	1	NOUN 14443
+ἐγκύκλιος	adjective	NOUN	ligre-pos-wrong		correct	25917		ADJ			ligre-pos-wrong	1	NOUN 25917
+ἐρινεός	adjective	NOUN	convention		none						convention	1	NOUN 36340
+ἐχθρός	adjective	NOUN	ligre-pos-wrong		correct	39311		ADJ			ligre-pos-wrong	1	NOUN 39311
+ἑπτάμηνος	adjective	NOUN	ligre-pos-wrong		correct	35927		ADJ			ligre-pos-wrong	1	NOUN 35927
+ἔγγραπτος	adjective	NOUN	ligre-pos-wrong		correct	25504		ADJ			ligre-pos-wrong	1	NOUN 25504
+ἔπαρχος	adjective	NOUN	convention		none						convention	1	NOUN 32698
+ἥμερος	adjective	NOUN	papygreek-lemma-wrong	40116	none						papygreek-lemma-wrong	1	NOUN 40155
+Ῥοδιακός	adjective	NOUN	ligre-pos-wrong		correct	79496		ADJ			ligre-pos-wrong	1	NOUN 79496
+καί	adverb	CCONJ	convention		none						convention	511	CCONJ 44225
+ἀλλά	adverb	CCONJ	convention		none						convention	24	CCONJ 3659
+καλός	adverb	ADJ	papygreek-lemma-differs	45038	none						papygreek-lemma-differs	131	ADJ 44978
+πολύς	adverb	ADJ	convention		none						convention	111	ADJ 72891
+πρότερος	adverb	ADJ	convention		none						convention	24	ADJ 77696
+ταχύς	adverb	ADJ	convention		none						convention	24	ADJ 88297
+πᾶς	adverb	ADJ	convention		none						convention	17	ADJ 68127
+ἀκόλουθος	adverb	ADJ	papygreek-lemma-differs		add		ἀκολούθως	ADV			papygreek-lemma-differs (in LiGre)	11	ADJ 2796
+ὅμοιος	adverb	ADJ	papygreek-lemma-differs		add		ὁμοίως	ADV			papygreek-lemma-differs (in LiGre)	11	ADJ 62681
+λοιπός	adverb	ADJ	convention		none						convention	9	ADJ 54287
+ὀρθός	adverb	ADJ	papygreek-lemma-differs		add		ὀρθῶς	ADV			papygreek-lemma-differs (in LiGre)	9	ADJ 63838
+μόνος	adverb	ADJ	convention		none						convention	8	ADJ 58391
+σύντομος	adverb	ADJ	papygreek-lemma-differs		add		συντόμως	ADV			papygreek-lemma-differs (in LiGre)	8	ADJ 86846
+ἄτοκος	adverb	ADJ	convention		none						convention	7	ADJ 14773
+εὔκαιρος	adverb	ADJ	papygreek-lemma-differs		add		εὐκαίρως	ADV			papygreek-lemma-differs (in LiGre)	6	ADJ 37741
+μέγας	adverb	ADJ	papygreek-lemma-differs	55728	none						papygreek-lemma-differs	6	ADJ 55743
+εὔτακτος	adverb	ADJ	papygreek-lemma-differs		add		εὐτάκτως	ADV			papygreek-lemma-differs (in LiGre)	4	ADJ 38707
+μέτριος	adverb	ADJ	papygreek-lemma-differs		add		μετρίως	ADV			papygreek-lemma-differs (in LiGre)	4	ADJ 57233
+μισοπόνηρος	adverb	ADJ	papygreek-lemma-differs		add		μισοπονήρως	ADV			papygreek-lemma-differs (in LiGre)	4	ADJ 57904
+οὐδείς	adverb	ADJ	convention		none						convention	4	ADJ 64451
+πλήρης	adverb	ADJ	convention		none						convention	4	ADJ 71545
+συνεχής	adverb	ADJ	convention		none						convention	4	ADJ 86340
+ἀκριβής	adverb	ADJ	papygreek-lemma-differs		add		ἀκριβῶς	ADV			papygreek-lemma-differs (in LiGre)	4	ADJ 2948
+ἄρα	adverb	ADJ	ligre-pos-wrong		correct	12723		PART			ligre-pos-wrong	4	ADJ 12723
+ἄριστος	adverb	ADJ	convention		none						convention	4	ADJ 13106
+ἡδύς	adverb	ADJ	papygreek-lemma-differs	39858	none						papygreek-lemma-differs	4	ADJ 39917
+ὅλος	adverb	ADJ	papygreek-lemma-differs		add		ὅλως	ADV			papygreek-lemma-differs (in LiGre)	4	ADJ 62349
+ὅσιος	adverb	ADJ	papygreek-lemma-differs		add		ὁσίως	ADV			papygreek-lemma-differs (in LiGre)	4	ADJ 64278
+κομψός	adverb	ADJ	papygreek-lemma-differs		add		κομψῶς	ADV			papygreek-lemma-differs (in LiGre)	3	ADJ 50169
+ἀσθενής	adverb	ADJ	papygreek-lemma-differs		add		ἀσθενῶς	ADV			papygreek-lemma-differs (in LiGre)	3	ADJ 13936
+ἄλλος	adverb	ADJ	papygreek-lemma-differs	3823	none						papygreek-lemma-differs	3	ADJ 3773
+ἑκούσιος	adverb	ADJ	papygreek-lemma-differs		add		ἑκουσίως	ADV			papygreek-lemma-differs (in LiGre)	3	ADJ 27694
+αὐθαίρετος	adverb	ADJ	papygreek-lemma-differs		add		αὐθαιρέτως	ADV			papygreek-lemma-differs (in LiGre)	2	ADJ 14956
+βαρύς	adverb	ADJ	papygreek-lemma-differs		add		βαρέως	ADV			papygreek-lemma-differs (in LiGre)	2	ADJ 16695
+βραχύς	adverb	ADJ	convention		none						convention	2	ADJ 17803
+λαμπρός	adverb	ADJ	papygreek-lemma-differs		add		λαμπρῶς	ADV			papygreek-lemma-differs (in LiGre)	2	ADJ 52629
+πρόθυμος	adverb	ADJ	convention		none						convention	2	ADJ 74895
+σαφής	adverb	ADJ	papygreek-lemma-differs		add		σαφῶς	ADV			papygreek-lemma-differs (in LiGre)	2	ADJ 80189
+σπουδαῖος	adverb	ADJ	papygreek-lemma-differs		add		σπουδαίως	ADV			papygreek-lemma-differs (in LiGre)	2	ADJ 82355
+συνήθης	adverb	ADJ	papygreek-lemma-differs		add		συνήθως	ADV			papygreek-lemma-differs (in LiGre)	2	ADJ 86365
+φιλότιμος	adverb	ADJ	convention		none						convention	2	ADJ 95833
+ἀνυπέρθετος	adverb	ADJ	papygreek-lemma-differs		add		ἀνυπερθέτως	ADV			papygreek-lemma-differs (in LiGre)	2	ADJ 9355
+ἑτοῖμος	adverb	ADJ	papygreek-lemma-differs		add		ἑτοίμως	ADV			papygreek-lemma-differs (in LiGre)	2	ADJ 36963
+ἡμιόλιος	adverb	ADJ	convention		none						convention	2	ADJ 40324
+ὀλίγος	adverb	ADJ	convention		none						convention	2	ADJ 62158
+ὕστερος	adverb	ADJ	convention		none						convention	2	ADJ 94299
+βραδύς	adverb	ADJ	papygreek-lemma-differs		add		βραδέως	ADV			papygreek-lemma-differs (in LiGre)	1	ADJ 17736
+γενναῖος	adverb	ADJ	papygreek-lemma-differs		add		γενναίως	ADV			papygreek-lemma-differs (in LiGre)	1	ADJ 18559
+δίκαιος	adverb	ADJ	papygreek-lemma-differs		add		δικαίως	ADV			papygreek-lemma-differs (in LiGre)	1	ADJ 22827
+δυσχερής	adverb	ADJ	papygreek-lemma-differs		add		δυσχερῶς	ADV			papygreek-lemma-differs (in LiGre)	1	ADJ 25210
+εὐμαρής	adverb	ADJ	papygreek-lemma-differs		add		εὐμαρῶς	ADV			papygreek-lemma-differs (in LiGre)	1	ADJ 37979
+εὐτυχής	adverb	ADJ	papygreek-lemma-differs		add		εὐτυχῶς	ADV			papygreek-lemma-differs (in LiGre)	1	ADJ 38804
+εὐχερής	adverb	ADJ	papygreek-lemma-differs		add		εὐχερῶς	ADV			papygreek-lemma-differs (in LiGre)	1	ADJ 38907
+εὔθυμος	adverb	ADJ	convention		none						convention	1	ADJ 37654
+εὔτονος	adverb	ADJ	papygreek-lemma-differs		add		εὐτόνως	ADV			papygreek-lemma-differs (in LiGre)	1	ADJ 38751
+θυμικός	adverb	ADJ	papygreek-lemma-differs		add		θυμικῶς	ADV			papygreek-lemma-differs (in LiGre)	1	ADJ 42156
+κατάξιος	adverb	ADJ	papygreek-lemma-differs		add		καταξίως	ADV			papygreek-lemma-differs (in LiGre)	1	ADJ 46566
+λυσιτελής	adverb	ADJ	convention		none						convention	1	ADJ 54595
+μαλακός	adverb	ADJ	papygreek-lemma-differs		add		μαλακῶς	ADV			papygreek-lemma-differs (in LiGre)	1	ADJ 55075
+μηδαμός	adverb	ADJ	papygreek-lemma-differs	57275	none						papygreek-lemma-differs	1	ADJ 57272
+μηδείς	adverb	ADJ	convention		none						convention	1	ADJ 57277
+μικρός	adverb	ADJ	convention		none						convention	1	ADJ 57618
+μικός	adverb	ADJ	papygreek-lemma-wrong		add		μικρῶς	ADV			papygreek-lemma-wrong (in LiGre)	1	ADJ 57555
+παντελής	adverb	ADJ	papygreek-lemma-differs		add		παντελῶς	ADV			papygreek-lemma-differs (in LiGre)	1	ADJ 65990
+παχυμερής	adverb	ADJ	papygreek-lemma-differs		add		παχυμερῶς	ADV			papygreek-lemma-differs (in LiGre)	1	ADJ 68353
+πικρός	adverb	ADJ	convention		none						convention	1	ADJ 70952
+πρῶτος	adverb	ADJ	convention		none						convention	1	ADJ 78166
+πότερος	adverb	ADJ	convention		none						convention	1	ADJ 73493
+στενός	adverb	ADJ	papygreek-lemma-differs		add		στενῶς	ADV			papygreek-lemma-differs (in LiGre)	1	ADJ 82698
+τρίς	adverb	ADJ	ligre-pos-wrong		correct	90262		ADV			ligre-pos-wrong	1	ADJ 90262
+φανερός	adverb	ADJ	papygreek-lemma-differs		add		φανερῶς	ADV			papygreek-lemma-differs (in LiGre)	1	ADJ 94707
+ἀγνώμων	adverb	ADJ	papygreek-lemma-differs		add		ἀγνωμόνως	ADV			papygreek-lemma-differs (in LiGre)	1	ADJ 595
+ἀδιάφορος	adverb	ADJ	papygreek-lemma-differs		add		ἀδιαφόρως	ADV			papygreek-lemma-differs (in LiGre)	1	ADJ 1132
+ἀηδής	adverb	ADJ	papygreek-lemma-differs		add		ἀηδῶς	ADV			papygreek-lemma-differs (in LiGre)	1	ADJ 1536
+ἀκέραιος	adverb	ADJ	papygreek-lemma-differs		add		ἀκεραίως	ADV			papygreek-lemma-differs (in LiGre)	1	ADJ 2613
+ἀκαλός	adverb	ADJ	papygreek-lemma-differs		add		ἀκάλως	ADV			papygreek-lemma-differs (in LiGre)	1	ADJ 2426
+ἀλλοῖος	adverb	ADJ	papygreek-lemma-differs		add		ἀλλοίως	ADV			papygreek-lemma-differs (in LiGre)	1	ADJ 3749
+ἀνοικονόμητος	adverb	ADJ	papygreek-lemma-differs		add		ἀνοικονομήτως	ADV			papygreek-lemma-differs (in LiGre)	1	ADJ 7804
+ἀσυνείδητος	adverb	ADJ	papygreek-lemma-differs		add		ἀσυνειδήτως	ADV			papygreek-lemma-differs (in LiGre)	1	ADJ 14489
+ἀσχήμων	adverb	ADJ	convention		none						convention	1	ADJ 14581
+ἀσύντακτος	adverb	ADJ	papygreek-lemma-differs		add		ἀσυντάκτως	ADV			papygreek-lemma-differs (in LiGre)	1	ADJ 14514
+ἀφειδής	adverb	ADJ	convention		none						convention	1	ADJ 15655
+ἁπλόος	adverb	ADJ	papygreek-lemma-differs	10540	none						papygreek-lemma-differs	1	ADJ 10524
+ἄδικος	adverb	ADJ	papygreek-lemma-differs		add		ἀδίκως	ADV			papygreek-lemma-differs (in LiGre)	1	ADJ 1179
+ἄμεμπτος	adverb	ADJ	papygreek-lemma-differs		add		ἀμέμπτως	ADV			papygreek-lemma-differs (in LiGre)	1	ADJ 4294
+ἐξενίαυτος	adverb	ADJ	convention		none						convention	1	ADJ 31658
+ἐπιμελής	adverb	ADJ	papygreek-lemma-differs		add		ἐπιμελῶς	ADV			papygreek-lemma-differs (in LiGre)	1	ADJ 34293
+ἐπιστρεφής	adverb	ADJ	convention		none						convention	1	ADJ 35120
+ἱκανός	adverb	ADJ	papygreek-lemma-differs		add		ἱκανῶς	ADV			papygreek-lemma-differs (in LiGre)	1	ADJ 42837
+ὀλίγωρος	adverb	ADJ	papygreek-lemma-differs		add		ὀλιγώρως	ADV			papygreek-lemma-differs (in LiGre)	1	ADJ 62220
+ὁμός	adverb	ADJ	papygreek-lemma-wrong	62950	correct	62950		ADV			papygreek-lemma-wrong	1	ADJ 62811
+ὁπότερος	adverb	ADJ	papygreek-lemma-differs		add		ὁποτέρως	ADV			papygreek-lemma-differs (in LiGre)	1	ADJ 63516
+ὄρθριος	adverb	ADJ	convention		none						convention	1	ADJ 63874
+ὑγιής	adverb	ADJ	papygreek-lemma-differs		add		ὑγιῶς	ADV			papygreek-lemma-differs (in LiGre)	1	ADJ 91115
+ῥᾴδιος	adverb	ADJ	papygreek-lemma-differs		add		ῥᾳδίως	ADV			papygreek-lemma-differs (in LiGre)	1	ADJ 79057
+α	numeral	NOUN	ligre-lemma-missing		add		α	NUM			ligre-lemma-missing (waits for LiGre)	102	NOUN 1
+εἷς	numeral	NOUN	ligre-pos-wrong		correct	26520		NUM			ligre-pos-wrong	101	NOUN 26520
+λ	numeral	NOUN	ligre-lemma-missing		add		λ	NUM			ligre-lemma-missing (waits for LiGre)	79	NOUN 52315
+κ	numeral	NOUN	ligre-lemma-missing		add		κ	NUM			ligre-lemma-missing (waits for LiGre)	74	NOUN 43911
+ἕξ	numeral	NOUN	ligre-pos-wrong		correct	31080		NUM			ligre-pos-wrong	19	NOUN 31080
+εἰκοστός	numeral	NOUN	ligre-pos-wrong		correct	26369		ADJ			ligre-pos-wrong	14	NOUN 26369
+τέταρτος	numeral	NOUN	ligre-pos-wrong		correct	88729		ADJ			ligre-pos-wrong	9	NOUN 88729
+μ	numeral	NOUN	ligre-lemma-missing		add		μ	NUM			ligre-lemma-missing (waits for LiGre)	7	NOUN 54728
+εἰκάς	numeral	NOUN	convention		none						convention	4	NOUN 26291
+ν	numeral	NOUN	ligre-lemma-missing		add		ν	NUM			ligre-lemma-missing (waits for LiGre)	4	NOUN 59234
+τ	numeral	NOUN	ligre-lemma-missing		add		τ	NUM			ligre-lemma-missing (waits for LiGre)	4	NOUN 87786
+ἕκτος	numeral	NOUN	ligre-pos-wrong		correct	28170		ADJ			ligre-pos-wrong	3	NOUN 28170
+δέκατος	numeral	NOUN	ligre-pos-wrong		correct	20158		ADJ			ligre-pos-wrong	2	NOUN 20158
+δωδέκατος	numeral	NOUN	ligre-pos-wrong		correct	25313		ADJ			ligre-pos-wrong	2	NOUN 25313
+ἑνδέκατος	numeral	NOUN	ligre-pos-wrong		correct	29961		ADJ			ligre-pos-wrong	1	NOUN 29961
+μή	adverb	SCONJ	ligre-pos-wrong		correct	57262		ADV			ligre-pos-wrong	357	SCONJ 57262
+διό	adverb	SCONJ	convention		none						convention	39	SCONJ 23016
+ὅτι	adverb	SCONJ	papygreek-pos-wrong		none						papygreek-pos-wrong	1	SCONJ 64411
+ἐάν	adverb	SCONJ	papygreek-pos-wrong		none						papygreek-pos-wrong	9	SCONJ 25401
+ἵνα	adverb	SCONJ	papygreek-pos-wrong		none						papygreek-pos-wrong	2	SCONJ 43042
+ὅμως	adverb	SCONJ	ligre-pos-wrong		correct	62950		ADV			ligre-pos-wrong	2	SCONJ 62950
+ὥστε	adverb	SCONJ	papygreek-pos-wrong		none						papygreek-pos-wrong	2	SCONJ 99977
+ἄλλος	pronoun	ADJ	convention		none						convention	150	ADJ 3773
+μηδείς	pronoun	ADJ	convention		none						convention	72	ADJ 57277
+οὐδείς	pronoun	ADJ	convention		none						convention	72	ADJ 64451
+σός	pronoun	ADJ	convention		none						convention	11	ADJ 81958
+ἐμός	pronoun	ADJ	convention		none						convention	7	ADJ 29127
+ἡμέτερος	pronoun	ADJ	convention		none						convention	7	ADJ 40175
+ὁπότερος	pronoun	ADJ	convention		none						convention	2	ADJ 63516
+ποῖος	pronoun	ADJ	convention		none						convention	1	ADJ 72015
+ἕτερος	pronoun	ADJ	convention		none						convention	1	ADJ 36892
+ὡς	conjunction	NOUN	ligre-pos-wrong		correct	99964		ADV			ligre-pos-wrong	177	NOUN 99964
+φαίνω	verb	NOUN	ligre-pos-wrong		correct	94608		VERB			ligre-pos-wrong	53	NOUN 94608
+δεῖ	verb	NOUN	ligre-pos-wrong		correct	19927		VERB			ligre-pos-wrong	33	NOUN 19927
+ἀπολαμβάνω	verb	NOUN	ligre-pos-wrong		correct	11257		VERB			ligre-pos-wrong	13	NOUN 11257
+ἡγέομαι	verb	NOUN	ligre-pos-wrong		correct	39833		VERB			ligre-pos-wrong	11	NOUN 39833
+κατάγω	verb	NOUN	ligre-pos-wrong		correct	45796		VERB			ligre-pos-wrong	10	NOUN 45796
+ἀποσπάω	verb	NOUN	ligre-pos-wrong		correct	11943		VERB			ligre-pos-wrong	9	NOUN 11943
+συμφέρω	verb	NOUN	ligre-pos-wrong		correct	84843		VERB			ligre-pos-wrong	4	NOUN 84843
+ἀκολουθέω	verb	NOUN	ligre-pos-wrong		correct	2790		VERB			ligre-pos-wrong	4	NOUN 2790
+καθαροποιέω	verb	NOUN	ligre-pos-wrong		correct	44000		VERB			ligre-pos-wrong	3	NOUN 44000
+συντυγχάνω	verb	NOUN	ligre-pos-wrong		correct	86886		VERB			ligre-pos-wrong	3	NOUN 86886
+ἐπιφέρω	verb	NOUN	ligre-pos-wrong		correct	35499		VERB			ligre-pos-wrong	3	NOUN 35499
+αὐξάνω	verb	NOUN	ligre-pos-wrong		correct	15054		VERB			ligre-pos-wrong	1	NOUN 15054
+καθαίρω	verb	NOUN	ligre-pos-wrong		correct	43964		VERB			ligre-pos-wrong	1	NOUN 43964
+ἀναμιμνήσκω	verb	NOUN	ligre-pos-wrong		correct	5863		VERB			ligre-pos-wrong	1	NOUN 5863
+ἀναστρέφω	verb	NOUN	ligre-pos-wrong		correct	6371		VERB			ligre-pos-wrong	1	NOUN 6371
+ἀνομολογέομαι	verb	NOUN	ligre-pos-wrong		correct	7878		VERB			ligre-pos-wrong	1	NOUN 7878
+ἀντίκειμαι	verb	NOUN	ligre-pos-wrong		correct	8575		VERB			ligre-pos-wrong	1	NOUN 8575
+ἐλλείπω	verb	NOUN	ligre-pos-wrong		correct	28814		VERB			ligre-pos-wrong	1	NOUN 28814
+ὑπεραπαιτέω	verb	NOUN	ligre-pos-wrong		correct	92028		VERB			ligre-pos-wrong	1	NOUN 92028
+ὡς	adverb	NOUN	ligre-pos-wrong		correct	99964		ADV			ligre-pos-wrong	62	NOUN 99964
+εὐθύς	adverb	NOUN	papygreek-lemma-differs	37577	correct	37686		ADJ			papygreek-lemma-differs	2	NOUN 37686
+ἀναγκαῖος	adverb	NOUN	papygreek-lemma-differs		add		ἀναγκαίως	ADV			papygreek-lemma-differs (waits for LiGre)	6	NOUN 5253
+ἀσφαλής	adverb	NOUN	papygreek-lemma-differs		add		ἀσφαλῶς	ADV			papygreek-lemma-differs (waits for LiGre)	6	NOUN 14540
+οὗτος	adverb	NOUN	papygreek-lemma-differs	64671	none						papygreek-lemma-differs	5	NOUN 64670
+κύριος	adverb	NOUN	papygreek-lemma-differs	52007	none						papygreek-lemma-differs	4	NOUN 52000
+μήν	adverb	NOUN	ligre-lemma-missing		add		μήν	PART			ligre-lemma-missing (waits for LiGre)	4	NOUN 44229
+περισσός	adverb	NOUN	papygreek-lemma-differs		add		περισσῶς	ADV			papygreek-lemma-differs (waits for LiGre)	2	NOUN 70129
+τάχος	adverb	NOUN	convention		none						convention	2	NOUN 88245
+τέλειος	adverb	NOUN	papygreek-lemma-differs	88497	none						papygreek-lemma-differs	2	NOUN 88443
+ἴσος	adverb	NOUN	papygreek-lemma-differs	43761	none						papygreek-lemma-differs	2	NOUN 43570
+δέον	adverb	NOUN	papygreek-lemma-differs	20317	none						papygreek-lemma-differs	1	NOUN 20316
+θερμός	adverb	NOUN	papygreek-lemma-differs		add		θερμῶς	ADV			papygreek-lemma-differs (in LiGre)	1	NOUN 41398
+κακός	adverb	NOUN	papygreek-lemma-differs		add		κακῶς	ADV			papygreek-lemma-differs (waits for LiGre)	1	NOUN 44547
+μακρός	adverb	NOUN	ligre-pos-wrong		correct	54995		ADJ			ligre-pos-wrong	1	NOUN 54995
+οἷος	adverb	NOUN	ligre-pos-wrong		correct	61788		DET			ligre-pos-wrong	1	NOUN 61788
+πανοικία	adverb	NOUN	papygreek-lemma-differs	65895	none						papygreek-lemma-differs	1	NOUN 65896
+πλείων	adverb	NOUN	ligre-pos-wrong		correct	71414		ADJ			ligre-pos-wrong	1	NOUN 71414
+πλεῖστος	adverb	NOUN	ligre-pos-wrong		correct	71410		ADJ			ligre-pos-wrong	1	NOUN 71410
+πυκνός	adverb	NOUN	ligre-pos-wrong		correct	78523		ADJ			ligre-pos-wrong	1	NOUN 78523
+πόσος	adverb	NOUN	ligre-pos-wrong		correct	73439		DET			ligre-pos-wrong	1	NOUN 73439
+τῷ	adverb	NOUN	ligre-pos-wrong		correct	91035		ADV			ligre-pos-wrong	1	NOUN 91035
+ἄλογος	adverb	NOUN	papygreek-lemma-differs		add		ἀλόγως	ADV			papygreek-lemma-differs (in LiGre)	1	NOUN 3870
+ὅς	adverb	NOUN	ligre-pos-wrong		correct	39866		PRON			ligre-pos-wrong	1	NOUN 39866
+ὅσος	adverb	NOUN	ligre-pos-wrong		correct	64298		DET			ligre-pos-wrong	1	NOUN 64298
+οὔτε	conjunction	ADV	ligre-pos-wrong		correct	64659		CCONJ			ligre-pos-wrong	24	ADV 64659
+καθότι	conjunction	ADV	convention		none						convention	19	ADV 44169
+καθάπερ	conjunction	ADV	convention		none						convention	15	ADV 43976
+καθά	conjunction	ADV	convention		none						convention	12	ADV 43949
+καθώς	conjunction	ADV	convention		none						convention	11	ADV 44223
+ὁπηνίκα	conjunction	ADV	convention		none						convention	3	ADV 63348
+μήποτε	conjunction	ADV	convention		none						convention	2	ADV 57393
+ὁπόταν	conjunction	ADV	convention		none						convention	2	ADV 63514
+ὥσπερ	conjunction	ADV	convention		none						convention	2	ADV 99974
+πρίν	conjunction	ADV	convention		none						convention	1	ADV 73795
+ἡνίκα	conjunction	ADV	convention		none						convention	1	ADV 40498
+ὁπότε	conjunction	ADV	convention		none						convention	1	ADV 63515
+ὅπου	conjunction	ADV	convention		none						convention	1	ADV 63520
+διάδοχος	noun	ADJ	convention		none						convention	28	ADJ 20847
+ἅλς	noun	ADJ	ligre-pos-wrong		correct	3923		NOUN	m		ligre-pos-wrong	4	ADJ 3923
+Ἀργεῖος	noun	ADJ	convention		none						convention	3	ADJ 12805
+ἐννήρης	noun	ADJ	convention		none						convention	3	ADJ 30554
+Κρόνιος	noun	ADJ	convention		none						convention	2	ADJ 51235
+Ἀφροδίσιος	noun	ADJ	convention		none						convention	2	ADJ 15925
+ἔγγυος	noun	ADJ	convention		none						convention	2	ADJ 25527
+Βάκχιος	noun	ADJ	convention		none						convention	1	ADJ 16463
+δίκαιος	noun	ADJ	convention		none						convention	1	ADJ 22827
+λοιπός	noun	ADJ	convention		none						convention	1	ADJ 54287
+μνημόνειος	noun	ADJ	convention		none						convention	1	ADJ 57981
+μοναχός	noun	ADJ	convention		none						convention	1	ADJ 58225
+πατητός	noun	ADJ	convention		none						convention	1	ADJ 68221
+συγγενής	noun	ADJ	convention		none						convention	1	ADJ 83567
+φαμιλιαρικός	noun	ADJ	convention		none						convention	1	ADJ 94693
+ἀνάδοχος	noun	ADJ	convention		none						convention	1	ADJ 5384
+Ὀλύμπιος	noun	ADJ	convention		none						convention	1	ADJ 62417
+τρίτος	numeral	ADJ	convention		none						convention	9	ADJ 90384
+πέμπτος	numeral	ADJ	convention		none						convention	4	ADJ 68664
+πρῶτος	numeral	ADJ	convention		none						convention	4	ADJ 78166
+ἐννέα	numeral	ADJ	ligre-pos-wrong		correct	30484		NUM			ligre-pos-wrong	4	ADJ 30484
+πεντεκαιδέκατος	numeral	ADJ	convention		none						convention	3	ADJ 68865
+τεσσαρεσκαιδέκατος	numeral	ADJ	convention		none						convention	3	ADJ 88697
+ἔνατος	numeral	ADJ	convention		none						convention	3	ADJ 29888
+ἕβδομος	numeral	ADJ	convention		none						convention	3	ADJ 25444
+δυώδεκα	numeral	ADJ	ligre-pos-wrong		correct	25254		NUM			ligre-pos-wrong	1	ADJ 25254
+πρότερος	numeral	ADJ	papygreek-lemma-wrong	78166	none						papygreek-lemma-wrong	1	ADJ 77696
+τεσσαρακοστός	numeral	ADJ	convention		none						convention	1	ADJ 88687
+ἑκκαιδέκατος	numeral	ADJ	convention		none						convention	1	ADJ 27271
+ἑπτακαιδέκατος	numeral	ADJ	convention		none						convention	1	ADJ 35904
+ὀγδοήκοντα	numeral	ADJ	ligre-pos-wrong		correct	61224		NUM			ligre-pos-wrong	1	ADJ 61224
+ὄγδοος	numeral	ADJ	convention		none						convention	1	ADJ 61234
+ἕκαστος	adjective	PRON	convention		none						convention	36	PRON 26840
+χωρίς	preposition	ADV	convention		none								
+μεταξύ	preposition	ADV	convention		none								
+ἄχρι	preposition	ADV	convention		none								
+ἔμπροσθεν	preposition	ADV	convention		none								
+ἐγγύς	preposition	ADV	convention		none								
+ἔξω	preposition	ADV	convention		none								
+πῶς	adverb	PRON	ligre-pos-wrong		correct	79008		ADV			ligre-pos-wrong	2	PRON 79008
+ἆρα	adverb	PRON	ligre-pos-wrong		correct	12724		PART			ligre-pos-wrong	2	PRON 12724
+ποῦ	adverb	PRON	ligre-pos-wrong		correct	73578		ADV			ligre-pos-wrong	1	PRON 73578
+πότε	adverb	PRON	ligre-pos-wrong		correct	73486		ADV			ligre-pos-wrong	1	PRON 73486
+τις	adverb	PRON	convention		none						convention	1	PRON 89326
+ἕκαστος	adverb	PRON	convention		none						convention	1	PRON 26840
+ὅστις	adverb	PRON	convention		none						convention	1	PRON 64329
+ἅμα	preposition	ADJ	ligre-pos-wrong	4060	correct	4060		ADV					
+ἅμα	preposition	PRON	ligre-pos-wrong	4060	correct	4061		ADV					
+δίχα	preposition	ADJ	ligre-pos-wrong	23458	correct	23458		ADV					
+δίχα	preposition	PRON	ligre-pos-wrong	23458	correct	23459		ADV					
+δεύτερος	adjective	NUM	ligre-pos-wrong		correct	20448		ADJ			ligre-pos-wrong	8	NUM 20448
+ἔξεστι	verb	ADJ	ligre-pos-wrong		correct	31723		VERB			ligre-pos-wrong	7	ADJ 31723
+ἅμα	adverb	ADJ	ligre-pos-wrong	4060	correct	4060		ADV					
+ἅμα	adverb	PRON	ligre-pos-wrong	4060	correct	4061		ADV					
+δίχα	adverb	ADJ	ligre-pos-wrong	23458	correct	23458		ADV					
+δίχα	adverb	PRON	ligre-pos-wrong	23458	correct	23459		ADV					
+ἐπάνω	preposition	ADV	convention		none						convention	4	ADV 32617
+κατεναντίον	preposition	ADV	convention		none						convention	1	ADV 47567
+ἔσω	adverb	ADP	convention		none						convention	3	ADP 36762
+μέχρι	adverb	ADP	convention		none						convention	1	ADP 57260
+νή	adverb	ADP	convention		none						convention	1	ADP 60069
+τοσοῦτος	pronoun	ADV	ligre-pos-wrong		correct	89635		DET			ligre-pos-wrong	5	ADV 89635
+πλήν	conjunction	ADP	convention		none						convention	3	ADP 71540
+μέχρι	conjunction	ADP	convention		none						convention	1	ADP 57260
+δηλονότι	adverb	VERB	ligre-pos-wrong		correct	20506		ADV			ligre-pos-wrong	2	VERB 20506
+μήπω	adverb	VERB	ligre-pos-wrong		correct	57395		ADV			ligre-pos-wrong	1	VERB 57395
+συντηρέω	adverb	VERB	papygreek-lemma-differs	86810	none						papygreek-lemma-differs	1	VERB 86825
+ξ	numeral	VERB	ligre-lemma-missing		add		ξ	NUM			ligre-lemma-missing (waits for LiGre)	2	VERB 60771
+εἰκοσιδύω	numeral	VERB	ligre-pos-wrong		correct	26345		NUM			ligre-pos-wrong	1	VERB 26345
+ἤ	adverb	CCONJ	convention		none								
+πῶς	conjunction	PRON	ligre-pos-wrong		correct	79008		ADV			ligre-pos-wrong	2	PRON 79008
+ὅσπερ	conjunction	PRON	convention		none						convention	1	PRON 64299
+καί	untagged	CCONJ	papygreek-pos-wrong		none						papygreek-pos-wrong	3	CCONJ 44225
+δέ	untagged	PART	papygreek-pos-wrong		none						papygreek-pos-wrong	3	PART 19911
+ὥστε	preposition	SCONJ	papygreek-pos-wrong		none						papygreek-pos-wrong	2	SCONJ 99977
+ἐναντίος	preposition	ADJ	convention		none						convention	2	ADJ 29717
+ἐντός	preposition	PRON	ligre-pos-wrong	30933	correct	30933		ADV					
+ἐντός	preposition	VERB	ligre-pos-wrong	30933	correct	30934		ADV					
+ἐφήμισυς	adjective	ADV	convention		none						convention	1	ADV 39135
+οὐ	conjunction	ADJ	crasis	44225 57389	none								
+οὐ	conjunction	ADV	crasis	44225 57389	none								
+οὐ	conjunction	VERB	crasis	44225 57389	none								
+ἐνώπιος	adjective	ADP	convention		none						convention	1	ADP 31069
+μή	untagged	SCONJ	papygreek-pos-wrong		none						papygreek-pos-wrong	1	SCONJ 57262
+ὁ	untagged	NOUN	ligre-pos-wrong		correct	61173		DET			ligre-pos-wrong	1	NOUN 61173
+παραχρῆμα	noun	ADV	papygreek-pos-wrong		none						papygreek-pos-wrong	1	ADV 67399
+εἶπον	untagged	VERB	papygreek-pos-wrong		none						papygreek-pos-wrong	1	VERB 26459
+ὁ	untagged	DET	papygreek-pos-wrong		none						papygreek-pos-wrong	1	DET 61173
+ὅς	adverb	PRON	convention		none						convention	1	PRON 39866
+οὗτος	adverb	DET	papygreek-lemma-differs	64671	none						papygreek-lemma-differs	5	DET 64670
+ὡς	conjunction	ADV	convention		none						convention	177	ADV 99964
