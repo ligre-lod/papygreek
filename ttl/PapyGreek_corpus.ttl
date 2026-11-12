@@ -578,47 +578,47 @@
     dcterms:description "The PapyGreek treebanks (558 documentary papyri in Postclassical Greek, ca. 300 BCE-700 CE, morphosyntactically annotated by the Digital Grammar of Greek Documentary Papyri project) as linked data, with every token linked to its lemma in the LiGre Lemma Bank for Ancient Greek, following the model of the LiLa Knowledge Base corpora."@en ;
     dcterms:identifier "https://doi.org/10.5281/zenodo.24089052" ;
     dcterms:isPartOf <https://w3id.org/ligre/data/id/KnowledgeBase> ;
-    dcterms:issued "2026-11-09"^^xsd:date ;
+    dcterms:issued "2026-11-12"^^xsd:date ;
     dcterms:language <http://lexvo.org/id/iso639-3/grc> ;
     dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
     dcterms:publisher <https://ror.org/00cv9y106> ;
     dcterms:source <https://doi.org/10.5281/zenodo.8428823>,
         <https://github.com/papygreek/papygreek-treebanks> ;
     dcterms:title "PapyGreek Treebanks"@en ;
-    void:classPartition [ void:class lila_corpus:CitationStructure ; void:entities "1116"^^xsd:integer ],
-        [ void:class powla:Document ; void:entities "558"^^xsd:integer ],
+    void:classPartition [ void:class powla:Document ; void:entities "558"^^xsd:integer ],
         [ void:class powla:Corpus ; void:entities "1"^^xsd:integer ],
+        [ void:class lila_corpus:citationUnit ; void:entities "15801"^^xsd:integer ],
         [ void:class powla:Terminal ; void:entities "63628"^^xsd:integer ],
-        [ void:class lila_corpus:citationUnit ; void:entities "15801"^^xsd:integer ] ;
+        [ void:class lila_corpus:CitationStructure ; void:entities "1116"^^xsd:integer ] ;
     void:classes "5"^^xsd:integer ;
-    void:dataDump <https://raw.githubusercontent.com/ligre-lod/papygreek/v0.1.1/ttl/complete_papygreek.ttl.gz> ;
+    void:dataDump <https://raw.githubusercontent.com/ligre-lod/papygreek/v0.2.0/ttl/complete_papygreek.ttl.gz> ;
     void:entities "81104"^^xsd:integer ;
     void:exampleResource <https://w3id.org/ligre/data/corpora/PapyGreek/id/corpus/aegyptus.90.43> ;
     void:feature <http://www.w3.org/ns/formats/Turtle> ;
     void:properties "23"^^xsd:integer ;
-    void:propertyPartition [ void:property powla:next ; void:triples "77003"^^xsd:integer ],
-        [ void:property lilaOntology:hasLemma ; void:triples "45870"^^xsd:integer ],
-        [ void:property powla:hasStringValue ; void:triples "63628"^^xsd:integer ],
-        [ void:property dc:title ; void:triples "1675"^^xsd:integer ],
-        [ void:property dc:description ; void:triples "1116"^^xsd:integer ],
-        [ void:property powla:hasChild ; void:triples "127188"^^xsd:integer ],
-        [ void:property powla:hasSubDocument ; void:triples "558"^^xsd:integer ],
+    void:propertyPartition [ void:property lila_corpus:hasCitLevel ; void:triples "15801"^^xsd:integer ],
         [ void:property rdf:type ; void:triples "81104"^^xsd:integer ],
-        [ void:property lila_corpus:last ; void:triples "15801"^^xsd:integer ],
-        [ void:property powla:previous ; void:triples "77003"^^xsd:integer ],
-        [ void:property powla:hasDocument ; void:triples "1116"^^xsd:integer ],
-        [ void:property lila_corpus:hasRefType ; void:triples "15801"^^xsd:integer ],
-        [ void:property lila_corpus:hasCitLevel ; void:triples "15801"^^xsd:integer ],
-        [ void:property lila_corpus:hasRefValue ; void:triples "15801"^^xsd:integer ],
-        [ void:property rdfs:label ; void:triples "79429"^^xsd:integer ],
-        [ void:property dcterms:identifier ; void:triples "560"^^xsd:integer ],
-        [ void:property lila_corpus:isLayer ; void:triples "5212"^^xsd:integer ],
-        [ void:property lila_corpus:hasCitStructure ; void:triples "127188"^^xsd:integer ],
-        [ void:property dcterms:source ; void:triples "1"^^xsd:integer ],
         [ void:property dcterms:license ; void:triples "1"^^xsd:integer ],
+        [ void:property lila_corpus:hasRefValue ; void:triples "15801"^^xsd:integer ],
+        [ void:property lila_corpus:first ; void:triples "16917"^^xsd:integer ],
+        [ void:property powla:hasStringValue ; void:triples "63628"^^xsd:integer ],
+        [ void:property lilaOntology:hasLemma ; void:triples "45870"^^xsd:integer ],
+        [ void:property powla:hasChild ; void:triples "127188"^^xsd:integer ],
+        [ void:property dc:title ; void:triples "1675"^^xsd:integer ],
         [ void:property lila_corpus:hasCitSubUnit ; void:triples "10589"^^xsd:integer ],
+        [ void:property dcterms:identifier ; void:triples "560"^^xsd:integer ],
+        [ void:property powla:hasSubDocument ; void:triples "558"^^xsd:integer ],
+        [ void:property dc:description ; void:triples "1116"^^xsd:integer ],
         [ void:property rdfs:seeAlso ; void:triples "1122"^^xsd:integer ],
-        [ void:property lila_corpus:first ; void:triples "16917"^^xsd:integer ] ;
+        [ void:property lila_corpus:hasCitStructure ; void:triples "127188"^^xsd:integer ],
+        [ void:property powla:hasDocument ; void:triples "1116"^^xsd:integer ],
+        [ void:property powla:next ; void:triples "77003"^^xsd:integer ],
+        [ void:property dcterms:source ; void:triples "1"^^xsd:integer ],
+        [ void:property lila_corpus:isLayer ; void:triples "5212"^^xsd:integer ],
+        [ void:property powla:previous ; void:triples "77003"^^xsd:integer ],
+        [ void:property rdfs:label ; void:triples "79429"^^xsd:integer ],
+        [ void:property lila_corpus:hasRefType ; void:triples "15801"^^xsd:integer ],
+        [ void:property lila_corpus:last ; void:triples "15801"^^xsd:integer ] ;
     void:subset [ a void:Linkset ; dcterms:title "PapyGreek tokens linked to LiGre lemmas"@en ; void:distinctObjects "3271"^^xsd:integer ; void:linkPredicate lilaOntology:hasLemma ; void:objectsTarget ligreLemma:LemmaBank ; void:subjectsTarget <https://w3id.org/ligre/data/corpora/PapyGreek/id/corpus> ; void:triples "45870"^^xsd:integer ] ;
     void:triples "780484"^^xsd:integer ;
     void:uriSpace "https://w3id.org/ligre/data/corpora/PapyGreek/id/corpus/" ;
@@ -628,7 +628,7 @@
         <http://purl.org/dc/terms/>,
         <http://purl.org/powla/powla.owl#> ;
     rdfs:seeAlso <https://papygreek.com/> ;
-    dcat:distribution [ a dcat:Distribution ; dcterms:identifier "https://doi.org/10.5281/zenodo.24089052" ; dcterms:issued "2026-11-09"^^xsd:date ; dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ; dcterms:title "Complete corpus in Turtle (gzip)"@en ; dcat:accessURL <https://doi.org/10.5281/zenodo.24089052> ; dcat:compressFormat <https://www.iana.org/assignments/media-types/application/gzip> ; dcat:downloadURL <https://raw.githubusercontent.com/ligre-lod/papygreek/v0.1.1/ttl/complete_papygreek.ttl.gz> ; dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> ] ;
+    dcat:distribution [ a dcat:Distribution ; dcterms:identifier "https://doi.org/10.5281/zenodo.24089052" ; dcterms:issued "2026-11-12"^^xsd:date ; dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ; dcterms:title "Complete corpus in Turtle (gzip)"@en ; dcat:accessURL <https://doi.org/10.5281/zenodo.24089052> ; dcat:compressFormat <https://www.iana.org/assignments/media-types/application/gzip> ; dcat:downloadURL <https://raw.githubusercontent.com/ligre-lod/papygreek/v0.2.0/ttl/complete_papygreek.ttl.gz> ; dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> ] ;
     dcat:keyword "Ancient Greek"@en,
         "LiGre"@en,
         "Postclassical Greek"@en,
@@ -637,7 +637,7 @@
         "linked data"@en,
         "treebank"@en ;
     dcat:landingPage <https://github.com/ligre-lod/papygreek> ;
-    dcat:version "0.1.1" ;
+    dcat:version "0.2.0" ;
     foaf:homepage <https://ligre-lod.github.io/> .
 
 <https://orcid.org/0009-0004-2388-9233> a foaf:Agent ;

@@ -5,6 +5,8 @@ All notable changes to PapyGreek–LiGre are listed here. Releases follow
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-11-12
+
 ### Added
 - Columns in `review/decisions_ambiguous.tsv` that record what each decision
   changes in the LiGre Lemma Bank (`ligre_change`: `none`, `correct` or `add`,
@@ -88,6 +90,7 @@ First release.
 - Pinned sources: the PapyGreek Treebanks release v3.0 and the LiGre Lemma
   Bank release v0.1.0, so that the corpus and its IRIs can be rebuilt exactly.
 
-[Unreleased]: https://github.com/ligre-lod/papygreek/compare/v0.1.1...HEAD
+[Unreleased]: https://github.com/ligre-lod/papygreek/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/ligre-lod/papygreek/compare/v0.1.1...v0.2.0
 [0.1.1]: https://github.com/ligre-lod/papygreek/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/ligre-lod/papygreek/releases/tag/v0.1.0
