@@ -9,13 +9,10 @@ from .pos_decisions import POS_DECISION_FILE_COLUMNS, is_undecided, read_pos_fil
 from .variants import RULE_ORDER, variant_candidates
 from .wr_lv_decisions import read_wr_lv_rows, updated_rows, write_wr_lv_rows
 
-CHECK_HOMOGRAPH = "check homograph"
-HOMOGRAPH = "homograph, linked to the only LiGre lemma"
-OPEN_STATUSES = {"undecided", "ambiguous", CHECK_HOMOGRAPH}
+OPEN_STATUSES = {"undecided", "ambiguous"}
 
 STATUS_BY_STEP = {
     LinkStep.UNDECIDED_POS_CLASH: "undecided",
-    LinkStep.UNDECIDED_HOMOGRAPH: CHECK_HOMOGRAPH,
     LinkStep.REJECTED: "reject",
     LinkStep.TO_ADD_TO_LIGRE: "waits for LiGre",
     LinkStep.AMBIGUOUS: "ambiguous",
@@ -32,10 +29,6 @@ class PosClash:
 def review_status(result):
     if result.decision is not None and result.decision.adds_to_ligre:
         return f"{result.decision.value} (in LiGre)" if result.is_linked else f"{result.decision.value} (waits for LiGre)"
-    if result.homograph_check:
-        if result.decision:
-            return result.decision.value
-        return HOMOGRAPH if result.step is LinkStep.HOMOGRAPH else CHECK_HOMOGRAPH
     if result.step in (LinkStep.LEMMA_DECISION, LinkStep.REJECTED, LinkStep.TO_ADD_TO_LIGRE) and result.decision:
         return result.decision.value
     return STATUS_BY_STEP[result.step]

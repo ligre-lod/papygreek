@@ -30,9 +30,8 @@ LiGre Lemma Bank.
 - `ttl/texts/` gets one Turtle file for each papyrus when you run the pipeline (not in the repository; the same data is in `ttl/complete_papygreek.ttl.gz`)
 - `ttl/PapyGreek_corpus.ttl` describes the corpus
 - `ttl/complete_papygreek.ttl.gz` provides one Turtle file containing the whole corpus
-- `review/` holds the two decision files used for linking, `decisions_ambiguous.tsv` and `decisions_wr_lv.tsv`, which every run keeps up to date (see *Linking workflow*)
-- `ttl/paper_subset.ttl` is a subset of the corpus made with `queries/loanwords/paper_subset.rq`
-- `queries/examples/` holds example SPARQL queries (see *Example queries*); the queries in `queries/loanwords/` combine the corpus with other resources (IGVLL, CLaSSES) and are run with `scripts/run_query.py`
+- `review/` holds the two decision files used for linking, `decisions_ambiguous.tsv` and `decisions_wr_lv.tsv`, which every run keeps up to date (see *Linking workflow*), and `decisions_unmatched.tsv`, the list of every other unlinked lemma, written by `scripts/list_unmatched.py` (see *Unmatched lemmas*)
+- `queries/examples/` holds example SPARQL queries (see *Example queries*), two of which combine the corpus with IGVLL and CLaSSES through the LiLa SPARQL endpoint
 - `LICENSE`, `LICENSE-DATA.md`, `CITATION.cff` and `.zenodo.json` hold the licences and the citation and archiving metadata; `CHANGELOG.md` and `RELEASING.md` the changes per release and the release procedure
 
 ## Data model
@@ -57,6 +56,20 @@ python scripts/run_query.py queries/examples/01_documents_and_coverage.rq --data
 python scripts/run_query.py queries/examples/02_most_frequent_lemmas.rq --data ttl/complete_papygreek.ttl.gz data/ligre_lemmabank.ttl
 ```
 
+Queries 06 and 07 are federated queries for the [LiLa SPARQL endpoint](https://lila-erc.eu/sparql/)
+(`https://lila-erc.eu/sparql/lila_knowledge_base/sparql`), which holds IGVLL and CLaSSES, and take the
+IGVLL–LiGre links and the PapyGreek tokens from the LiGre endpoint (`https://ligre.ugent.be/sparql`)
+through `SERVICE`. LiLa also holds a copy of the links, imported once; the linkset on the LiGre endpoint is
+the maintained version, and fetching the links together with the tokens returns only the tokens of IGVLL words. Paste them into the LiLa query editor, or run them with `scripts/run_query.py --endpoint`,
+which needs no extra packages:
+
+```bash
+python scripts/run_query.py queries/examples/07_shared_loanwords.rq --endpoint
+```
+
+The LiLa endpoint does not accept aggregates or subqueries inside `SERVICE`, so the queries fetch the
+PapyGreek tokens with a plain pattern and count them on the LiLa side.
+
 | Query | What it returns |
 |---|---|
 | [`01_documents_and_coverage.rq`](queries/examples/01_documents_and_coverage.rq) | Documents with their Trismegistos number, number of tokens and share of linked tokens. |
@@ -64,13 +77,15 @@ python scripts/run_query.py queries/examples/02_most_frequent_lemmas.rq --data t
 | [`03_occurrences_of_a_lemma.rq`](queries/examples/03_occurrences_of_a_lemma.rq) | Every occurrence of a lemma (ἀρτάβη) with its form, document and line. |
 | [`04_unlinked_forms.rq`](queries/examples/04_unlinked_forms.rq) | The most frequent forms of unlinked tokens. |
 | [`05_dataset_description.rq`](queries/examples/05_dataset_description.rq) | The VoID statistics of the corpus and of its links to LiGre. |
+| [`06_loanword_coverage.rq`](queries/examples/06_loanword_coverage.rq) | How many IGVLL loanwords have their Greek source word in LiGre and in PapyGreek, their Latin word in CLaSSES, and both (federated, LiLa endpoint). |
+| [`07_shared_loanwords.rq`](queries/examples/07_shared_loanwords.rq) | The IGVLL loanwords attested in both PapyGreek and CLaSSES, with their LiGre and LiLa lemmas and token counts (federated, LiLa endpoint). |
 
 ## Quality and known limitations
 
 - Not every token has a lemma link: lemmas missing from LiGre (mostly personal and place names and
   alphabetic numerals such as β or ιθ), matches that are not decided yet, and words that wait for a lemma
   LiGre will add. Every unlinked token stays in the corpus; `review/decisions_ambiguous.tsv` and
-  `review/decisions_wr_lv.tsv` list the open cases.
+  `review/decisions_wr_lv.tsv` list the open cases, and `review/decisions_unmatched.tsv` all other unlinked lemmas.
 - Homographs share one LiGre lemma. PapyGreek distinguishes homographs (`λέγω1`, `λέγω2`), as LiLa does
   for Latin (two lemmas *malum*, 'apple' and 'evil'), but LiGre has one lemma per spelling, part of speech
   and gender, so all of them link to it. PapyGreek's homograph numbers are not always reliable either
@@ -89,11 +104,10 @@ python scripts/run_query.py queries/examples/02_most_frequent_lemmas.rq --data t
 Every token goes through these steps; the pipeline logs how many tokens end up in each. The pipeline writes only the two decision files in `review/`, `decisions_ambiguous.tsv` and `decisions_wr_lv.tsv`. Every run adds the cases that are still open, keeps everything you filled in, and drops undecided rows that are no longer open; undecided rows come first. The columns after the decision columns are information the pipeline fills in. A row you have not filled in is ignored; a row that is filled in but incomplete or wrong is skipped with a warning (the pipeline and the export name the row and what is missing), so you can decide part of the file and run again.
 
 0. **Not a word.** Tokens that PapyGreek marks in the lemma field as no identifiable word are left unlinked: a lost or partly lost word (`|gap:…|` or `G` in the lemma, the placeholder lemma `γ` on an untagged token), a blank space (`|vac:…|`), an unresolved abbreviation (lemma ending in `…`) or a placeholder (`TO_ADD`, a part-of-speech tag in the lemma field). Each token is counted under the marker that excluded it. The rules are in `linking/not_a_word.py`.
-1. **Strict match.** The PapyGreek lemma and part of speech match exactly one LiGre lemma. PapyGreek's AGDT tags are compared to LiGre's Universal Dependencies tags through `STRICT_UNIVERSAL_TAGS_BY_PAPYGREEK_POS` in `linking/pos_tags.py`. When a noun matches several LiGre lemmas, its gender picks the one with the same gender (LiGre has a masculine and a feminine λίψ).
-2. **Ambiguous matches** (`decisions_ambiguous.tsv`). The lemma is in LiGre, but the match does not say which LiGre lemma the tokens belong to. Three kinds of matches end up here, each with its `status`:
+1. **Strict match.** The PapyGreek lemma and part of speech match exactly one LiGre lemma. PapyGreek's AGDT tags are compared to LiGre's Universal Dependencies tags through `STRICT_UNIVERSAL_TAGS_BY_PAPYGREEK_POS` in `linking/pos_tags.py`. When a noun matches several LiGre lemmas, its gender picks the one with the same gender (LiGre has a masculine and a feminine λίψ). PapyGreek numbers homographs (`λέγω1`, `λέγω2`); LiGre does not distinguish them (it has one lemma per spelling, part of speech and gender), so a numbered lemma whose spelling matches only one LiGre lemma is a strict match too. To link it elsewhere, add a row for the numbered lemma to `decisions_ambiguous.tsv` (εὐθύς2, always εὐθέως, to LiGre's adverb εὐθέως).
+2. **Ambiguous matches** (`decisions_ambiguous.tsv`). The lemma is in LiGre, but the match does not say which LiGre lemma the tokens belong to. Two kinds of matches end up here, each with its `status`:
    - **Part-of-speech clash** (`undecided`): LiGre has the spelling, but only with another part of speech (PapyGreek's adverb καλός, LiGre's adjective καλός). When the LiGre candidates have several parts of speech, `ligre_pos` lists them (`ADJ/NOUN`): keep the one you decide on.
    - **Several LiGre lemmas** (`ambiguous`): the spelling and part of speech match more than one LiGre lemma, and gender cannot tell them apart (θεῖος1: two nouns θεῖος).
-   - **Homographs** (`check homograph`): PapyGreek numbers homographs (`λέγω1`, `λέγω2`); LiGre does not distinguish them (it has one lemma per spelling, part of speech and gender). A numbered lemma whose spelling matches only one LiGre lemma links to it without a decision and does not appear here; to link it elsewhere, add a row for the numbered lemma (εὐθύς2, always εὐθέως, to LiGre's adverb εὐθέως).
 
    The tokens stay unlinked until the row is decided. Every row also shows its `tokens` and its LiGre `candidates` (part of speech and id), the most frequent first.
 
@@ -130,9 +144,35 @@ Every token goes through these steps; the pipeline logs how many tokens end up i
    | `correct-ligre` | LiGre's spelling is wrong, PapyGreek's is right | LiGre corrects the spelling of `ligre_lemma` (`correct`); the tokens link to it |
    | `new` | a different word that LiGre lacks, e.g. a name that only matches a common word (Φίλων, φίλων) | LiGre gets PapyGreek's lemma as a new lemma with `new_pos` and `new_gender` (`add`); leave `ligre_lemma` empty |
 
-4. **Lemmas missing from LiGre.** The lemma does not match any LiGre lemma, not even after normalisation: mostly personal and place names and alphabetic numerals. Its tokens stay in the corpus without a lemma and are not listed in a decision file; they link once LiGre has the lemma. To get a lemma into LiGre, add it there with a correction.
+4. **Lemmas missing from LiGre.** The lemma does not match any LiGre lemma, not even after normalisation: mostly personal and place names and alphabetic numerals. Its tokens stay in the corpus without a lemma and are not in either decision file, but they are listed in `review/decisions_unmatched.tsv` (see *Unmatched lemmas*); they link once LiGre has the lemma. To get a lemma into LiGre, add it there with a correction.
 
 A lemma can be decided in only one of the two decision files.
+
+### Unmatched lemmas
+
+`scripts/list_unmatched.py` lists every unlinked lemma that is in neither decision file in
+`review/decisions_unmatched.tsv`, so that the gaps can be inspected without running the pipeline:
+
+```bash
+uv run python scripts/list_unmatched.py
+```
+
+It links the tokens exactly as the pipeline does (with the decisions in `review/` and the data in `data/`), and
+writes one row per PapyGreek lemma and part of speech whose tokens are not linked, except the lemmas listed in
+`decisions_ambiguous.tsv` or `decisions_wr_lv.tsv`. Together, the three files account for every unlinked token.
+Run it after the pipeline, so that the decision files are up to date. The file is a list, not a decision file:
+the pipeline does not read it, and every run overwrites it.
+
+| Column | Content |
+|---|---|
+| `lemma`, `papygreek_pos` | PapyGreek's lemma and part of speech |
+| `reason` | `not in LiGre` (step 4), or `not a word: <rule>` for a token set aside in step 0, with the rule that set it aside |
+| `tokens`, `documents` | the number of unlinked tokens and of papyri they occur in |
+| `forms` | the forms as written on the papyri, the most frequent first (at most ten) |
+| `examples` | up to three occurrences, as document and line |
+| `lsj_papygreek` | for `not in LiGre`, the address of the lemma on [lsj.gr](https://lsj.gr) |
+
+Rows are sorted by reason (`not in LiGre` first) and then by number of tokens.
 
 ### Submitting the changes to LiGre
 

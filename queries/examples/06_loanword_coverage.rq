@@ -1,0 +1,50 @@
+PREFIX lemonEty: <http://lari-datasets.ilc.cnr.it/lemonEty#>
+PREFIX lilaOntology: <http://lila-erc.eu/ontologies/lila/>
+PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+
+SELECT ?loanwords ?greekWordInLiGre ?greekWordInPapyGreek ?latinWordInCLaSSES ?inPapyGreekAndCLaSSES
+WHERE {
+  {
+    SELECT (COUNT(DISTINCT ?entry) AS ?loanwords)
+    WHERE {
+      ?entry a ontolex:LexicalEntry .
+      FILTER(STRSTARTS(STR(?entry), "http://lila-erc.eu/data/lexicalResources/IGVLL/"))
+    }
+  }
+  {
+    SELECT (COUNT(DISTINCT ?entry) AS ?greekWordInLiGre)
+    WHERE {
+      ?entry lemonEty:etymology/lemonEty:etymon/ontolex:canonicalForm ?ligreLemma .
+      FILTER(STRSTARTS(STR(?entry), "http://lila-erc.eu/data/lexicalResources/IGVLL/"))
+      FILTER(STRSTARTS(STR(?ligreLemma), "https://w3id.org/ligre/"))
+    }
+  }
+  {
+    SELECT (COUNT(DISTINCT ?entry) AS ?latinWordInCLaSSES)
+    WHERE {
+      ?entry ontolex:canonicalForm ?lilaLemma .
+      FILTER(STRSTARTS(STR(?entry), "http://lila-erc.eu/data/lexicalResources/IGVLL/"))
+      ?classesToken lilaOntology:hasLemma ?lilaLemma .
+      FILTER(STRSTARTS(STR(?classesToken), "http://lila-erc.eu/data/corpora/CLaSSES/"))
+    }
+  }
+  {
+    SELECT (COUNT(DISTINCT ?entry) AS ?greekWordInPapyGreek) (COUNT(DISTINCT ?sharedEntry) AS ?inPapyGreekAndCLaSSES)
+    WHERE {
+      SERVICE <https://ligre.ugent.be/sparql> {
+        ?etymon ontolex:canonicalForm ?ligreLemma .
+        ?papygreekToken lilaOntology:hasLemma ?ligreLemma .
+      }
+      ?entry lemonEty:etymology/lemonEty:etymon ?etymon .
+      FILTER(STRSTARTS(STR(?entry), "http://lila-erc.eu/data/lexicalResources/IGVLL/"))
+      OPTIONAL {
+        ?entry ontolex:canonicalForm ?lilaLemma .
+        FILTER EXISTS {
+          ?classesToken lilaOntology:hasLemma ?lilaLemma .
+          FILTER(STRSTARTS(STR(?classesToken), "http://lila-erc.eu/data/corpora/CLaSSES/"))
+        }
+        BIND(?entry AS ?sharedEntry)
+      }
+    }
+  }
+}
