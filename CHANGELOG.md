@@ -5,6 +5,8 @@ All notable changes to PapyGreek–LiGre are listed here. Releases follow
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-11-16
+
 ### Added
 - `scripts/list_unmatched.py` writes `review/decisions_unmatched.tsv`: every PapyGreek
   lemma whose tokens are not linked to LiGre and that is in neither decision file
@@ -117,7 +119,8 @@ First release.
 - Pinned sources: the PapyGreek Treebanks release v3.0 and the LiGre Lemma
   Bank release v0.1.0, so that the corpus and its IRIs can be rebuilt exactly.
 
-[Unreleased]: https://github.com/ligre-lod/papygreek/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/ligre-lod/papygreek/compare/v0.3.0...HEAD
+[0.3.0]: https://github.com/ligre-lod/papygreek/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/ligre-lod/papygreek/compare/v0.1.1...v0.2.0
 [0.1.1]: https://github.com/ligre-lod/papygreek/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/ligre-lod/papygreek/releases/tag/v0.1.0
