@@ -1,0 +1,28 @@
+PREFIX lemonEty: <http://lari-datasets.ilc.cnr.it/lemonEty#>
+PREFIX lilaOntology: <http://lila-erc.eu/ontologies/lila/>
+PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?latin ?greek ?ligreLemma ?lilaLemma (COUNT(DISTINCT ?papygreekToken) AS ?inPapyGreek) ?inCLaSSES
+WHERE {
+  SERVICE <https://ligre.ugent.be/sparql> {
+    ?etymon ontolex:canonicalForm ?ligreLemma .
+    ?papygreekToken lilaOntology:hasLemma ?ligreLemma .
+  }
+  ?entry lemonEty:etymology/lemonEty:etymon ?etymon ;
+         rdfs:label ?latin .
+  ?etymon rdfs:label ?greek .
+  {
+    SELECT ?entry ?lilaLemma (COUNT(DISTINCT ?classesToken) AS ?inCLaSSES)
+    WHERE {
+      ?entry a ontolex:LexicalEntry ;
+             ontolex:canonicalForm ?lilaLemma .
+      FILTER(STRSTARTS(STR(?entry), "http://lila-erc.eu/data/lexicalResources/IGVLL/"))
+      ?classesToken lilaOntology:hasLemma ?lilaLemma .
+      FILTER(STRSTARTS(STR(?classesToken), "http://lila-erc.eu/data/corpora/CLaSSES/"))
+    }
+    GROUP BY ?entry ?lilaLemma
+  }
+}
+GROUP BY ?latin ?greek ?ligreLemma ?lilaLemma ?inCLaSSES
+ORDER BY DESC(?inCLaSSES) DESC(?inPapyGreek) ?latin

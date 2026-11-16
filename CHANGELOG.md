@@ -5,6 +5,29 @@ All notable changes to PapyGreek–LiGre are listed here. Releases follow
 
 ## [Unreleased]
 
+### Added
+- `scripts/list_unmatched.py` writes `review/decisions_unmatched.tsv`: every PapyGreek
+  lemma whose tokens are not linked to LiGre and that is in neither decision file
+  (lemmas absent from LiGre and tokens that are not a word), with its tokens,
+  forms, example occurrences and LSJ address, so that the gaps can be inspected.
+
+### Changed
+- Numbered PapyGreek homographs that link to the only LiGre lemma with their
+  spelling without a decision are counted as strict matches instead of as a
+  separate step (`homograph linked to the only LiGre lemma`), since no decision
+  is involved. The links themselves are unchanged; only the step counts are.
+- The loanword queries are now federated queries for the LiLa SPARQL endpoint,
+  `queries/examples/06_loanword_coverage.rq` and `07_shared_loanwords.rq`. They
+  take the IGVLL–LiGre links and the PapyGreek tokens from the LiGre endpoint
+  through `SERVICE`, so they run on the live data, including
+  the parts of CLaSSES that are not in its GitHub release.
+  `scripts/run_query.py` sends a query to an endpoint with `--endpoint` or runs it
+  on Turtle files with `--data`; it no longer builds a local store of all resources.
+
+### Removed
+- `queries/loanwords/` and `ttl/paper_subset.ttl`, replaced by the federated
+  queries above.
+
 ## [0.2.0] - 2026-11-12
 
 ### Added

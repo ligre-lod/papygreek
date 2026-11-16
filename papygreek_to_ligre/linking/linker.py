@@ -12,8 +12,6 @@ class LinkStep(Enum):
     STRICT = "strict"
     LEMMA_DECISION = "lemma decision"
     UNDECIDED_POS_CLASH = "undecided pos clash"
-    UNDECIDED_HOMOGRAPH = "undecided homograph"
-    HOMOGRAPH = "homograph linked to the only LiGre lemma"
     REJECTED = "rejected"
     TO_ADD_TO_LIGRE = "waits for a lemma LiGre will add"
     AMBIGUOUS = "ambiguous"
@@ -21,7 +19,7 @@ class LinkStep(Enum):
     NOT_A_WORD = "not a word"
 
 
-LINKING_STEPS = {LinkStep.STRICT, LinkStep.LEMMA_DECISION, LinkStep.HOMOGRAPH}
+LINKING_STEPS = {LinkStep.STRICT, LinkStep.LEMMA_DECISION}
 
 
 @dataclass(frozen=True)
@@ -32,7 +30,6 @@ class LinkResult:
     in_review: bool = False
     lemma: Optional[object] = None
     decision: Optional[object] = None
-    homograph_check: bool = False
     not_a_word: Optional[str] = None
     extra_lemmas: tuple = ()
 
@@ -76,12 +73,8 @@ class LemmaLinker:
         ligre_tags = result.candidates[0].universal_tags
         decision = self.pos_decisions.homograph_decision_for(lemma, result.papygreek_pos, ligre_tags)
         if decision is None:
-            # LiGre does not distinguish homographs (it has one lemma per spelling, part of speech and gender),
-            # so a numbered PapyGreek homograph links to the only LiGre lemma with its spelling, unless a
-            # decision links it elsewhere.
-            return replace(result, step=LinkStep.HOMOGRAPH, in_review=True, homograph_check=True)
-        return self.apply_decision(result.papygreek_pos, result.candidates, decision, list(result.candidates),
-                                   homograph_check=True)
+            return result
+        return self.apply_decision(result.papygreek_pos, result.candidates, decision, list(result.candidates))
 
     def resolve_ambiguity(self, lemma, result):
         ligre_tags = frozenset(tag for candidate in result.candidates for tag in candidate.universal_tags)
@@ -105,33 +98,30 @@ class LemmaLinker:
         corrected = [candidate for candidate in candidates if candidate.lemma_id == decision.ligre_change.ligre_id]
         return self.apply_decision(pos, candidates, decision, corrected or list(candidates), gender)
 
-    def apply_decision(self, pos, candidates, decision, matching, gender=None, homograph_check=False):
+    def apply_decision(self, pos, candidates, decision, matching, gender=None):
         """Link the tokens where the decision says: to the lemma LiGre will add, to the LiGre lemmas in
         ligre_lemma, or else to the LiGre lemma with PapyGreek's spelling."""
         if decision.adds_to_ligre:
             added = self.added_lemma(decision.ligre_change)
             if added is None:
-                return LinkResult(LinkStep.TO_ADD_TO_LIGRE, pos, candidates, True, decision=decision,
-                                  homograph_check=homograph_check)
-            return LinkResult(LinkStep.LEMMA_DECISION, pos, candidates, True, added, decision, homograph_check)
+                return LinkResult(LinkStep.TO_ADD_TO_LIGRE, pos, candidates, True, decision=decision)
+            return LinkResult(LinkStep.LEMMA_DECISION, pos, candidates, True, added, decision)
         corrected_entry = self.lemma_bank.entry(decision.ligre_change.ligre_id) if decision.ligre_change.ligre_id else None
         if decision.adds_spelling_to_ligre:
             if corrected_entry is None:
                 return LinkResult(LinkStep.MISSING, pos, candidates, decision=decision)
-            return LinkResult(LinkStep.LEMMA_DECISION, pos, candidates, True, corrected_entry.lemma, decision,
-                              homograph_check)
+            return LinkResult(LinkStep.LEMMA_DECISION, pos, candidates, True, corrected_entry.lemma, decision)
         if not matching and not decision.ligre_lemmas and decision.ligre_change.kind is LigreChangeKind.CORRECT \
                 and corrected_entry is not None:
             lemma = corrected_entry.lemma
-            return LinkResult(LinkStep.LEMMA_DECISION, pos, candidates, True, lemma, decision, homograph_check)
+            return LinkResult(LinkStep.LEMMA_DECISION, pos, candidates, True, lemma, decision)
         if not matching and not decision.ligre_lemmas:
             return LinkResult(LinkStep.MISSING, pos, candidates, decision=decision)
         if decision.ligre_lemmas:
             first, *others = [self.lemma_bank.entry(lemma_id).lemma for lemma_id in decision.ligre_lemmas]
-            return LinkResult(LinkStep.LEMMA_DECISION, pos, candidates, True, first, decision, homograph_check,
+            return LinkResult(LinkStep.LEMMA_DECISION, pos, candidates, True, first, decision,
                               extra_lemmas=tuple(others))
-        return replace(link_single(LinkStep.LEMMA_DECISION, matching, pos, candidates, decision, gender),
-                       homograph_check=homograph_check)
+        return link_single(LinkStep.LEMMA_DECISION, matching, pos, candidates, decision, gender)
 
     def added_lemma(self, change):
         gender = LILA_GENDER_BY_AGDT_TAG.get(change.gender) if change.gender else None
