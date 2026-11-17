@@ -5,6 +5,17 @@ All notable changes to PapyGreek–LiGre are listed here. Releases follow
 
 ## [Unreleased]
 
+### Added
+- `review/manual_check.tsv`: the manual check of a random sample of 100
+  automatic links (PapyGreek lemma and part of speech to LiGre lemma, 764
+  tokens) against their context in the papyri; all 100 are correct.
+- 83 decisions in `review/decisions_wr_lv.tsv`: 51 personal names that LiGre
+  only has as an adjective (`new`, `PROPN`), 6 middle verbs that LSJ treats as
+  the usual form of the verb (`lv`), 23 spelling errors in PapyGreek's lemmas
+  (`link`) and 3 spelling variants (`wr`). Their LiGre changes are in
+  `ligre_corrections/papygreek-review.tsv`, which now lists only the changes
+  that LiGre 0.6.2 does not have yet.
+
 ## [0.3.0] - 2026-11-16
 
 ### Added
