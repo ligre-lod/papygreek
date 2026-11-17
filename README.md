@@ -30,7 +30,7 @@ LiGre Lemma Bank.
 - `ttl/texts/` gets one Turtle file for each papyrus when you run the pipeline (not in the repository; the same data is in `ttl/complete_papygreek.ttl.gz`)
 - `ttl/PapyGreek_corpus.ttl` describes the corpus
 - `ttl/complete_papygreek.ttl.gz` provides one Turtle file containing the whole corpus
-- `review/` holds the two decision files used for linking, `decisions_ambiguous.tsv` and `decisions_wr_lv.tsv`, which every run keeps up to date (see *Linking workflow*), and `decisions_unmatched.tsv`, the list of every other unlinked lemma, written by `scripts/list_unmatched.py` (see *Unmatched lemmas*)
+- `review/` holds the two decision files used for linking, `decisions_ambiguous.tsv` and `decisions_wr_lv.tsv`, which every run keeps up to date (see *Linking workflow*), and `decisions_unmatched.tsv`, the list of every other unlinked lemma, written by `scripts/list_unmatched.py` (see *Unmatched lemmas*), and `manual_check.tsv`, the manual check of a random sample of 100 automatic links (PapyGreek lemma and part of speech to LiGre lemma, 764 tokens) against their context in the papyri, with its judgement and the date
 - `queries/examples/` holds example SPARQL queries (see *Example queries*), two of which combine the corpus with IGVLL and CLaSSES through the LiLa SPARQL endpoint
 - `LICENSE`, `LICENSE-DATA.md`, `CITATION.cff` and `.zenodo.json` hold the licences and the citation and archiving metadata; `CHANGELOG.md` and `RELEASING.md` the changes per release and the release procedure
 
