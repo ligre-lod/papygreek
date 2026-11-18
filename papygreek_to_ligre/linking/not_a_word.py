@@ -26,6 +26,8 @@ MARKERS = (
            lambda word: word.lemma == "TO_ADD"),
     Marker("postag as lemma", "the lemma field holds a part-of-speech tag (u--------)",
            lambda word: "-" in word.lemma and POSTAG_AS_LEMMA.fullmatch(word.lemma) is not None),
+    Marker("full stop with a lemma", "the form is a full stop: the annotation of the word before it slipped onto it",
+           lambda word: word.form.strip() == "."),
 )
 
 
