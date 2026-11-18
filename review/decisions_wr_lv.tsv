@@ -55,7 +55,7 @@ lemma	ligre_lemma	decision	new_pos	new_gender	note	papygreek_pos	tokens	rule	can
 Ὡρος						noun	20	capitalisation	ὦρος NOUN 99949 ὧρος NOUN 99950	https://lsj.gr/wiki/Ὡρος	https://lsj.gr/wiki/ὦρος https://lsj.gr/wiki/ὧρος
 Φίλων	95937					noun	17	capitalisation	φίλων NOUN 95937	https://lsj.gr/wiki/Φίλων	https://lsj.gr/wiki/φίλων
 Φιλομήτωρ	95625					noun	13	capitalisation	φιλομήτωρ NOUN 95625	https://lsj.gr/wiki/Φιλομήτωρ	https://lsj.gr/wiki/φιλομήτωρ
-Μῦς	59056					noun	10	capitalisation	μῦς NOUN 59056	https://lsj.gr/wiki/Μῦς	https://lsj.gr/wiki/μῦς
+Μῦς		new	PROPN	m		noun	10	capitalisation	μῦς NOUN 59056	https://lsj.gr/wiki/Μῦς	https://lsj.gr/wiki/μῦς
 Παράβολος	66190					noun	9	capitalisation	παράβολος NOUN 66190	https://lsj.gr/wiki/Παράβολος	https://lsj.gr/wiki/παράβολος
 Διογένης	23023					noun	8	capitalisation	διογενής NOUN 23023	https://lsj.gr/wiki/Διογένης	https://lsj.gr/wiki/διογενής
 Δράκων	24040					noun	8	capitalisation	δράκων NOUN 24040	https://lsj.gr/wiki/Δράκων	https://lsj.gr/wiki/δράκων
@@ -65,7 +65,7 @@ lemma	ligre_lemma	decision	new_pos	new_gender	note	papygreek_pos	tokens	rule	can
 Κρότος	51269					noun	6	capitalisation	κρότος NOUN 51269	https://lsj.gr/wiki/Κρότος	https://lsj.gr/wiki/κρότος
 Σκνίψ	81472					noun	6	capitalisation	σκνίψ NOUN 81472	https://lsj.gr/wiki/Σκνίψ	https://lsj.gr/wiki/σκνίψ
 Ἡγεμονίς	39831					noun	6	capitalisation	ἡγεμονίς NOUN 39831	https://lsj.gr/wiki/Ἡγεμονίς	https://lsj.gr/wiki/ἡγεμονίς
-Εἰρήνη	26482					noun	5	capitalisation	εἰρήνη NOUN 26482	https://lsj.gr/wiki/Εἰρήνη	https://lsj.gr/wiki/εἰρήνη
+Εἰρήνη		new	PROPN	f		noun	5	capitalisation	εἰρήνη NOUN 26482	https://lsj.gr/wiki/Εἰρήνη	https://lsj.gr/wiki/εἰρήνη
 Εὐεργέτης	37456					noun	5	capitalisation	εὐεργέτης NOUN 37456	https://lsj.gr/wiki/Εὐεργέτης	https://lsj.gr/wiki/εὐεργέτης
 Καλόκαιρος	44960					noun	5	capitalisation	καλόκαιρος NOUN 44960	https://lsj.gr/wiki/Καλόκαιρος	https://lsj.gr/wiki/καλόκαιρος
 Πέτρα	70641					noun	5	capitalisation	πέτρα NOUN 70641	https://lsj.gr/wiki/Πέτρα	https://lsj.gr/wiki/πέτρα
@@ -143,7 +143,7 @@ lemma	ligre_lemma	decision	new_pos	new_gender	note	papygreek_pos	tokens	rule	can
 Λύκος	54504					noun	1	capitalisation	λύκος NOUN 54504	https://lsj.gr/wiki/Λύκος	https://lsj.gr/wiki/λύκος
 Λῦσις	54591					noun	1	capitalisation	λύσις NOUN 54591	https://lsj.gr/wiki/Λῦσις	https://lsj.gr/wiki/λύσις
 Μακαρία	54889					noun	1	capitalisation	μακαρία NOUN 54889	https://lsj.gr/wiki/Μακαρία	https://lsj.gr/wiki/μακαρία
-Μηνᾶς	57352					noun	1	capitalisation	μηνάς NOUN 57352	https://lsj.gr/wiki/Μηνᾶς	https://lsj.gr/wiki/μηνάς
+Μηνᾶς		new	PROPN	m		noun	1	capitalisation	μηνάς NOUN 57352	https://lsj.gr/wiki/Μηνᾶς	https://lsj.gr/wiki/μηνάς
 Μωρίων	59213					noun	1	capitalisation	μωρίων NOUN 59213	https://lsj.gr/wiki/Μωρίων	https://lsj.gr/wiki/μωρίων
 Μῶρος	59227					noun	1	capitalisation	μωρός ADJ 59227	https://lsj.gr/wiki/Μῶρος	https://lsj.gr/wiki/μωρός
 Νάρδος	59305					noun	1	capitalisation	νάρδος NOUN 59305	https://lsj.gr/wiki/Νάρδος	https://lsj.gr/wiki/νάρδος

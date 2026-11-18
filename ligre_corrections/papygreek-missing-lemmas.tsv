@@ -1,0 +1,27 @@
+action	ligre_id	lemma	pos	gender	new_lemma	new_pos	new_gender	replaced_by	reason	evidence	submitted_by
+add					δίδυμος	ADJ			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): δίδυμος as adjective	https://orcid.org/0009-0004-2388-9233
+add					Σαραπιεῖον	NOUN	n		lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): Σαραπιεῖον as noun	https://orcid.org/0009-0004-2388-9233
+add					ὄνομα	NOUN	n		lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): ὄνομα as noun	https://orcid.org/0009-0004-2388-9233
+add					σεαυτοῦ	PRON			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): σεαυτοῦ as pronoun	https://orcid.org/0009-0004-2388-9233
+add					σύ	PRON			lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): σύ as pronoun	https://orcid.org/0009-0004-2388-9233
+add					Αὐρήλιος	PROPN	m		lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): Αὐρήλιος as noun	https://orcid.org/0009-0004-2388-9233
+add					Βησᾶς	PROPN	m		lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): Βησᾶς as noun	https://orcid.org/0009-0004-2388-9233
+add					Δίδυμος	PROPN	m		lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): Δίδυμος as noun	https://orcid.org/0009-0004-2388-9233
+add					Δημητρία	PROPN	f		lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): Δημητρία as noun	https://orcid.org/0009-0004-2388-9233
+add					Διογενίς	PROPN	f		lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): Διογενίς as noun	https://orcid.org/0009-0004-2388-9233
+add					Διοσκουρίδης	PROPN	m		lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): Διοσκουρίδης as noun	https://orcid.org/0009-0004-2388-9233
+add					Ζήνων	PROPN	m		lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): Ζήνων as noun	https://orcid.org/0009-0004-2388-9233
+add					Μάξιμος	PROPN	m		lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): Μάξιμος as noun	https://orcid.org/0009-0004-2388-9233
+add					Μεγχῆς	PROPN	m		lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): Μεγχῆς as noun	https://orcid.org/0009-0004-2388-9233
+add					Σαραπάς	PROPN	m		lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): Σαραπάς as noun	https://orcid.org/0009-0004-2388-9233
+add					Σαραπίων	PROPN	m		lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): Σαραπίων as noun	https://orcid.org/0009-0004-2388-9233
+add					Σερηνίλλα	PROPN	f		lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): Σερηνίλλα as noun	https://orcid.org/0009-0004-2388-9233
+add					Φάβιος	PROPN	m		lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): Φάβιος as noun	https://orcid.org/0009-0004-2388-9233
+add					Ἀθηνόδωρος	PROPN	m		lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): Ἀθηνόδωρος as noun	https://orcid.org/0009-0004-2388-9233
+add					Ἀμμωνοῦς	PROPN	f		lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): Ἀμμωνοῦς as noun	https://orcid.org/0009-0004-2388-9233
+add					Ἀμμώνιος	PROPN	m		lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): Ἀμμώνιος as noun	https://orcid.org/0009-0004-2388-9233
+add					Ἀχιλλεύς	PROPN	m		lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): Ἀχιλλεύς as noun	https://orcid.org/0009-0004-2388-9233
+add					Ἡρακλείδης	PROPN	m		lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): Ἡρακλείδης as noun	https://orcid.org/0009-0004-2388-9233
+add					Ἰούδας	PROPN	m		lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): Ἰούδας as noun	https://orcid.org/0009-0004-2388-9233
+add					Ἰσιδώρα	PROPN	f		lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): Ἰσιδώρα as noun	https://orcid.org/0009-0004-2388-9233
+add					Ὀξύρυγχος	PROPN	m		lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): Ὀξύρυγχος as noun	https://orcid.org/0009-0004-2388-9233

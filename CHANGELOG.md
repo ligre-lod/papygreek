@@ -5,10 +5,29 @@ All notable changes to PapyGreek–LiGre are listed here. Releases follow
 
 ## [Unreleased]
 
+### Added
+- `ligre_corrections/papygreek-missing-lemmas.tsv`: 26 lemmas that are missing
+  from LiGre, from the annotation of the most frequent PapyGreek lemmas
+  without a LiGre lemma (σύ, σεαυτοῦ, ὄνομα, Σαραπιεῖον, δίδυμος and 21
+  names), submitted to LiGre with the 3 names decided as `new` in
+  `review/decisions_wr_lv.tsv` (Εἰρήνη, Μηνᾶς, Μῦς). The month names, ἕως and
+  the lemmas whose spelling the annotation corrected are not included yet.
+
 ### Changed
 - `review/decisions_unmatched.tsv` is renamed `review/list_unmatched.tsv`: it is
   a list written by `scripts/list_unmatched.py`, not a decision file that the
   pipeline reads, as in the review folder of igvll.
+- The last open part-of-speech conflicts in `review/decisions_ambiguous.tsv`
+  are decided: μή, δεύτερος, ξένος1, οὔτε, ὅμως, ἐπίτιμος and Σεβαστός as
+  `convention`, εἷς as `papygreek-pos-wrong`. Most of them only became
+  conflicts when LiGre corrected the part of speech of these lemmas for their
+  more frequent use.
+- `linking/not_a_word.py` leaves out a token whose form is a full stop: in
+  PapyGreek's regularised layer, the annotation of the word before it has
+  slipped onto it (3 tokens, in O.Claud. 2.237 and UPZ 1.43).
+- A `PROPN` decided as `new` (or added with `ligre_change` `add`) may be without
+  a gender, for indeclinable names such as the Egyptian months, which LiGre
+  now accepts; a `NOUN` still needs one.
 
 ### Fixed
 - `queries/examples/06_loanword_coverage.rq` counted the IGVLL entries with a
