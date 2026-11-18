@@ -133,7 +133,7 @@ Every token goes through these steps; the pipeline logs how many tokens end up i
    | `lemma` | PapyGreek's lemma |
    | `ligre_lemma` | the id of the LiGre lemma the decision is about; prefilled when there is one clear candidate |
    | `decision` | empty (not decided yet) or one of the values below |
-   | `new_pos`, `new_gender` | for `new`: the part of speech (`PROPN` for a name) and, for `NOUN` and `PROPN`, the gender (`m`, `f`, `n`); for `lv` and `correct-ligre` only to deviate from the LiGre lemma's |
+   | `new_pos`, `new_gender` | for `new`: the part of speech (`PROPN` for a name) and, for `NOUN`, the gender (`m`, `f`, `n`), which a `PROPN` may leave empty when it has none (an indeclinable name such as an Egyptian month); for `lv` and `correct-ligre` only to deviate from the LiGre lemma's |
    | `note` | your note, e.g. the LSJ entry you checked |
 
    | `decision` | Meaning | What happens |

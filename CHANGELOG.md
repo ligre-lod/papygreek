@@ -5,6 +5,11 @@ All notable changes to PapyGreek–LiGre are listed here. Releases follow
 
 ## [Unreleased]
 
+### Changed
+- A `PROPN` decided as `new` (or added with `ligre_change` `add`) may be without
+  a gender, for indeclinable names such as the Egyptian months, which LiGre
+  now accepts; a `NOUN` still needs one.
+
 ### Fixed
 - `queries/examples/06_loanword_coverage.rq` counted the IGVLL entries with a
   Greek word linked to LiGre in LiLa's copy of the IGVLL–LiGre links, which
