@@ -1,13 +1,12 @@
 lemma	papygreek_pos	ligre_pos	decision	ligre_lemma	ligre_change	ligre_id	ligre_new_lemma	ligre_new_pos	ligre_new_gender	ligre_variant_of	status	tokens	candidates
-μή	conjunction	ADV	convention		none						undecided	30	ADV 57262
-δεύτερος	numeral	ADJ	convention		none						undecided	6	ADJ 20448
-ξένος1	noun	ADJ	convention		none						undecided	4	ADJ 60879
-εἷς	noun	NUM	papygreek-pos-wrong		none						undecided	3	NUM 26520
-Σεβαστός	adjective	PROPN	convention		none						undecided	2	PROPN 100048
-οὔτε	adverb	CCONJ	convention		none						undecided	2	CCONJ 64659
-ὅμως	conjunction	ADV	convention		none						undecided	2	ADV 62950
-αὐτός	adverb	PRON									undecided	1	PRON 15421
-ἐπίτιμος	noun	ADJ	convention		none						undecided	1	ADJ 35389
+μή	conjunction	ADV	convention		none						convention	30	ADV 57262
+δεύτερος	numeral	ADJ	convention		none						convention	6	ADJ 20448
+ξένος1	noun	ADJ	convention		none						convention	4	ADJ 60879
+εἷς	noun	NUM	papygreek-pos-wrong		none						papygreek-pos-wrong	3	NUM 26520
+Σεβαστός	adjective	PROPN	convention		none						convention	2	PROPN 100048
+οὔτε	adverb	CCONJ	convention		none						convention	2	CCONJ 64659
+ὅμως	conjunction	ADV	convention		none						convention	2	ADV 62950
+ἐπίτιμος	noun	ADJ	convention		none						convention	1	ADJ 35389
 ὁ	article	NOUN	ligre-pos-wrong		correct	61173		DET			ligre-pos-wrong	6038	NOUN 61173
 ὅς	pronoun	NOUN	ligre-pos-wrong		correct	39866		PRON			ligre-pos-wrong	552	NOUN 39866
 οὗτος	pronoun	NOUN	ligre-pos-wrong		correct	64670		DET			ligre-pos-wrong	342	NOUN 64670

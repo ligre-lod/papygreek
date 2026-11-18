@@ -1,4 +1,5 @@
 lemma	ligre_lemma	decision	new_pos	new_gender	note	papygreek_pos	tokens	rule	candidates	lsj_papygreek	lsj_ligre
+Μεγχης	100191					noun	13	accents, breathings or editorial signs	Μεγχῆς PROPN 100191	https://lsj.gr/wiki/Μεγχης	https://lsj.gr/wiki/Μεγχῆς
 Δημ́ητριος	20542					noun	12	accents, breathings or editorial signs	Δημήτριος NOUN 20542	https://lsj.gr/wiki/Δημ́ητριος	https://lsj.gr/wiki/Δημήτριος
 Ὡρίων	99928					noun	8	accents, breathings or editorial signs	Ὠρίων NOUN 99928	https://lsj.gr/wiki/Ὡρίων	https://lsj.gr/wiki/Ὠρίων
 τροφεῖα	90554					noun	6	accents, breathings or editorial signs	τροφεία NOUN 90554	https://lsj.gr/wiki/τροφεῖα	https://lsj.gr/wiki/τροφεία
@@ -14,15 +15,20 @@ lemma	ligre_lemma	decision	new_pos	new_gender	note	papygreek_pos	tokens	rule	can
 ἐπισκοπός	34952					noun	3	accents, breathings or editorial signs	ἐπίσκοπος NOUN 34952	https://lsj.gr/wiki/ἐπισκοπός	https://lsj.gr/wiki/ἐπίσκοπος
 ἕτοιμος	36963					adjective	3	accents, breathings or editorial signs	ἑτοῖμος ADJ 36963	https://lsj.gr/wiki/ἕτοιμος	https://lsj.gr/wiki/ἑτοῖμος
 Αἰᾶς	1764					noun	2	accents, breathings or editorial signs	Αἴας NOUN 1764	https://lsj.gr/wiki/Αἰᾶς	https://lsj.gr/wiki/Αἴας
+Μαξίμος	100190					noun	2	accents, breathings or editorial signs	Μάξιμος PROPN 100190	https://lsj.gr/wiki/Μαξίμος	https://lsj.gr/wiki/Μάξιμος
 θελήσις	41039					noun	2	accents, breathings or editorial signs	θέλησις NOUN 41039	https://lsj.gr/wiki/θελήσις	https://lsj.gr/wiki/θέλησις
 νεάνισκος	59501					noun	2	accents, breathings or editorial signs	νεανίσκος NOUN 59501	https://lsj.gr/wiki/νεάνισκος	https://lsj.gr/wiki/νεανίσκος
+Ἀμμώνους	100197					noun	2	accents, breathings or editorial signs	Ἀμμωνοῦς PROPN 100197	https://lsj.gr/wiki/Ἀμμώνους	https://lsj.gr/wiki/Ἀμμωνοῦς
 Ἀσκλήπιος	14038					noun	2	accents, breathings or editorial signs	Ἀσκληπιός NOUN 14038	https://lsj.gr/wiki/Ἀσκλήπιος	https://lsj.gr/wiki/Ἀσκληπιός
 ἐφέτος	39083					adverb	2	accents, breathings or editorial signs	ἐφετός NOUN 39083	https://lsj.gr/wiki/ἐφέτος	https://lsj.gr/wiki/ἐφετός
 ἔξοθεν	31944					adverb	2	accents, breathings or editorial signs	ἐξόθεν ADV 31944	https://lsj.gr/wiki/ἔξοθεν	https://lsj.gr/wiki/ἐξόθεν
 ἡμός	40483					pronoun	2	accents, breathings or editorial signs	ἦμος ADV 40483	https://lsj.gr/wiki/ἡμός	https://lsj.gr/wiki/ἦμος
+Ἴσιδώρα	100202					noun	2	accents, breathings or editorial signs	Ἰσιδώρα PROPN 100202	https://lsj.gr/wiki/Ἴσιδώρα	https://lsj.gr/wiki/Ἰσιδώρα
 Ἴσις	43423					noun	2	accents, breathings or editorial signs	Ἶσις NOUN 43423	https://lsj.gr/wiki/Ἴσις	https://lsj.gr/wiki/Ἶσις
 ̓Ορφεύς	64219					noun	1	accents, breathings or editorial signs	Ὀρφεύς NOUN 64219	https://lsj.gr/wiki/̓Ορφεύς	https://lsj.gr/wiki/Ὀρφεύς
+Αύρήλιος	100183					noun	1	accents, breathings or editorial signs	Αὐρήλιος PROPN 100183	https://lsj.gr/wiki/Αύρήλιος	https://lsj.gr/wiki/Αὐρήλιος
 Αἰγυπτιός	1855					adjective	1	accents, breathings or editorial signs	Αἰγύπτιος NOUN 1855	https://lsj.gr/wiki/Αἰγυπτιός	https://lsj.gr/wiki/Αἰγύπτιος
+Δημήτρια	100186					noun	1	accents, breathings or editorial signs	Δημητρία PROPN 100186	https://lsj.gr/wiki/Δημήτρια	https://lsj.gr/wiki/Δημητρία
 Διονύσος	23106					noun	1	accents, breathings or editorial signs	Διόνυσος NOUN 23106	https://lsj.gr/wiki/Διονύσος	https://lsj.gr/wiki/Διόνυσος
 Λευκός	53351					noun	1	accents, breathings or editorial signs	Λεῦκος NOUN 53351	https://lsj.gr/wiki/Λευκός	https://lsj.gr/wiki/Λεῦκος
 Σεβάστος	80219					noun	1	accents, breathings or editorial signs	Σεβαστός PROPN 100048	https://lsj.gr/wiki/Σεβάστος	https://lsj.gr/wiki/Σεβαστός
@@ -38,6 +44,7 @@ lemma	ligre_lemma	decision	new_pos	new_gender	note	papygreek_pos	tokens	rule	can
 ἐνεἰμί	30149					verb	1	accents, breathings or editorial signs	ἔνειμι VERB 30149	https://lsj.gr/wiki/ἐνεἰμί	https://lsj.gr/wiki/ἔνειμι
 ἐπίτηδες	35353					adverb	1	accents, breathings or editorial signs	ἐπιτηδές ADV 35353	https://lsj.gr/wiki/ἐπίτηδες	https://lsj.gr/wiki/ἐπιτηδές
 ἴλαος	42911					adverb	1	accents, breathings or editorial signs	ἵλαος ADJ 42911	https://lsj.gr/wiki/ἴλαος	https://lsj.gr/wiki/ἵλαος
+Ἴουδας	100201					noun	1	accents, breathings or editorial signs	Ἰούδας PROPN 100201	https://lsj.gr/wiki/Ἴουδας	https://lsj.gr/wiki/Ἰούδας
 ὀφρύς	64765					noun	1	accents, breathings or editorial signs	ὀφρῦς NOUN 64765	https://lsj.gr/wiki/ὀφρύς	https://lsj.gr/wiki/ὀφρῦς
 ὁμοῖος	62681					adverb	1	accents, breathings or editorial signs	ὅμοιος ADJ 62681	https://lsj.gr/wiki/ὁμοῖος	https://lsj.gr/wiki/ὅμοιος
 ὁμοῖος	62681					adjective	1	accents, breathings or editorial signs	ὅμοιος ADJ 62681	https://lsj.gr/wiki/ὁμοῖος	https://lsj.gr/wiki/ὅμοιος
@@ -55,7 +62,6 @@ lemma	ligre_lemma	decision	new_pos	new_gender	note	papygreek_pos	tokens	rule	can
 Ὡρος						noun	20	capitalisation	ὦρος NOUN 99949 ὧρος NOUN 99950	https://lsj.gr/wiki/Ὡρος	https://lsj.gr/wiki/ὦρος https://lsj.gr/wiki/ὧρος
 Φίλων	95937					noun	17	capitalisation	φίλων NOUN 95937	https://lsj.gr/wiki/Φίλων	https://lsj.gr/wiki/φίλων
 Φιλομήτωρ	95625					noun	13	capitalisation	φιλομήτωρ NOUN 95625	https://lsj.gr/wiki/Φιλομήτωρ	https://lsj.gr/wiki/φιλομήτωρ
-Μῦς		new	PROPN	m		noun	10	capitalisation	μῦς NOUN 59056	https://lsj.gr/wiki/Μῦς	https://lsj.gr/wiki/μῦς
 Παράβολος	66190					noun	9	capitalisation	παράβολος NOUN 66190	https://lsj.gr/wiki/Παράβολος	https://lsj.gr/wiki/παράβολος
 Διογένης	23023					noun	8	capitalisation	διογενής NOUN 23023	https://lsj.gr/wiki/Διογένης	https://lsj.gr/wiki/διογενής
 Δράκων	24040					noun	8	capitalisation	δράκων NOUN 24040	https://lsj.gr/wiki/Δράκων	https://lsj.gr/wiki/δράκων
@@ -65,7 +71,6 @@ lemma	ligre_lemma	decision	new_pos	new_gender	note	papygreek_pos	tokens	rule	can
 Κρότος	51269					noun	6	capitalisation	κρότος NOUN 51269	https://lsj.gr/wiki/Κρότος	https://lsj.gr/wiki/κρότος
 Σκνίψ	81472					noun	6	capitalisation	σκνίψ NOUN 81472	https://lsj.gr/wiki/Σκνίψ	https://lsj.gr/wiki/σκνίψ
 Ἡγεμονίς	39831					noun	6	capitalisation	ἡγεμονίς NOUN 39831	https://lsj.gr/wiki/Ἡγεμονίς	https://lsj.gr/wiki/ἡγεμονίς
-Εἰρήνη		new	PROPN	f		noun	5	capitalisation	εἰρήνη NOUN 26482	https://lsj.gr/wiki/Εἰρήνη	https://lsj.gr/wiki/εἰρήνη
 Εὐεργέτης	37456					noun	5	capitalisation	εὐεργέτης NOUN 37456	https://lsj.gr/wiki/Εὐεργέτης	https://lsj.gr/wiki/εὐεργέτης
 Καλόκαιρος	44960					noun	5	capitalisation	καλόκαιρος NOUN 44960	https://lsj.gr/wiki/Καλόκαιρος	https://lsj.gr/wiki/καλόκαιρος
 Πέτρα	70641					noun	5	capitalisation	πέτρα NOUN 70641	https://lsj.gr/wiki/Πέτρα	https://lsj.gr/wiki/πέτρα
@@ -143,7 +148,6 @@ lemma	ligre_lemma	decision	new_pos	new_gender	note	papygreek_pos	tokens	rule	can
 Λύκος	54504					noun	1	capitalisation	λύκος NOUN 54504	https://lsj.gr/wiki/Λύκος	https://lsj.gr/wiki/λύκος
 Λῦσις	54591					noun	1	capitalisation	λύσις NOUN 54591	https://lsj.gr/wiki/Λῦσις	https://lsj.gr/wiki/λύσις
 Μακαρία	54889					noun	1	capitalisation	μακαρία NOUN 54889	https://lsj.gr/wiki/Μακαρία	https://lsj.gr/wiki/μακαρία
-Μηνᾶς		new	PROPN	m		noun	1	capitalisation	μηνάς NOUN 57352	https://lsj.gr/wiki/Μηνᾶς	https://lsj.gr/wiki/μηνάς
 Μωρίων	59213					noun	1	capitalisation	μωρίων NOUN 59213	https://lsj.gr/wiki/Μωρίων	https://lsj.gr/wiki/μωρίων
 Μῶρος	59227					noun	1	capitalisation	μωρός ADJ 59227	https://lsj.gr/wiki/Μῶρος	https://lsj.gr/wiki/μωρός
 Νάρδος	59305					noun	1	capitalisation	νάρδος NOUN 59305	https://lsj.gr/wiki/Νάρδος	https://lsj.gr/wiki/νάρδος
@@ -246,7 +250,9 @@ lemma	ligre_lemma	decision	new_pos	new_gender	note	papygreek_pos	tokens	rule	can
 Σεβαστός		new	PROPN	m		noun	40	capitalisation	σεβαστός ADJ 80219	https://lsj.gr/wiki/Σεβαστός	https://lsj.gr/wiki/σεβαστός
 Ἀλέξανδρος		new	PROPN	m		noun	21	capitalisation	ἀλέξανδρος ADJ 3371	https://lsj.gr/wiki/Ἀλέξανδρος	https://lsj.gr/wiki/ἀλέξανδρος
 Λυσίμαχος		new	PROPN	m		noun	17	capitalisation	λυσίμαχος NOUN 54581	https://lsj.gr/wiki/Λυσίμαχος	https://lsj.gr/wiki/λυσίμαχος
+Μῦς		new	PROPN	m		noun	10	capitalisation	μῦς NOUN 59056	https://lsj.gr/wiki/Μῦς	https://lsj.gr/wiki/μῦς
 Φίλιππος		new	PROPN	m		noun	9	capitalisation	φίλιππος ADJ 95381	https://lsj.gr/wiki/Φίλιππος	https://lsj.gr/wiki/φίλιππος
+Εἰρήνη		new	PROPN	f		noun	5	capitalisation	εἰρήνη NOUN 26482	https://lsj.gr/wiki/Εἰρήνη	https://lsj.gr/wiki/εἰρήνη
 Μένανδρος		new	PROPN	m		noun	5	capitalisation	μένανδρος ADJ 56347	https://lsj.gr/wiki/Μένανδρος	https://lsj.gr/wiki/μένανδρος
 Φιλόξενος		new	PROPN	m		noun	5	capitalisation	φιλόξενος ADJ 95653	https://lsj.gr/wiki/Φιλόξενος	https://lsj.gr/wiki/φιλόξενος
 Εὔμηλος		new	PROPN	m		noun	4	capitalisation	εὔμηλος ADJ 38019	https://lsj.gr/wiki/Εὔμηλος	https://lsj.gr/wiki/εὔμηλος
@@ -276,6 +282,7 @@ lemma	ligre_lemma	decision	new_pos	new_gender	note	papygreek_pos	tokens	rule	can
 Κτήσιππος		new	PROPN	m		noun	1	capitalisation	κτήσιππος ADJ 51435	https://lsj.gr/wiki/Κτήσιππος	https://lsj.gr/wiki/κτήσιππος
 Κόκκινος		new	PROPN	m		noun	1	capitalisation	κόκκινος ADJ 49880	https://lsj.gr/wiki/Κόκκινος	https://lsj.gr/wiki/κόκκινος
 Λιμένιος		new	PROPN	m		noun	1	capitalisation	λιμένιος ADJ 53814	https://lsj.gr/wiki/Λιμένιος	https://lsj.gr/wiki/λιμένιος
+Μηνᾶς		new	PROPN	m		noun	1	capitalisation	μηνάς NOUN 57352	https://lsj.gr/wiki/Μηνᾶς	https://lsj.gr/wiki/μηνάς
 Νεόφυτος		new	PROPN	m		noun	1	capitalisation	νεόφυτος ADJ 59919	https://lsj.gr/wiki/Νεόφυτος	https://lsj.gr/wiki/νεόφυτος
 Νουμήνιος		new	PROPN	m		noun	1	capitalisation	νουμήνιος ADJ 60506	https://lsj.gr/wiki/Νουμήνιος	https://lsj.gr/wiki/νουμήνιος
 Περικλέης		new	PROPN	m		noun	1	capitalisation	περικλεής ADJ 69515	https://lsj.gr/wiki/Περικλέης	https://lsj.gr/wiki/περικλεής
@@ -305,3 +312,4 @@ lemma	ligre_lemma	decision	new_pos	new_gender	note	papygreek_pos	tokens	rule	can
 ἀσφαλίζομαι	14541	lv				verb	2	voice (-ομαι/-ω, -ουμαι/-εω, -αω, -οω)	ἀσφαλίζω VERB 14541	https://lsj.gr/wiki/ἀσφαλίζομαι	https://lsj.gr/wiki/ἀσφαλίζω
 συνεπιλαμβάνομαι	86139	lv				verb	1	voice (-ομαι/-ω, -ουμαι/-εω, -αω, -οω)	συνεπιλαμβάνω VERB 86139	https://lsj.gr/wiki/συνεπιλαμβάνομαι	https://lsj.gr/wiki/συνεπιλαμβάνω
 ἐπιλανθάνομαι	34137	lv				verb	1	voice (-ομαι/-ω, -ουμαι/-εω, -αω, -οω)	ἐπιλανθάνω VERB 34137	https://lsj.gr/wiki/ἐπιλανθάνομαι	https://lsj.gr/wiki/ἐπιλανθάνω
+σου	100182	link			a form used as lemma; the lemma is σύ	pronoun	7	added by hand	σύ PRON 100182		

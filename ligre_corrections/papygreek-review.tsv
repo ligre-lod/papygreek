@@ -1,4 +1,1 @@
 action	ligre_id	lemma	pos	gender	new_lemma	new_pos	new_gender	replaced_by	reason	evidence	submitted_by
-add					Εἰρήνη	PROPN	f		lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): Εἰρήνη as noun	https://orcid.org/0009-0004-2388-9233
-add					Μηνᾶς	PROPN	m		lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): Μηνᾶς as noun	https://orcid.org/0009-0004-2388-9233
-add					Μῦς	PROPN	m		lemma missing from LiGre	PapyGreek Treebanks v3.0 (https://doi.org/10.5281/zenodo.8428823): Μῦς as noun	https://orcid.org/0009-0004-2388-9233

@@ -17,7 +17,7 @@ PAPYGREEK_REPOSITORY_URL = "https://github.com/papygreek/papygreek-treebanks"
 PAPYGREEK_PORTAL_URL = "https://papygreek.com/"
 PAPYGREEK_LICENSE_URL = "https://creativecommons.org/licenses/by-sa/4.0/"
 
-LIGRE_LEMMA_BANK_VERSION = "v0.7.0"
+LIGRE_LEMMA_BANK_VERSION = "v0.8.0"
 LIGRE_LEMMA_BANK_URL = (
     f"https://raw.githubusercontent.com/ligre-lod/ligre_lemmabank/{LIGRE_LEMMA_BANK_VERSION}/ttl/ligre_lemmabank.ttl"
 )
