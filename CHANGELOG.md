@@ -5,6 +5,11 @@ All notable changes to PapyGreek–LiGre are listed here. Releases follow
 
 ## [Unreleased]
 
+### Changed
+- `review/decisions_unmatched.tsv` is renamed `review/list_unmatched.tsv`: it is
+  a list written by `scripts/list_unmatched.py`, not a decision file that the
+  pipeline reads, as in the review folder of igvll.
+
 ### Fixed
 - `queries/examples/06_loanword_coverage.rq` counted the IGVLL entries with a
   Greek word linked to LiGre in LiLa's copy of the IGVLL–LiGre links, which
