@@ -5,6 +5,13 @@ All notable changes to PapyGreek–LiGre are listed here. Releases follow
 
 ## [Unreleased]
 
+### Fixed
+- `queries/examples/06_loanword_coverage.rq` counted the IGVLL entries with a
+  Greek word linked to LiGre in LiLa's copy of the IGVLL–LiGre links, which
+  LiLa imported once (1,381 links). It now takes the links from the LiGre
+  endpoint through `SERVICE`, like the other counts, so that it follows the
+  released linkset (1,456 links in IGVLL–LiGre 0.2.0).
+
 ## [0.4.0] - 2026-11-17
 
 ### Added
