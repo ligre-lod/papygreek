@@ -234,8 +234,10 @@ def read_ligre_change(where, row):
         raise DecisionFileError(f"{where}: ligre_new_pos is one of {sorted(UNIVERSAL_TAGS)}, not {row['ligre_new_pos']!r}")
     if row["ligre_new_gender"] and row["ligre_new_gender"] not in LILA_GENDER_BY_AGDT_TAG:
         raise DecisionFileError(f"{where}: ligre_new_gender is one of {sorted(LILA_GENDER_BY_AGDT_TAG)} or empty")
-    if (row["ligre_new_pos"] in GENDERED_TAGS) != bool(row["ligre_new_gender"]):
-        raise DecisionFileError(f"{where}: NOUN and PROPN lemmas have a ligre_new_gender, other lemmas none")
+    if (row["ligre_new_pos"] == "NOUN" and not row["ligre_new_gender"]) or \
+            (row["ligre_new_pos"] not in GENDERED_TAGS and row["ligre_new_gender"]):
+        raise DecisionFileError(f"{where}: NOUN lemmas have a ligre_new_gender, PROPN lemmas one or none, "
+                                f"other lemmas none")
     return LigreChange(kind, row["ligre_id"] or None, lemma_key(row["ligre_new_lemma"]) or None,
                        row["ligre_new_pos"], row["ligre_new_gender"] or None, row["ligre_variant_of"] or None)
 

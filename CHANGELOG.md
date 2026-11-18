@@ -17,6 +17,9 @@ All notable changes to PapyGreek–LiGre are listed here. Releases follow
 - `linking/not_a_word.py` leaves out a token whose form is a full stop: in
   PapyGreek's regularised layer, the annotation of the word before it has
   slipped onto it (3 tokens, in O.Claud. 2.237 and UPZ 1.43).
+- A `PROPN` decided as `new` (or added with `ligre_change` `add`) may be without
+  a gender, for indeclinable names such as the Egyptian months, which LiGre
+  now accepts; a `NOUN` still needs one.
 
 ### Fixed
 - `queries/examples/06_loanword_coverage.rq` counted the IGVLL entries with a

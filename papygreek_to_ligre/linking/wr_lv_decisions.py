@@ -55,8 +55,10 @@ def ligre_analysis(lemma_bank, ligre_id):
 def check_new_analysis(where, pos, gender):
     if pos not in UNIVERSAL_TAGS:
         raise WrLvDecisionError(f"{where}: new_pos is one of {sorted(UNIVERSAL_TAGS)}, not {pos!r}")
-    if (pos in GENDERED_TAGS) != bool(gender) or (gender and gender not in LILA_GENDER_BY_AGDT_TAG):
-        raise WrLvDecisionError(f"{where}: NOUN and PROPN need new_gender m, f or n; other parts of speech none")
+    if (pos == "NOUN" and not gender) or (pos not in GENDERED_TAGS and gender) or \
+            (gender and gender not in LILA_GENDER_BY_AGDT_TAG):
+        raise WrLvDecisionError(f"{where}: NOUN needs new_gender m, f or n, PROPN m, f, n or none; "
+                                f"other parts of speech none")
 
 
 def lemma_decision_row(where, row, lemma_bank):
