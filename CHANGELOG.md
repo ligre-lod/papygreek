@@ -5,6 +5,8 @@ All notable changes to PapyGreek–LiGre are listed here. Releases follow
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-11-17
+
 ### Added
 - `review/manual_check.tsv`: the manual check of a random sample of 100
   automatic links (PapyGreek lemma and part of speech to LiGre lemma, 764
@@ -15,6 +17,12 @@ All notable changes to PapyGreek–LiGre are listed here. Releases follow
   (`link`) and 3 spelling variants (`wr`). Their LiGre changes are in
   `ligre_corrections/papygreek-review.tsv`, which now lists only the changes
   that LiGre 0.6.2 does not have yet.
+
+### Changed
+- The corpus links to LiGre 0.7.0, which has the lemmas of the 51 names and 6
+  middle verbs and the 3 spellings decided in `review/decisions_wr_lv.tsv`, so
+  their tokens are now linked. `ligre_corrections/papygreek-review.tsv` is
+  empty again: LiGre 0.7.0 has every change of the decision files.
 
 ## [0.3.0] - 2026-11-16
 
@@ -130,7 +138,8 @@ First release.
 - Pinned sources: the PapyGreek Treebanks release v3.0 and the LiGre Lemma
   Bank release v0.1.0, so that the corpus and its IRIs can be rebuilt exactly.
 
-[Unreleased]: https://github.com/ligre-lod/papygreek/compare/v0.3.0...HEAD
+[Unreleased]: https://github.com/ligre-lod/papygreek/compare/v0.4.0...HEAD
+[0.4.0]: https://github.com/ligre-lod/papygreek/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/ligre-lod/papygreek/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/ligre-lod/papygreek/compare/v0.1.1...v0.2.0
 [0.1.1]: https://github.com/ligre-lod/papygreek/compare/v0.1.0...v0.1.1
