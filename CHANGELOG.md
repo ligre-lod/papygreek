@@ -5,6 +5,15 @@ All notable changes to PapyGreek–LiGre are listed here. Releases follow
 
 ## [Unreleased]
 
+## [0.5.0] - 2026-11-18
+
+### Changed
+- The corpus links to LiGre 0.8.0 (10.5281/zenodo.24340538), which has the
+  lemmas submitted in `ligre_corrections/papygreek-missing-lemmas.tsv` and
+  the 3 names of `review/decisions_wr_lv.tsv`, so that their tokens are now
+  linked. The 7 tokens that PapyGreek lemmatises under the form σου are linked
+  to σύ by a row added by hand to `review/decisions_wr_lv.tsv`.
+
 ### Added
 - `ligre_corrections/papygreek-missing-lemmas.tsv`: 26 lemmas that are missing
   from LiGre, from the annotation of the most frequent PapyGreek lemmas
@@ -169,7 +178,8 @@ First release.
 - Pinned sources: the PapyGreek Treebanks release v3.0 and the LiGre Lemma
   Bank release v0.1.0, so that the corpus and its IRIs can be rebuilt exactly.
 
-[Unreleased]: https://github.com/ligre-lod/papygreek/compare/v0.4.0...HEAD
+[Unreleased]: https://github.com/ligre-lod/papygreek/compare/v0.5.0...HEAD
+[0.5.0]: https://github.com/ligre-lod/papygreek/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/ligre-lod/papygreek/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/ligre-lod/papygreek/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/ligre-lod/papygreek/compare/v0.1.1...v0.2.0

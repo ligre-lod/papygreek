@@ -1,36 +1,27 @@
 lemma	papygreek_pos	reason	tokens	documents	forms	examples	lsj_papygreek
-σύ	pronoun	not in LiGre	1409	405	σοι σε σου σοῦ σὺ ὑμᾶς ὑμῶν σὲ σέ σοὶ	aegyptus.90.43 l. 6; bgu.1.261 l. 3; bgu.1.261 l. 6	https://lsj.gr/wiki/σύ
-Ζήνων	noun	not in LiGre	197	105	Ζήνωνι Ζήνωνος [Ζήνωνι] Ζήνων[ι] Ζήνων [Ζήν]ωνι Ζήνω̣[νι] Ζήν[ωνι] Ζ̣ή̣ν̣ω̣ν̣ι̣ Ζή[νωνι]	bgu.3.948 l. 2; bgu.3.948 l. 17; o.claud.2.239 l. 1	https://lsj.gr/wiki/Ζήνων
 β	numeral	not in LiGre	99	64	β ¯β¯ [β] β̣ \β/ β̅ β[_.1] <β>	bgu.16.2586 l. 18; bgu.16.2607 l. 26; bgu.16.2613 l. 10	https://lsj.gr/wiki/β
-δίδυμος	adjective	not in LiGre	84	45	διδυμῶν διδύμαις δίδυμαι διδύμας [διδυμῶν] δ[ιδ]υμ[ῶ]ν [δ]ίδυμαι 〚διδυμῶν〛 \δίδυμαι/ [διδυμῶν(?)]	upz.1.17 l. 3; upz.1.17 l. 12; upz.1.18r l. 1	https://lsj.gr/wiki/δίδυμος
 ιθ	numeral	not in LiGre	77	47	ιθ θι ιθ̣ κ ι̣θ̣ [ιθ] [ι]θ ¯ιθ¯	bgu.3.701 l. 6; p.adl.G10 l. 10; p.adl.G10 l. 20	https://lsj.gr/wiki/ιθ
-Σαραπιεῖον	noun	not in LiGre	72	55	Σαραπιείωι Σαραπιείου Σαραπιεῖον Σαραπιείῳ Σαραπίγηωι Σαραπι[εί]ωι [Σαραπιείωι] Σαραπιείοω Σαραπιειῆν Σαραπειείωι	p.cair.zen.1.59034 l. 13; upz.1.10 l. 6; upz.1.11 l. 5	https://lsj.gr/wiki/Σαραπιεῖον
 ἕως	preposition	not in LiGre	72	43	ἕως ἥως [ἕ]ως ἕ̣ω̣ς [ἕως] ἕ̣[ω]ς ἕ̣ω̣ς̣ <ἕως> ἕω\ς̣/	bgu.16.2606 l. 11; bgu.16.2626 l. 34; bgu.16.2629 l. 27	https://lsj.gr/wiki/ἕως
-Σαραπίων	noun	not in LiGre	68	51	Σαραπίωνι Σαραπίων Σαραπίωνα Σαραπίωνος Σαραπί|ωνος Σαραπιων Σεραπίωνα Σαραπίω(νος) Σαραπίωνο[ς] Σαρα|πίωνα	bgu.16.2637 l. 1; bgu.2.601 l. 12; bgu.2.601 l. 23	https://lsj.gr/wiki/Σαραπίων
 κθ	numeral	not in LiGre	63	47	κθ ¯κθ¯ [κθ] κθ̣ κ̣θ̣ κδ	bgu.16.2606 l. 15; bgu.16.2627 l. 6; bgu.16.2651 l. 11	https://lsj.gr/wiki/κθ
 γ	numeral	not in LiGre	62	49	γ ¯γ¯ γ̣ [γ] \|γ|/ β	bgu.12.2147 l. 2; bgu.16.2653 l. 7; bgu.16.2661 l. 19	https://lsj.gr/wiki/γ
 ιη	numeral	not in LiGre	62	43	ιη ηι ι̣η̣ [ι]η ιθ κ ¯ιη¯	bgu.16.2608 l. 10; bgu.16.2650 l. 17; bgu.16.2661 l. 35	https://lsj.gr/wiki/ιη
-Ἀθηνόδωρος	noun	not in LiGre	58	39	Ἀθηνοδώρωι Ἀθηνόδωρος [Ἀθηνοδώρωι] Ἀθηνοδώρῳ Ἀθηνόδωρ[ος] Ἀθηνοδώρου Ἀθηνο̣[δώρωι] Ἀθηνοδώρωρι Ἀθ̣ηνοδώρωι [Ἀ]θηνοδώρῳ	bgu.16.2586 l. 5; bgu.16.2586 l. 7; bgu.16.2602 l. 2	https://lsj.gr/wiki/Ἀθηνόδωρος
 δ	numeral	not in LiGre	54	41	δ ¯δ¯ ϛ [δ]	bgu.16.2611 l. 18; bgu.16.2661 l. 18; bgu.16.2661 l. 19	https://lsj.gr/wiki/δ
 τρεῖς	numeral	not in LiGre	50	38	τριῶν τρεῖς τρία τρῖς τρις \τρεῖς/ τρ[ι]σίν [τρι]|ῶν [τρία] ❛[τρεῖ]⧙❜⧘ς	bgu.16.2586 l. 9; bgu.16.2643 l. 10; bgu.16.2643 l. 26	https://lsj.gr/wiki/τρεῖς
 Μεσορη	noun	not in LiGre	49	38	Μεσορὴ Μεσορή Μεσ[ορὴ] Μεσο(ρὴ) Με|^σ^|(ορὴ) Μεσορεὶ 〚Μεσορ(η)〛 Μεσορ(ὴ) [Μεσ(ορὴ)] Μεσορῆι	bgu.16.2600 l. 19; bgu.16.2606 l. 11; bgu.16.2627 l. 15	https://lsj.gr/wiki/Μεσορη
 σαυτοῦ	pronoun	not in LiGre	49	44	σεα<υ>τοῦ σαυτοῦ σεαυτοῦ σ<ε>α<υ>τοῦ σεατοῦ σεαυτὸν [σεαυτοῦ] σατοῦ σαυτὸν σε<αυ>τοῦ	bgu.16.2600 l. 17; bgu.16.2606 l. 13; bgu.16.2608 l. 9	https://lsj.gr/wiki/σαυτοῦ
 Μεμφις	noun	not in LiGre	47	33	Μέμφει Μέμφιν Μέμφ[ει] [Μέμφει] [Μ]έ̣μφεως [Μέμ]φει \Μέμφεως/ [Μέμφιν(?)] Μεν̣φεων Μέμφειν	p.cair.zen.2.59159 l. 3; p.cair.zen.2.59241 l. 5; upz.1.11 l. 4	https://lsj.gr/wiki/Μεμφις
-Ἰούδας	noun	not in LiGre	47	11	Ἰούδου Ἰούδας [Ἰούδου] Ἰούδα [Ἰούδας] Ἰούδ[ο]υ Ἰουδᾶς Ἰ̣ο̣ύ̣δα̣ς Ἰούδαν [Ἰούδαν]	p.babatha.11 l. 2; p.babatha.11 l. 13; p.babatha.11 l. 30	https://lsj.gr/wiki/Ἰούδας
 κη	numeral	not in LiGre	46	38	κη [κη] κη̣ κ̣[η] κ̣η̣ ¯κη¯ 〚κη〛	bgu.16.2627 l. 14; bgu.16.2637 l. 13; bgu.4.1205 l. 33	https://lsj.gr/wiki/κη
 Παχων	noun	not in LiGre	42	28	Παχὼν Παχὼνς Παχ|^ὼ^|(ν) Παχ(ὼν) Παχὼ(ν) Παχών [Παχὼν(?)] [Παχ]ὼν	bgu.16.2606 l. 6; bgu.16.2607 l. 26; bgu.16.2618 l. 25	https://lsj.gr/wiki/Παχων
 ι	numeral	not in LiGre	42	36	ι ¯ι¯ ι̣ ι̣_.1	bgu.12.2147 l. 2; bgu.16.2643 l. 16; bgu.16.2646 l. 32	https://lsj.gr/wiki/ι
 κδ	numeral	not in LiGre	42	29	κδ ¯κδ¯ κδ̣ κ[δ]	bgu.16.2604 l. 20; bgu.16.2626 l. 29; bgu.16.2645 l. 9	https://lsj.gr/wiki/κδ
 ε	numeral	not in LiGre	40	28	ε ¯ε¯ ε̣	bgu.16.2637 l. 13; bgu.16.2650 l. 17; bgu.16.2655 l. 24	https://lsj.gr/wiki/ε
-Ἡρακλείδης	noun	not in LiGre	40	18	Ἡρακλείδης Ἡρακλείδου Ἡρακλείδηι Ἡρακλείδῃ Ἡρακλεί|δης Ἡρακλείτου Ἡ[ρακ]λείδηι Ἡρακλ(είδῃ) Ἡρα|κλείδης Ἡρα|κλίτου	bgu.16.2586 l. 2; bgu.16.2608 l. 1; bgu.16.2610 l. 1	https://lsj.gr/wiki/Ἡρακλείδης
 Φαωφι	noun	not in LiGre	39	28	Φαῶφι Φαῶ(φι) Φ[αῶφι(?)][_.2] Φ[αῶφι] [Φαῶ]φι Φαῶπι [Φαῶφι] [Φα(?)]ῶφι	bgu.12.2147 l. 2; bgu.12.2159 l. 14; bgu.16.2604 l. 20	https://lsj.gr/wiki/Φαωφι
 Θωθ	noun	not in LiGre	38	26	Θῶυθ Θὼθ [Θῶ]υθ Θῶυθ̣ Θω(ὺθ) Θωὺθ Θ̣ω(ὺθ) Θωὺθ̣ Θ̣ὼ̣θ̣ Θὼ̣[θ]	chr.wilck.499 l. 16; o.claud.1.124 l. 4; o.claud.1.125 l. 5	https://lsj.gr/wiki/Θωθ
 Κλαύδιος	noun	not in LiGre	37	19	Κλαυδίου Κλαυδίῳ Κλαυδ[ί]ῳ Κλαύδιος Κλαυ|δίῳ Κλαύ|διν Κλαύδιο̣ν Κλα[υ]δί̣ω̣ Κλα[υδίο]υ Κλαυδίο[υ]	bgu.4.1079 l. 35; o.krok.2.152 l. 13; o.krok.2.152 l. 20	https://lsj.gr/wiki/Κλαύδιος
 Χοιακ	noun	not in LiGre	37	26	Χοίαχ Χοιὰκ Χοίακ Χο(ιὰκ) Χοιὰ[_.1]κ Χοιὰχ Χοία[χ] Χοί|αχ Χοιαχ Χο̣ί̣ακ	bgu.12.2159 l. 1; bgu.16.2611 l. 15; bgu.16.2630 l. 17	https://lsj.gr/wiki/Χοιακ
 η	numeral	not in LiGre	37	31	η η̣ ¯η¯ ηι	bgu.12.2159 l. 1; bgu.16.2661 l. 16; bgu.4.1205 l. 1	https://lsj.gr/wiki/η
-Μεννίδης	noun	not in LiGre	35	21	Μεννίδει Μεννίδου Μεννίδης Μεννίδο[υ] Μεννιδει Μεννίδηι Μεννίδ[ου] [Μεννίδης] . Με[ν]νίδην	upz.1.21 l. 11; upz.1.22 l. 26; upz.1.23 l. 6	https://lsj.gr/wiki/Μεννίδης
 Φαμενωθ	noun	not in LiGre	35	30	Φαμενὼθ Φαμενώθ Φαμε(νὼθ) Παμενὼθ Φαμενὼ(θ) Φαμεν(ὼθ) [Φα]μ̣εν(ὼθ) Φαμεν̣[ὼθ] Φ̣α̣μ̣ενὼθ \Φ̣[αμε]ν̣ὼ̣θ̣/	bgu.16.2606 l. 4; bgu.16.2608 l. 10; bgu.16.2631 l. 21	https://lsj.gr/wiki/Φαμενωθ
-ὄνομα	noun	not in LiGre	34	31	ὄνομα ὀνόματα ὄνομά ὄ(νο)|μα ὀνόμα|τι ὄ|νομα ὄν[ο]μα ὀνόματός ὀνόμα|τος ὄνο⧙[⧘]μα	bgu.1.261 l. 34; bgu.3.714 l. 9; bgu.4.1205 l. 24	https://lsj.gr/wiki/ὄνομα
+Μεννίδης	noun	not in LiGre	34	21	Μεννίδει Μεννίδου Μεννίδης Μεννίδο[υ] Μεννιδει Μεννίδηι Μεννίδ[ου] [Μεννίδης] Με[ν]νίδην	upz.1.21 l. 11; upz.1.22 l. 26; upz.1.23 l. 6	https://lsj.gr/wiki/Μεννίδης
 ϛ	numeral	not in LiGre	33	26	ϛ ¯ϛ¯ \ϛ/ {ϛ} \¯ϛ¯/ ε ϛ̣ [ϛ] η	bgu.16.2627 l. 14; bgu.16.2631 l. 21; bgu.16.2636 l. 3	https://lsj.gr/wiki/ϛ
 θ	numeral	not in LiGre	32	28	θ ¯θ¯ θ̣ ιθ	bgu.12.2159 l. 1; bgu.16.2628 l. 17; bgu.4.1207 l. 1	https://lsj.gr/wiki/θ
 ιβ	numeral	not in LiGre	32	23	ιβ ιβ̣ ι̣β	p.adl.G10 l. 9; p.adl.G10 l. 22; p.adl.G6 l. 1	https://lsj.gr/wiki/ιβ
@@ -57,13 +48,10 @@ lemma	papygreek_pos	reason	tokens	documents	forms	examples	lsj_papygreek
 Παθυρις	noun	not in LiGre	24	17	Παθύρει Παθύρεως [Παθύρει] Πα̣θ̣ύ(ρει) Π̣αθύρε̣[ι] [Παθύρεως] Παθῦρ(ιν) Παθύ(ρει) Πάθυ(ριν)	bgu.3.994 l. 9; bgu.3.994 l. 1; bgu.3.994 l. 13	https://lsj.gr/wiki/Παθυρις
 Ταους	noun	not in LiGre	24	23	Ταῦτος Θαῦτος Ταοῦς Ταοῦτος Θαοῦτος Ταοῦν Ταῦστος Ταῦς [Ταοῦς] \Ταῦτος/	upz.1.17 l. 2; upz.1.18r l. 1; upz.1.19 l. 2	https://lsj.gr/wiki/Ταους
 Ἀμύντας	noun	not in LiGre	24	14	Ἀμύντας Ἀμύντου [Ἀ]μύντας [Ἀμύντας] [Ἀμύντο]υ [Ἀμύντας(?)] [Ἀ]μ̣ύ̣ν̣τ̣α̣ς̣ [Ἀ]μύντου Ἀμύντ̣[ου]	p.cair.zen.1.59027 l. 1; p.cair.zen.1.59038 l. 1; p.cair.zen.1.59038 l. 30	https://lsj.gr/wiki/Ἀμύντας
-Αὐρήλιος	noun	not in LiGre	23	10	Αὐρήλιος Αὐρ(ήλιος) Αὐρηλίου Αὐρ(ηλίου) [Αὐρ(ηλίου)] Α<ὐ>ρ(ήλιος) Αὐρήλ(ιος) Αὐρήλιοι Αὐρηλίῳ Αὐ̣ρηλίου	bgu.12.2147 l. 4; bgu.12.2147 l. 17; bgu.12.2147 l. 18	https://lsj.gr/wiki/Αὐρήλιος
 Μέμφις	noun	not in LiGre	23	22	Μέμφει Μέμφιν Μ̣έμφει Μέμφεως [Μεμ]|φέως Μενφις \Μέμφει/ Μένφεως Μέ̣μφ̣ε|ως Μέμφι	bgu.16.2627 l. 11; bgu.16.2631 l. 4; bgu.16.2664 l. 2	https://lsj.gr/wiki/Μέμφις
 ζ	numeral	not in LiGre	23	21	ζ \ζ/ ζ̣	bgu.16.2607 l. 16; bgu.16.2639 l. 5; bgu.16.2650 l. 8	https://lsj.gr/wiki/ζ
 Ἰησοῦς	noun	not in LiGre	23	9	Ἰησούου Ἰησοῦ Ἰησοῦς Ἰησοῦτος Ἠσους Ἰησοῦ̣ Ἰ̣η̣[σούου] Ἰησο̣ύ̣[ου] Ἰησ[ο]ύου [Ἰ]η̣[σ]ο̣ύ[ο]υ̣	p.babatha.11 l. 5; p.babatha.11 l. 18; p.babatha.15 l. 4	https://lsj.gr/wiki/Ἰησοῦς
 πέντε	numeral	not in LiGre	22	21	πέντε πέν|τε [π]έν[τε] πένται πέ̣ν̣τ̣ε̣ πέντη πέν⧙[⧘]τε	bgu.4.1050 l. 26; bgu.6.1249 l. 11; cpr.18.1 l. 8	https://lsj.gr/wiki/πέντε
-σεαυτοῦ	pronoun	not in LiGre	22	21	σαυτοῦ σεατοῦ σεα<υ>(του) σεα⧙[⧘τ]οῦ σεαυτοῦ σ̣α̣τοῦ̣ σατοῦ σα|τῷ σατͅ [σεαυτὸν]	bgu.16.2629 l. 31; bgu.16.2656 l. 19; bgu.16.2664 l. 5	https://lsj.gr/wiki/σεαυτοῦ
-Ἀμμώνιος	noun	not in LiGre	22	16	Ἀμμωνίου Ἀμμώνιος Ἀμμωνίωι Ἀμμώνιον Ἀμ[μ]ωνίῳ Ἀμμώ(νιος) Ἀμμώνις Ἀμμω̣[ν]ί[ο(υ)] Ἀμμωνί|ωι Ἀμμω(νίου)	aegyptus.90.43 l. 3; bgu.3.994 l. 9; o.claud.1.155 l. 1	https://lsj.gr/wiki/Ἀμμώνιος
 Ἀσκληπιάδης	noun	not in LiGre	22	17	Ἀσκληπιάδηι Ἀσκληπιάδου Ἀσκληπιάδης Ἀσκληπιάδει Ἀσκλη|πιάδου [Ἀσκληπιάδης] Ἀσκληπι|άδης Ἀσκ<λ>ηπι|άδης Ἀσκλη(πιάδου) Ἀσκληπιάδ[ει]	bgu.16.2626 l. 23; bgu.16.2626 l. 35; bgu.16.2651 l. 1	https://lsj.gr/wiki/Ἀσκληπιάδης
 Μεχειρ	noun	not in LiGre	21	16	Μεχεὶρ Μεχ(εὶρ) Με|^χ^|(εὶρ) Μεχὶρ Μεχείρ̣ Μεχείρ μ̣ε̣χείρ [Με]χ̣ειρ Μεχε̣ί̣ρ̣	aegyptus.90.43 l. 8; bgu.16.2586 l. 18; bgu.16.2626 l. 21	https://lsj.gr/wiki/Μεχειρ
 Πολέμων	noun	not in LiGre	21	16	Πολέμωνος Πολέμων Πολέμωνι Πολέμ[ωνος] Π[ολ]έμωνος Πο(λέμωνος) Πολέμων[ι] Πολέμωνα Πολέ[μ]ων	cpr.18.1 l. 2; p.hib.1.40 l. 1; p.hib.1.41 l. 1	https://lsj.gr/wiki/Πολέμων
@@ -83,7 +71,6 @@ lemma	papygreek_pos	reason	tokens	documents	forms	examples	lsj_papygreek
 λβ	numeral	not in LiGre	17	12	λβ λβ̣ [λβ] λ̣β	p.cair.zen.2.59215 l. 22; p.cair.zen.2.59217 l. 8; p.cair.zen.2.59220 l. 3	https://lsj.gr/wiki/λβ
 ιδ	numeral	not in LiGre	16	15	ιδ ¯ι¯δ [ιδ]	bgu.16.2607 l. 17; bgu.16.2643 l. 29; bgu.3.827 l. 30	https://lsj.gr/wiki/ιδ
 λε	numeral	not in LiGre	16	11	λε ¯λε¯ λ̣ε̣ λε̣	p.cair.zen.2.59150 l. 10; p.cair.zen.2.59244 l. 3; p.cair.zen.2.59270 l. 9	https://lsj.gr/wiki/λε
-Δημητρία	noun	not in LiGre	15	1	Δημητρίας Δημητρίαι Δημητρία Δημητρίαν	p.eleph.1intdupl l. 2; p.eleph.1intdupl l. 3; p.eleph.1intdupl l. 4	https://lsj.gr/wiki/Δημητρία
 Διδύμη	noun	not in LiGre	15	11	Διδύμη Διδύμην Διδύμῃ Δι̣[δύμῃ] Δ̣ι̣δ̣ύμη Διδύμης Διδύ[μης] Διτύμη	o.claud.1.160 l. 5; o.krok.2.152 l. 3; o.krok.2.155 l. 2	https://lsj.gr/wiki/Διδύμη
 Θερμουθᾶς	noun	not in LiGre	15	7	Θερμουθᾶς Θερμουθᾶτος Θερμου|θᾶτι Θερ[μ]ουθᾶτος Θερμ̣ουτᾶς Θερμουτᾶτος Θερμουθ|ᾶν Θερ̣[μουθ]ᾶ̣τι Θε[ρ]μου|θᾶτος Θερμουθᾶτ̣ι	bgu.1.261 l. 1; bgu.1.261 l. 22; bgu.1.261 l. 2	https://lsj.gr/wiki/Θερμουθᾶς
 Μεχιρ	noun	not in LiGre	15	7	Μεχεὶρ Μχεὶρ	upz.1.20 l. 39; upz.1.52 l. 11; upz.1.52 l. 11	https://lsj.gr/wiki/Μεχιρ
@@ -95,7 +82,6 @@ lemma	papygreek_pos	reason	tokens	documents	forms	examples	lsj_papygreek
 λγ	numeral	not in LiGre	14	10	λγ [λγ] λ̣γ	p.cair.zen.2.59237 l. 13; p.cair.zen.2.59240 l. 13; p.cair.zen.2.59240 l. 14	https://lsj.gr/wiki/λγ
 προίστημι	verb	not in LiGre	14	12	προεστηκότων προεστηκόσι προεστῶτος προ|ιστάμενος προεστηκότος προεστηκὼς προσεστηκο 〚[προεστηκότος]〛 προεσ|τηκόσι προ⧙[⧘ε]στηκότων	bgu.16.2586 l. 4; p.bour.10 l. 14; upz.1.23 l. 4	https://lsj.gr/wiki/προίστημι
 τεσσαράκοντα	numeral	not in LiGre	14	11	τεσσαράκοντα τεσσεράκοντα τεσσαρά⧙[]⧘κοντα τεσσα[ρ]ά̣κοντα [τεσσαράκοντα] τεσσαράκ̣ο̣ν̣τα τεσσαρά|κοντα τεσ[σαράκοντα]	aegyptus.90.43 l. 5; bgu.16.2617 l. 5; cpr.18.1 l. 7	https://lsj.gr/wiki/τεσσαράκοντα
-Μεγχης	noun	not in LiGre	13	8	Μεγχεῖ Μεγχῆς Μεγχῆι	p.tebt.1.11 l. 1; p.tebt.1.14 l. 1; p.tebt.1.16 l. 1	https://lsj.gr/wiki/Μεγχης
 Τασουχάριον	noun	not in LiGre	13	6	Τασουχάριον Τασουχάρειν Τασουχαρίω Τασουχαρ[ί]ω Τασουχάριν Τασου*✕*χαρίου Τασ̣ουχαρίου Τασουχαρίου Τασουχα[ρί]ου [Τ]ασο[υχαρίῳ]	bgu.2.601 l. 1; bgu.2.601 l. 28; bgu.2.601 l. 1	https://lsj.gr/wiki/Τασουχάριον
 Φιλαδέλφεια	noun	not in LiGre	13	11	Φιλαδέλφειαν Φιλαδελφείαι Φιλαδέλ|φ̣ε̣ι̣αν Φιλαδε\λ/φείαι Φιλαδελφεία[ι] [Φιλ]αδέλφειαν Φιλαδελφ̣[είαι] Φιλαδέλφεαν Φιλα*✕*δελ	p.cair.zen.2.59140 l. 24; p.cair.zen.2.59160 l. 9; p.cair.zen.2.59199 l. 3	https://lsj.gr/wiki/Φιλαδέλφεια
 Φιλοκλῆς	noun	not in LiGre	13	13	Φιλοκλῆς [Φιλοκλῆς] Φ̣ιλοκ[λῆς] Φιλοκλῆτι Φιλωκλῆς [Φιλο]|κλῆν Φιλωκλῆν Φιλωκλ[ῆ]/ν\	o.krok.2.152 l. 1; o.krok.2.153 l. 1; o.krok.2.155 l. 1	https://lsj.gr/wiki/Φιλοκλῆς
@@ -103,9 +89,6 @@ lemma	papygreek_pos	reason	tokens	documents	forms	examples	lsj_papygreek
 τέσσαρες	numeral	not in LiGre	13	12	τέσσαρες τεσσάρων [τ]έσσαρας τέσσαρ[ας] τέσσερα τεσσαρασι τεσσ̣[ά]⧙[⧘ρ]ων τ̣[εσσάρων] τέσσαρας τέσσαρα(ς)	bgu.12.2147 l. 10; o.claud.1.161 l. 9; o.claud.1.162 l. 11	https://lsj.gr/wiki/τέσσαρες
 Ἀπολλινάριος	noun	not in LiGre	13	7	Ἀπολιναρίῳ Ἀπο[λ]ιναρίῳ Ἀπ[ολ]λιναρίῳ Ἀπολλιναρίωι̣ Ἀπλοναρ̣ίῳ Ἀπλονάριν Ἀπολλινάρι[ος] [Ἀπολλιναρίου] Ἀπολινάριος	bgu.1.261 l. 1; bgu.1.261 l. 1; bgu.3.822 l. 1	https://lsj.gr/wiki/Ἀπολλινάριος
 Ἀσκληπιεῖον	noun	not in LiGre	13	7	Ἀσκληπιείου Ἀσκληπιείωι Ἀσκλη|\πι/είου Ἀσκληασκληπιε[ί]ου Ἀ[σκ]λειπιείου Ἀσκληπίου	upz.1.42 l. 7; upz.1.42 l. 12; upz.1.42 l. 20	https://lsj.gr/wiki/Ἀσκληπιεῖον
-Ἰσιδώρα	noun	not in LiGre	13	11	Ἰσιδώρας Ἰσιδώρα Ἰσιδώ[ρα] [Ἰ]σιδώιρα Ἰσιδώιρα Ἰσιδώραι Ἰσίδωρας Ἰσιδώραν Εἰσιδώρα\ν/ Ἰ(¨)σιδώ[ραν(?)]	bgu.4.1050 l. 2; bgu.4.1050 l. 5; bgu.4.1050 l. 7	https://lsj.gr/wiki/Ἰσιδώρα
-Ὀξύρυγχος	noun	not in LiGre	13	6	Ὀξυρύγχων Ὀξυρύγχ(ων) Ὀξυρ(ύγχων) Ὀξ(υρύγχων)	p.mich.3.170 l. 2; p.mich.3.172 l. 3; p.mich.3.191_192dupl l. 3	https://lsj.gr/wiki/Ὀξύρυγχος
-Δίδυμος	noun	not in LiGre	12	8	Δίδυμος Διδύμωι Διδύμους Διδύμω[ι] Δ[ιδύ]|μῳ Διδύμῳ Διδύμου Δίδυμον	bgu.2.601 l. 21; o.claud.2.237 l. 1; o.krok.1.100 l. 3	https://lsj.gr/wiki/Δίδυμος
 Πέκυσις	noun	not in LiGre	12	1	Πεκύσιος [Πεκύσιος] [Πεκῦσις] [Π]εκύσιος Πεκῦσις Πεκυσις [Π]εκύσεος	p.oxy.1.105 l. 2; p.oxy.1.105 l. 2; p.oxy.1.105 l. 8	https://lsj.gr/wiki/Πέκυσις
 Πανακέστωρ	noun	not in LiGre	12	7	Πανακέστορι Πανακέστωρ Πανακέστο|ρος	p.cair.zen.1.59105 l. 1; p.cair.zen.1.59105 l. 5; p.cair.zen.1.59107 l. 1	https://lsj.gr/wiki/Πανακέστωρ
 φοῖνιξ	noun	not in LiGre	12	7	φοίνικος φοίνικα φύνι|κος φοί̣νικος [φο]ί̣νι̣[κα] [φοί]⧙[⧘]ν̣ι̣κα φοίν̣ικος φοινίκων φοίνικο(ς)	o.krok.2.184 l. 4; p.babatha.16 l. 19; p.babatha.16 l. 26	https://lsj.gr/wiki/φοῖνιξ
@@ -129,7 +112,6 @@ lemma	papygreek_pos	reason	tokens	documents	forms	examples	lsj_papygreek
 Ἡρᾶς	noun	not in LiGre	11	9	Ἡρᾶς Ἡρᾶτι Ἡρᾶτι̣ Ἡρας Ἡρᾶν Ἡρᾷ Ἡρᾶτος Ἡραν Ἡρᾶτ̣ι	bgu.1.261 l. 25; bgu.16.2613 l. 2; bgu.16.2646 l. 31	https://lsj.gr/wiki/Ἡρᾶς
 Ἰούλιος	noun	not in LiGre	11	7	Ἰούλιος Ἰ(¨)ουλίῳ Ἰ̣[ουλίο]υ̣ Ἰουλ̣[ί]ο̣υ̣ Ἰουλίων [Ἰουλίων] Ἰο̣υ̣λίων̣ Ἰουλίου Ἰ(¨)ου|λίου	o.claud.1.178 l. 1; p.babatha.11 l. 31; p.babatha.15 l. 10	https://lsj.gr/wiki/Ἰούλιος
 ὀκτώ	numeral	not in LiGre	11	10	ὀκτὼ ὀκτώ ὀκτὼι̣	o.claud.1.149 l. 5; p.babatha.16 l. 32; p.fouad.75 l. 8	https://lsj.gr/wiki/ὀκτώ
-Διοσκουρίδης	noun	not in LiGre	10	3	Διοσκουδει Διοσκουρίδης Διοσκου(ρίδου) Διοσ|κ<ου>ρίδου Διοσκουρίδῃ Διοσκουρίδει [Δι]οσκουδει	p.cair.zen.2.59215 l. 1; p.cair.zen.2.59215 l. 23; p.grenf.2.16 l. 1	https://lsj.gr/wiki/Διοσκουρίδης
 Ζωίλος	noun	not in LiGre	10	6	Ζωίλος Ζωίλου Ζωίλον [Ζωί]λ̣ος	p.cair.zen.1.59002 l. 2; p.cair.zen.1.59034 l. 1; p.cair.zen.1.59034 l. 25	https://lsj.gr/wiki/Ζωίλος
 Νικάνωρ	noun	not in LiGre	10	7	Νικάνορος Νικάνορα Νικάνωρ Νικάνορι Νικάνω̣ρ Νικάνορει	p.cair.zen.1.59057 l. 10; p.cair.zen.1.59093 l. 3; p.cair.zen.1.59093 l. 18	https://lsj.gr/wiki/Νικάνωρ
 Τιβέριος	noun	not in LiGre	10	6	Τιβερίου Τ̣ιβερίο̣υ̣	bgu.4.1079 l. 35; p.mich.10.598 l. 1; p.mich.3.170 l. 8	https://lsj.gr/wiki/Τιβέριος
@@ -185,7 +167,6 @@ lemma	papygreek_pos	reason	tokens	documents	forms	examples	lsj_papygreek
 Φιλώτας	noun	not in LiGre	7	4	Φιλώτου Φιλώτας Φ̣ι̣λ̣ώ̣τ̣ο̣υ̣ Φ̣ι̣λώτου	bgu.16.2654 l. 1; p.oxy.1.105 l. 2; p.polit.iud.4 l. 3	https://lsj.gr/wiki/Φιλώτας
 μαρσίππιον	noun	not in LiGre	7	4	μ[αρ]|σίππιν μαρ|σιππίον μαρ<σ>ίππια μαρσιπ|{π}ίπου μαρσίπ<π>ια μαρσίππιν μαρσείπειον	o.claud.2.227 l. 7; o.claud.2.248 l. 5; o.claud.2.248 l. 5	https://lsj.gr/wiki/μαρσίππιον
 πραισίδιον	noun	not in LiGre	7	6	πρεσιδίου πρε|σιδίου πραισιδίου [πραισιδίου] πραισίδιν πραισίδιον [πρ]α[ισ]ί̣δ̣[ι]ο̣ν	o.claud.2.225 l. 7; o.claud.2.228 l. 6; o.krok.1.100 l. 10	https://lsj.gr/wiki/πραισίδιον
-σου	pronoun	not in LiGre	7	5	σου [σου]	bgu.16.2600 l. 17; bgu.16.2602 l. 9; bgu.16.2618 l. 18	https://lsj.gr/wiki/σου
 συνγραφή	noun	not in LiGre	7	6	συνγραφὴν [συνγραφὴν] συνγρα(φή)	bgu.4.1050 l. 26; p.adl.G4 l. 7; p.babatha.17 l. 13	https://lsj.gr/wiki/συνγραφή
 τριακόσιοι	numeral	not in LiGre	7	4	τριακοσίων τριακοσίας τριακοσ[ι]ω̣ν τριακοσιων τριακοσ̣ίας	p.adl.G2 l. 18; p.babatha.17 l. 7; p.babatha.17 l. 26	https://lsj.gr/wiki/τριακόσιοι
 ἀντίγραφον	noun	not in LiGre	7	4	ἀντίγραφον [ἀντίγ]ρ̣αφον [ἀν]τί[γ]ρ[αφ]ον ἀντίγρα[φον] [ἀν]τ[ίγρ(αφον)]	p.adl.G2 l. 1; p.babatha.16 l. 1; p.babatha.16 l. 3	https://lsj.gr/wiki/ἀντίγραφον
@@ -199,7 +180,6 @@ lemma	papygreek_pos	reason	tokens	documents	forms	examples	lsj_papygreek
 Εὐρύλοχος	noun	not in LiGre	6	6	Εὐρύλοχος Εὐρύλ̣οχος Εὐρυλόχῳ	bgu.16.2626 l. 1; bgu.16.2627 l. 1; bgu.16.2628 l. 1	https://lsj.gr/wiki/Εὐρύλοχος
 Κατυλλινός	noun	not in LiGre	6	4	Κατηλίνου Κ̣α̣[τυλ]λ̣ί̣νου Κ[ατυλ]|λίνου Κατη̣λ̣ί⧙[⧘ν]ου	p.babatha.20 l. 2; p.babatha.20 l. 19; p.babatha.21 l. 3	https://lsj.gr/wiki/Κατυλλινός
 Λεωδάμας	noun	not in LiGre	6	5	Λεωδάμας Λεω[δάμ]α̣[ς] Λεωδάμα[ς] [Λε]ω[δ]άμας Λ̣ε̣[ωδάμαντος]	p.hib.1.45 l. 1; p.hib.1.46 l. 1; p.hib.1.48 l. 1	https://lsj.gr/wiki/Λεωδάμας
-Μάξιμος	noun	not in LiGre	6	6	Μάξιμος Μαξίμῳ Μαξί|μω Μαξίμου	o.claud.1.146 l. 1; o.florida.14 l. 1; o.krok.2.152 l. 14	https://lsj.gr/wiki/Μάξιμος
 Νεχουτης	noun	not in LiGre	6	5	Νεχουτωι Νε̣χ̣ούτου [Νεχούτου] [Νεχούτου(?)] Ν̣[εχούτου] Νεχούτου	p.adl.G15 l. 3; p.adl.G15 l. 1; p.adl.G19 l. 5	https://lsj.gr/wiki/Νεχουτης
 Παγωνις	noun	not in LiGre	6	3	Φαγώνιος Φαγῶνις [Φαγώ]νιος Σεννῆσιν Φαγωνις Φαγωνίς	p.dryton.1.29 l. 4; p.dryton.1.29 l. 8; p.dryton.1.29 l. 13	https://lsj.gr/wiki/Παγωνις
 Πατους	noun	not in LiGre	6	2	Πατοῦς Πατοῦτος Πατοῦν	p.grenf.2.16 l. 2; p.grenf.2.16 l. 2; p.grenf.2.16 l. 3	https://lsj.gr/wiki/Πατους
@@ -247,7 +227,6 @@ lemma	papygreek_pos	reason	tokens	documents	forms	examples	lsj_papygreek
 Τατημις	noun	not in LiGre	5	1	Ταθήμιος Ταθῆμιν Ταθῆμ[ι]ν Ταθήμει	upz.1.2 l. 6; upz.1.2 l. 11; upz.1.2 l. 17	https://lsj.gr/wiki/Τατημις
 Τιμόθεος	noun	not in LiGre	5	2	Τιμόθεον Τ̣ι̣μ̣ό̣θ̣εος	p.oxy.1.123 l. 11; p.polit.iud.6 l. 7; p.polit.iud.6 l. 11	https://lsj.gr/wiki/Τιμόθεος
 Τρύφων	noun	not in LiGre	5	5	Τρύφωνι [Τρύφ]ω̣νι Τρύφων Τ̣ρ̣ύφω̣νο̣ς̣	bgu.16.2625 l. 16; bgu.4.1203 l. 1; bgu.4.1209 l. 2	https://lsj.gr/wiki/Τρύφων
-Φάβιος	noun	not in LiGre	5	4	Φαβίου Φ̣[α]βί̣[ο]υ Φ̣α̣βίου	p.babatha.20 l. 2; p.babatha.20 l. 19; p.babatha.21 l. 3	https://lsj.gr/wiki/Φάβιος
 Φιβις	noun	not in LiGre	5	2	Φίβιος [Φίβιος] [Φίβει(?)]	bgu.3.994 l. 10; bgu.3.994 l. 14; p.adl.G2 l. 3	https://lsj.gr/wiki/Φιβις
 Χαρμίδης	noun	not in LiGre	5	3	Χαρμίδει Χαρμίδου	p.cair.zen.1.59025 l. 26; p.cair.zen.1.59036 l. 1; p.cair.zen.1.59036 l. 17	https://lsj.gr/wiki/Χαρμίδης
 αἴθριον	noun	not in LiGre	5	2	αιρῳ αἰθρίου αἴθ[ριο]ν	bgu.16.2607 l. 13; bgu.16.2607 l. 18; sb.1.5231qtpl l. 3	https://lsj.gr/wiki/αἴθριον
@@ -265,10 +244,8 @@ lemma	papygreek_pos	reason	tokens	documents	forms	examples	lsj_papygreek
 ἀνατολή	noun	not in LiGre	5	2	ἀνατολῆς ἀνα̣|τολῶν ἀνα⧙[⧘]τ̣ο̣λῶν ἀνατολὴν	p.babatha.11 l. 5; p.babatha.11 l. 18; p.babatha.20 l. 9	https://lsj.gr/wiki/ἀνατολή
 ἀποστερέω	verb	not in LiGre	5	5	ἀποστερη|θῆναι ἀποστερεῖ ἀπο\σ/τεροῦντες ἀποστε|ροῦσιν ἀποστερουμένων	p.lond.6.1915 l. 10; upz.1.16 l. 7; upz.1.32 l. 33	https://lsj.gr/wiki/ἀποστερέω
 Ἀγαθῖνος	noun	not in LiGre	5	3	Ἀγαθῖνος Ἀγαθίνωι Ἀγαθ̣ῖνον	p.adl.G10 l. 3; p.adl.G10 l. 12; p.adl.G10 l. 21	https://lsj.gr/wiki/Ἀγαθῖνος
-Ἀμμωνοῦς	noun	not in LiGre	5	1	Ἀμμωνοῦν Ἀμμωνοῦτι [Ἀμμωνοῦν] Ἀμμωνοῦς	p.oxy.1.105 l. 3; p.oxy.1.105 l. 6; p.oxy.1.105 l. 7	https://lsj.gr/wiki/Ἀμμωνοῦς
 Ἀνανίας	noun	not in LiGre	5	3	Ἀνανίου Ἀ̣ν̣α̣ν̣ί̣ο̣υ̣ Ἀ̣ν̣α̣ν̣ί̣ο̣υ [Ἀνανίου(?)]	p.babatha.18 l. 5; p.babatha.18 l. 35; p.babatha.20 l. 6	https://lsj.gr/wiki/Ἀνανίας
 Ἀπολλοφάνης	noun	not in LiGre	5	3	Ἀπολλοφάνης Ἀπολλοφάνην Ἀπολλοφάνους Ἀπολλοφάνει	p.cair.zen.1.59019 l. 8; p.cair.zen.1.59025 l. 15; p.cair.zen.1.59093 l. 5	https://lsj.gr/wiki/Ἀπολλοφάνης
-Ἀχιλλεύς	noun	not in LiGre	5	4	Ἀχιλλεὺς Ἀχιλλέως Ἀχειλλέα	bgu.16.2625 l. 1; bgu.4.1205 l. 27; p.mich.3.191_192dupl l. 5	https://lsj.gr/wiki/Ἀχιλλεύς
 Ἁθύρ	noun	not in LiGre	5	5	Ἁθὺρ Ἁθρεὶ	bgu.4.1206 l. 19; p.cair.zen.1.59033 l. 11; p.cair.zen.2.59154 l. 6	https://lsj.gr/wiki/Ἁθύρ
 Ἁρμαις	noun	not in LiGre	5	5	Ἁρμάεις Ἁρμάιος Ἁρμαῖς Ἁρμᾶιν Ἁρμάει	p.cair.zen.2.59291 l. 1; upz.1.2 l. 2; upz.1.6 l. 19	https://lsj.gr/wiki/Ἁρμαις
 ἐρίδιον	noun	not in LiGre	5	4	ἐρίδια <ἐρίδια> ἐρ{ε}ιδίων ἐριδίου αἰρίδια	bgu.16.2622 l. 20; bgu.16.2622 l. 21; bgu.16.2637 l. 11	https://lsj.gr/wiki/ἐρίδιον
@@ -279,10 +256,8 @@ lemma	papygreek_pos	reason	tokens	documents	forms	examples	lsj_papygreek
 Β	numeral	not in LiGre	4	2	Β	bgu.16.2652 l. 5; p.cair.zen.1.59036 l. 5; p.cair.zen.1.59036 l. 12	https://lsj.gr/wiki/Β
 Βαβάθα	noun	not in LiGre	4	1	[Βαβαθᾳ] Βαβαθ̣ᾳ̣ Βαβαθᾳ	p.babatha.17 l. 8; p.babatha.17 l. 13; p.babatha.17 l. 27	https://lsj.gr/wiki/Βαβάθα
 Βεντητις	noun	not in LiGre	4	1	Βεντήτιος Βεντῆτιν	p.mich.5.228 l. 1; p.mich.5.228 l. 2; p.mich.5.228 l. 11	https://lsj.gr/wiki/Βεντητις
-Βησᾶς	noun	not in LiGre	4	2	Βησᾶς \Βησᾶ̣[ς]/ Β̣η̣[σᾶς]	p.babatha.20 l. 4; p.babatha.20 l. 23; p.babatha.23 l. 1	https://lsj.gr/wiki/Βησᾶς
 Δεκέμβριος	adjective	not in LiGre	4	2	Δεκεμβρίων [Δ]εκενβρί[ων] Δεκενβρίω̣ν̣	p.babatha.16 l. 9; p.babatha.16 l. 37; p.babatha.23 l. 9	https://lsj.gr/wiki/Δεκέμβριος
 Δημητροῦς	noun	not in LiGre	4	4	Δημητροῦς Δημητροῦν Δημητροῦ|ν	bgu.1.261 l. 7; bgu.3.822 l. 25; p.oxy.33.2680 l. 20	https://lsj.gr/wiki/Δημητροῦς
-Διογενίς	noun	not in LiGre	4	3	Διωγενὶς [_.?][Δ]ι̣ωγε̣νίδος Δ̣ι̣ω̣γ̣ε̣[νίδος] [Δ]ιογενὶς	p.mil.vogl.2.76 l. 1; p.mil.vogl.2.76 l. 25; p.mil.vogl.2.77 l. 1	https://lsj.gr/wiki/Διογενίς
 Διότιμος	noun	not in LiGre	4	2	Διότιμος Διοτίμωι	p.cair.zen.2.59226 l. 1; p.cair.zen.2.59226 l. 7; p.cair.zen.2.59236 l. 1	https://lsj.gr/wiki/Διότιμος
 Εὐδαιμονίς	noun	not in LiGre	4	4	Εὐδαιμονὶς Εὐδ[αι]μονὶς Εὐδα[ι]μ̣ονὶς	p.brem.63 l. 1; p.flor.3.332 l. 1; p.giss.apoll.1 l. 1	https://lsj.gr/wiki/Εὐδαιμονίς
 Θαδδαῖος	noun	not in LiGre	4	2	Θαδ̣ᾶ̣ις Θαδαίου Θ̣α̣[δ]αδαῖ̣ς Θ̣[αδ]α̣ίου	p.babatha.15 l. 41; p.babatha.15 l. 41; p.babatha.23 l. 29	https://lsj.gr/wiki/Θαδδαῖος
@@ -541,7 +516,6 @@ lemma	papygreek_pos	reason	tokens	documents	forms	examples	lsj_papygreek
 Μαθθαῖος	noun	not in LiGre	2	1	Μ̣αθθαίου Μαθθ̣αίου	p.babatha.11 l. 6; p.babatha.11 l. 19	https://lsj.gr/wiki/Μαθθαῖος
 Μανδρῶν	noun	not in LiGre	2	1	Μανδρ̣ῶνο̣ς Μαν̣δ[ρ]ῶ̣ν̣ο̣ς̣	p.babatha.11 l. 5; p.babatha.11 l. 18	https://lsj.gr/wiki/Μανδρῶν
 Μανείος	noun	not in LiGre	2	1	Μανείου Μανείο̣υ	p.babatha.11 l. 1; p.babatha.11 l. 12	https://lsj.gr/wiki/Μανείος
-Μαξίμος	noun	not in LiGre	2	2	Μάξιμο̣ς̣ Μάξιμος	o.claud.1.137 l. 22; o.claud.1.138 l. 1	https://lsj.gr/wiki/Μαξίμος
 Μαξιμιανός	noun	not in LiGre	2	1	Μ[αξιμι]|ανοῦ Μαξιμιανοῦ	p.sakaon.61 l. 27; p.sakaon.61 l. 28	https://lsj.gr/wiki/Μαξιμιανός
 Μαρεπκαμις	noun	not in LiGre	2	1	Μαρεπκάμιος Μαρε|πκάμιος	p.mich.5.226 l. 6; p.mich.5.226 l. 7	https://lsj.gr/wiki/Μαρεπκαμις
 Μαριαμη	noun	not in LiGre	2	1	Μαριάμη̣ν Μαριάμη	p.babatha.26 l. 3; p.babatha.26 l. 12	https://lsj.gr/wiki/Μαριαμη
@@ -549,7 +523,6 @@ lemma	papygreek_pos	reason	tokens	documents	forms	examples	lsj_papygreek
 Μαρσύης	noun	not in LiGre	2	1	Μαρσύαν	p.bad.4.48 l. 11; p.bad.4.48 l. 13	https://lsj.gr/wiki/Μαρσύης
 Μαωζηνή	adjective	not in LiGre	2	2	Μαωζηνὴ	p.babatha.16 l. 13; p.babatha.26 l. 3	https://lsj.gr/wiki/Μαωζηνή
 Μαωζηνός	adjective	not in LiGre	2	1	Μαωζηνὴ̣<ν> Μαωζηνὴ<ν>	p.babatha.23 l. 3; p.babatha.23 l. 13	https://lsj.gr/wiki/Μαωζηνός
-Μεγχῆς	noun	not in LiGre	2	1	[Μεγ]χῆς Μεγχῆς	p.tebt.1.12 l. 1; p.tebt.1.12 l. 14	https://lsj.gr/wiki/Μεγχῆς
 Μενεκλῆς	noun	not in LiGre	2	1	Μενεκλῆς	p.cair.zen.1.59093 l. 10; p.cair.zen.1.59093 l. 15	https://lsj.gr/wiki/Μενεκλῆς
 Μεχίρ	noun	not in LiGre	2	2	Μεχεὶρ Μεχὶρ	p.cair.zen.1.59132 l. 10; p.cair.zen.2.59264 l. 20	https://lsj.gr/wiki/Μεχίρ
 Μνασέης	noun	not in LiGre	2	1	Μνασέας Μνασέου	bgu.16.2622 l. 1; bgu.16.2622 l. 26	https://lsj.gr/wiki/Μνασέης
@@ -596,7 +569,6 @@ lemma	papygreek_pos	reason	tokens	documents	forms	examples	lsj_papygreek
 Σενπαμωνθης	noun	not in LiGre	2	1	Σενπαμώνθης Σενπαμών(θου)	chr.wilck.499 l. 1; chr.wilck.499 l. 17	https://lsj.gr/wiki/Σενπαμωνθης
 Σενχώνς	noun	not in LiGre	2	1	Σενχώνς Σενχὼν̣ς̣	p.mich.1.29 l. 1; p.mich.1.29 l. 15	https://lsj.gr/wiki/Σενχώνς
 Σεραπίων	noun	not in LiGre	2	1	Σεραπίωνα Σεραπίωνι	bgu.2.380 l. 4; bgu.2.380 l. 13	https://lsj.gr/wiki/Σεραπίων
-Σερηνίλλα	noun	not in LiGre	2	1	Σερηνίλλα Σερη|νιλλα	bgu.2.385 l. 1; bgu.2.385 l. 12	https://lsj.gr/wiki/Σερηνίλλα
 Σεύθης	noun	not in LiGre	2	1	Σεύθου Σεύ̣θ̣ης	p.polit.iud.7 l. 3; p.polit.iud.7 l. 12	https://lsj.gr/wiki/Σεύθης
 Σιγηρις	noun	not in LiGre	2	1	Σιγήρεως Σικ̣ήρεος	p.mich.5.226 l. 3; p.mich.5.226 l. 42	https://lsj.gr/wiki/Σιγηρις
 Σιλβανὀς	noun	not in LiGre	2	2	Σιλβανὸς	o.claud.1.141 l. 1; o.claud.1.142 l. 1	https://lsj.gr/wiki/Σιλβανὀς
@@ -729,7 +701,6 @@ lemma	papygreek_pos	reason	tokens	documents	forms	examples	lsj_papygreek
 Ἀλγιφιαμμα	noun	not in LiGre	2	1	Αλγιφιαμμα	p.babatha.16 l. 18; p.babatha.16 l. 22	https://lsj.gr/wiki/Ἀλγιφιαμμα
 Ἀλεξάνδρειος	adjective	not in LiGre	2	2	Ἀλεξανδρείου	p.cair.zen.1.59033 l. 14; p.eleph.1intdupl l. 12	https://lsj.gr/wiki/Ἀλεξάνδρειος
 Ἀλλοῦς	noun	not in LiGre	2	2	Ἀλλοῦτος Ἀλλοῦς	p.bour.25 l. 2; p.mert.1.32 l. 1	https://lsj.gr/wiki/Ἀλλοῦς
-Ἀμμώνους	noun	not in LiGre	2	2	Ἀμμωνοῦν Ἀμμω|νοῦτι	bgu.2.602 l. 13; o.claud.1.169 l. 5	https://lsj.gr/wiki/Ἀμμώνους
 Ἀμοιτᾶς	noun	not in LiGre	2	1	Ἀμοιτᾶν	p.mich.3.171 l. 8; p.mich.3.171 l. 17	https://lsj.gr/wiki/Ἀμοιτᾶς
 Ἀννιανός	noun	not in LiGre	2	1	Ἀννιανοῦ Ἀννιανῷ	sb.14.12085 l. 4; sb.14.12085 l. 10	https://lsj.gr/wiki/Ἀννιανός
 Ἀντίοχος	noun	not in LiGre	2	2	Ἀντίοχός Ἀντι|όχωι	bgu.16.2644 l. 12; p.cair.zen.1.59057 l. 6	https://lsj.gr/wiki/Ἀντίοχος
@@ -801,7 +772,6 @@ lemma	papygreek_pos	reason	tokens	documents	forms	examples	lsj_papygreek
 Ἰουλία	noun	not in LiGre	2	1	Ἰουλία Ἰουλιία	p.babatha.20 l. 5; p.babatha.20 l. 43	https://lsj.gr/wiki/Ἰουλία
 Ἰσίων	noun	not in LiGre	2	1	Ἰσίων Ἰσίωνι	p.oxy.10.1299 l. 1; p.oxy.10.1299 l. 21	https://lsj.gr/wiki/Ἰσίων
 Ἴσιγγος	noun	not in LiGre	2	1	Ἰσίγγωι Ἰσ̣σίγγωι	p.cair.zen.2.59287 l. 1; p.cair.zen.2.59287 l. 5	https://lsj.gr/wiki/Ἴσιγγος
-Ἴσιδώρα	noun	not in LiGre	2	1	Ἰσιδώραν	bgu.4.1050 l. 13; bgu.4.1050 l. 19	https://lsj.gr/wiki/Ἴσιδώρα
 ὀκτακόσιοι	numeral	not in LiGre	2	1	ὀκτακοσίας	bgu.16.2630 l. 3; bgu.16.2630 l. 7	https://lsj.gr/wiki/ὀκτακόσιοι
 ὁλοκότινος	noun	not in LiGre	2	2	ὁλοκοττίνου ὁλοκοτ*⸍*τίνων	sb.14.11492 l. 3; sb.14.12085 l. 6	https://lsj.gr/wiki/ὁλοκότινος
 ὁλοκόττινος	noun	not in LiGre	2	1	ὁλο|κόττινα ὁλοκόττινος	p.oxy.9.1223 l. 24; p.oxy.9.1223 l. 32	https://lsj.gr/wiki/ὁλοκόττινος
@@ -827,7 +797,6 @@ lemma	papygreek_pos	reason	tokens	documents	forms	examples	lsj_papygreek
 Ατκ	numeral	not in LiGre	1	1	Ατκ	upz.1.61 l. 21	https://lsj.gr/wiki/Ατκ
 Αυν	numeral	not in LiGre	1	1	Αυν	bgu.16.2630 l. 11	https://lsj.gr/wiki/Αυν
 Αωλδ	numeral	not in LiGre	1	1	Αωλδ	p.hib.1.50 l. 3	https://lsj.gr/wiki/Αωλδ
-Αύρήλιος	noun	not in LiGre	1	1	Αὐρηλίῳ	p.sakaon.61 l. 4	https://lsj.gr/wiki/Αύρήλιος
 Αἰγυπτία	adjective	not in LiGre	1	1	Αἰγυπτί[ας]	sb.1.5231qtpl l. 20	https://lsj.gr/wiki/Αἰγυπτία
 Αἰλιανός	noun	not in LiGre	1	1	Α<ἰ>λιανῷ̣	bgu.16.2614 l. 5	https://lsj.gr/wiki/Αἰλιανός
 Αἰμίλις	noun	not in LiGre	1	1	Αἰμίλις	o.krok.2.184 l. 1	https://lsj.gr/wiki/Αἰμίλις
@@ -887,7 +856,6 @@ lemma	papygreek_pos	reason	tokens	documents	forms	examples	lsj_papygreek
 Δίφιλος	noun	not in LiGre	1	1	Δίφιλον	upz.1.8 l. 18	https://lsj.gr/wiki/Δίφιλος
 Δαμᾶς	noun	not in LiGre	1	1	Δαμᾶτος	bgu.16.2646 l. 38	https://lsj.gr/wiki/Δαμᾶς
 Δείνων	noun	not in LiGre	1	1	Δείνων	p.yale.1.33 l. 1	https://lsj.gr/wiki/Δείνων
-Δημήτρια	noun	not in LiGre	1	1	Δημητρίοις	bgu.16.2622 l. 11	https://lsj.gr/wiki/Δημήτρια
 Δημόξενος	noun	not in LiGre	1	1	Δαμοξέ[νωι]	upz.1.78 l. 1	https://lsj.gr/wiki/Δημόξενος
 Διδᾶς	noun	not in LiGre	1	1	Διδαν	o.krok.2.287 l. 5	https://lsj.gr/wiki/Διδᾶς
 Διοκλητιανός	noun	not in LiGre	1	1	Διο[κλη]τιανοῦ	p.sakaon.61 l. 26	https://lsj.gr/wiki/Διοκλητιανός
@@ -1193,7 +1161,6 @@ lemma	papygreek_pos	reason	tokens	documents	forms	examples	lsj_papygreek
 Σαμμοῦος	noun	not in LiGre	1	1	Σαμ|μοῦος	p.babatha.21 l. 18	https://lsj.gr/wiki/Σαμμοῦος
 Σαμοθράικιον	noun	not in LiGre	1	1	Σαμοθράικιον	p.hels.1.2 l. 19	https://lsj.gr/wiki/Σαμοθράικιον
 Σαράπιος	noun	not in LiGre	1	1	Σαραπίου	p.oxy.8.1105 l. 7	https://lsj.gr/wiki/Σαράπιος
-Σαραπάς	noun	not in LiGre	1	1	Σαραπᾶτ̣ι	aegyptus.90.43 l. 1	https://lsj.gr/wiki/Σαραπάς
 Σαραποδώρα	noun	not in LiGre	1	1	Σαραποδώρα	p.oxy.6.932 l. 9	https://lsj.gr/wiki/Σαραποδώρα
 Σαταβοῦς	noun	not in LiGre	1	1	Σαταβοῦς	sb.1.5231qtpl l. 20	https://lsj.gr/wiki/Σαταβοῦς
 Σαταβοῦτος	noun	not in LiGre	1	1	Σ[ατ]αβοῦτος	sb.1.5231qtpl l. 20	https://lsj.gr/wiki/Σαταβοῦτος
@@ -1726,7 +1693,6 @@ lemma	papygreek_pos	reason	tokens	documents	forms	examples	lsj_papygreek
 Ἱερειχών	noun	not in LiGre	1	1	Ἱερειχοῦντα	p.babatha.16 l. 16	https://lsj.gr/wiki/Ἱερειχών
 Ἱερωνίς	noun	not in LiGre	1	1	Ἱερω̣ν[ί]δ̣α	p.oxy.14.1681 l. 26	https://lsj.gr/wiki/Ἱερωνίς
 Ἴαμιτ	noun	not in LiGre	1	1	Ἰαμιτ	p.babatha.16 l. 29	https://lsj.gr/wiki/Ἴαμιτ
-Ἴουδας	noun	not in LiGre	1	1	Ἰ̣ο̣υ̣|δαν	p.babatha.17 l. 29	https://lsj.gr/wiki/Ἴουδας
 ὀλίγον	adverb	not in LiGre	1	1	ὀλίγ[ον]	p.sakaon.40 l. 7	https://lsj.gr/wiki/ὀλίγον
 ὀριγάνιν	noun	not in LiGre	1	1	ὀριγάνιν	p.mich.8.481 l. 19	https://lsj.gr/wiki/ὀριγάνιν
 ὀρπεει	noun	not in LiGre	1	1	ὀρπέει	sb.1.5231qtpl l. 1	https://lsj.gr/wiki/ὀρπεει
@@ -1780,11 +1746,14 @@ u--------	untagged	not a word: postag as lemma	1	1	,	bgu.16.2586 l. 8
 |gap:?|λίῳ	noun	not a word: lemma gap	1	1	[_.?]λίῳ	o.claud.1.165 l. 1	
 |gap:?|ρεξέχομαι	verb	not a word: lemma gap	1	1	[_.?]ρεξέχομαι	bgu.16.2628 l. 5	
 Βαρ|gap:?|	noun	not a word: lemma gap	1	1	Βαρ̣[_.?]	o.claud.1.167 l. 14	
+Μεννίδης	noun	not a word: full stop with a lemma	1	1	.	upz.1.43 l. 22	
 Πο|gap:2|ος	noun	not a word: lemma gap	1	1	\Πο_.2ον/	upz.1.8 l. 34	
 Πυ|gap:2|ρῶτος	noun	not a word: lemma gap	1	1	Πυ̣_.2ρῶτος	upz.1.18r l. 5	
 Τιεπ|gap:3|	noun	not a word: lemma gap	1	1	Τιεπ_.3	p.mich.8.481 l. 31	
 αναβ|gap:1|	verb	not a word: lemma gap	1	1	α̣ν̣αβ̣_.1	o.claud.1.157 l. 4	
+αὐτός	adverb	not a word: full stop with a lemma	1	1	.	o.claud.2.237 l. 10	
 βαυβ|gap:2|	noun	not a word: lemma gap	1	1	βαυβ_.2ς	bgu.16.2612 l. 5	
+γραμματεύς	noun	not a word: full stop with a lemma	1	1	.	upz.1.43 l. 21	
 διω…	untagged	not a word: unresolved abbreviation	1	1	(|διω|)	bgu.4.1209 l. 1	
 κατα|gap:3|	verb	not a word: lemma gap	1	1	κατα[_.3]ς	bgu.16.2612 l. 6	
 μδ…	untagged	not a word: unresolved abbreviation	1	1	(|μ̣δ|)	bgu.4.1209 l. 1	
