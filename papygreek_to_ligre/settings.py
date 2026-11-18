@@ -66,5 +66,5 @@ COMPLETE_OUTPUT_FILENAME = "complete_papygreek.ttl.gz"
 
 AMBIGUOUS_DECISIONS_FILENAME = "decisions_ambiguous.tsv"
 WR_LV_DECISIONS_FILENAME = "decisions_wr_lv.tsv"
-UNMATCHED_FILENAME = "decisions_unmatched.tsv"
+UNMATCHED_FILENAME = "list_unmatched.tsv"
 

@@ -30,7 +30,7 @@ LiGre Lemma Bank.
 - `ttl/texts/` gets one Turtle file for each papyrus when you run the pipeline (not in the repository; the same data is in `ttl/complete_papygreek.ttl.gz`)
 - `ttl/PapyGreek_corpus.ttl` describes the corpus
 - `ttl/complete_papygreek.ttl.gz` provides one Turtle file containing the whole corpus
-- `review/` holds the two decision files used for linking, `decisions_ambiguous.tsv` and `decisions_wr_lv.tsv`, which every run keeps up to date (see *Linking workflow*), and `decisions_unmatched.tsv`, the list of every other unlinked lemma, written by `scripts/list_unmatched.py` (see *Unmatched lemmas*), and `manual_check.tsv`, the manual check of a random sample of 100 automatic links (PapyGreek lemma and part of speech to LiGre lemma, 764 tokens) against their context in the papyri, with its judgement and the date
+- `review/` holds the two decision files used for linking, `decisions_ambiguous.tsv` and `decisions_wr_lv.tsv`, which every run keeps up to date (see *Linking workflow*), and `list_unmatched.tsv`, the list of every other unlinked lemma, written by `scripts/list_unmatched.py` (see *Unmatched lemmas*), and `manual_check.tsv`, the manual check of a random sample of 100 automatic links (PapyGreek lemma and part of speech to LiGre lemma, 764 tokens) against their context in the papyri, with its judgement and the date
 - `queries/examples/` holds example SPARQL queries (see *Example queries*), two of which combine the corpus with IGVLL and CLaSSES through the LiLa SPARQL endpoint
 - `LICENSE`, `LICENSE-DATA.md`, `CITATION.cff` and `.zenodo.json` hold the licences and the citation and archiving metadata; `CHANGELOG.md` and `RELEASING.md` the changes per release and the release procedure
 
@@ -85,7 +85,7 @@ PapyGreek tokens with a plain pattern and count them on the LiLa side.
 - Not every token has a lemma link: lemmas missing from LiGre (mostly personal and place names and
   alphabetic numerals such as β or ιθ), matches that are not decided yet, and words that wait for a lemma
   LiGre will add. Every unlinked token stays in the corpus; `review/decisions_ambiguous.tsv` and
-  `review/decisions_wr_lv.tsv` list the open cases, and `review/decisions_unmatched.tsv` all other unlinked lemmas.
+  `review/decisions_wr_lv.tsv` list the open cases, and `review/list_unmatched.tsv` all other unlinked lemmas.
 - Homographs share one LiGre lemma. PapyGreek distinguishes homographs (`λέγω1`, `λέγω2`), as LiLa does
   for Latin (two lemmas *malum*, 'apple' and 'evil'), but LiGre has one lemma per spelling, part of speech
   and gender, so all of them link to it. PapyGreek's homograph numbers are not always reliable either
@@ -144,14 +144,14 @@ Every token goes through these steps; the pipeline logs how many tokens end up i
    | `correct-ligre` | LiGre's spelling is wrong, PapyGreek's is right | LiGre corrects the spelling of `ligre_lemma` (`correct`); the tokens link to it |
    | `new` | a different word that LiGre lacks, e.g. a name that only matches a common word (Φίλων, φίλων) | LiGre gets PapyGreek's lemma as a new lemma with `new_pos` and `new_gender` (`add`); leave `ligre_lemma` empty |
 
-4. **Lemmas missing from LiGre.** The lemma does not match any LiGre lemma, not even after normalisation: mostly personal and place names and alphabetic numerals. Its tokens stay in the corpus without a lemma and are not in either decision file, but they are listed in `review/decisions_unmatched.tsv` (see *Unmatched lemmas*); they link once LiGre has the lemma. To get a lemma into LiGre, add it there with a correction.
+4. **Lemmas missing from LiGre.** The lemma does not match any LiGre lemma, not even after normalisation: mostly personal and place names and alphabetic numerals. Its tokens stay in the corpus without a lemma and are not in either decision file, but they are listed in `review/list_unmatched.tsv` (see *Unmatched lemmas*); they link once LiGre has the lemma. To get a lemma into LiGre, add it there with a correction.
 
 A lemma can be decided in only one of the two decision files.
 
 ### Unmatched lemmas
 
 `scripts/list_unmatched.py` lists every unlinked lemma that is in neither decision file in
-`review/decisions_unmatched.tsv`, so that the gaps can be inspected without running the pipeline:
+`review/list_unmatched.tsv`, so that the gaps can be inspected without running the pipeline:
 
 ```bash
 uv run python scripts/list_unmatched.py
