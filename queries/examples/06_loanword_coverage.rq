@@ -14,9 +14,11 @@ WHERE {
   {
     SELECT (COUNT(DISTINCT ?entry) AS ?greekWordInLiGre)
     WHERE {
-      ?entry lemonEty:etymology/lemonEty:etymon/ontolex:canonicalForm ?ligreLemma .
+      SERVICE <https://ligre.ugent.be/sparql> {
+        ?etymon ontolex:canonicalForm ?ligreLemma .
+      }
+      ?entry lemonEty:etymology/lemonEty:etymon ?etymon .
       FILTER(STRSTARTS(STR(?entry), "http://lila-erc.eu/data/lexicalResources/IGVLL/"))
-      FILTER(STRSTARTS(STR(?ligreLemma), "https://w3id.org/ligre/"))
     }
   }
   {
