@@ -5,6 +5,14 @@ All notable changes to PapyGreek–LiGre are listed here. Releases follow
 
 ## [Unreleased]
 
+### Added
+- `ligre_corrections/papygreek-missing-lemmas.tsv`: 26 lemmas that are missing
+  from LiGre, from the annotation of the most frequent PapyGreek lemmas
+  without a LiGre lemma (σύ, σεαυτοῦ, ὄνομα, Σαραπιεῖον, δίδυμος and 21
+  names), submitted to LiGre with the 3 names decided as `new` in
+  `review/decisions_wr_lv.tsv` (Εἰρήνη, Μηνᾶς, Μῦς). The month names, ἕως and
+  the lemmas whose spelling the annotation corrected are not included yet.
+
 ### Changed
 - `review/decisions_unmatched.tsv` is renamed `review/list_unmatched.tsv`: it is
   a list written by `scripts/list_unmatched.py`, not a decision file that the
